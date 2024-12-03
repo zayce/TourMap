@@ -1,0 +1,165 @@
+@font-face {
+  font-family: "SourM";
+  src: url("../Fonts/SourGummy-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "SourB";
+  src: url("../Fonts/SourGummy-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "SourR";
+  src: url("../Fonts/SourGummy-Regular.ttf") format("truetype");
+}
+
+.Wrapper {
+  background-color: #fbfaf8;
+  padding-top: 10px;
+  .Inner {
+    width: 1240px;
+    margin: 0 auto;
+    .Header-Top-Container {
+      display: flex;
+      justify-content: space-between;
+      .Header-left-container {
+        display: flex;
+        gap: 40px;
+        .menu-social {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          display: flex;
+          gap: 20px;
+
+          .item-social {
+            align-self: center;
+            margin-top: 2px;
+          }
+        }
+        .number-company {
+          font-size: 16px;
+          font-weight: 500;
+          font-family: "SourM";
+          align-self: center;
+          color: #2c3e50;
+          transition: font-size 0.9s ease, color 0.15s ease;
+          &:hover {
+            color: #00aced;
+            font-size: 17px;
+          }
+        }
+      }
+      .header-container-right {
+        .enter-buttons {
+          margin-right: 20px;
+          border: none;
+          background-color: #fbfaf8;
+          .enter {
+            color: #2c3e50;
+            font-size: 20px;
+            transition: color 0.3s ease;
+            &:hover {
+              color: #00aced;
+            }
+          }
+        }
+        .change-languages {
+          font-size: 16px;
+          padding: 8px;
+          border-radius: 8px;
+          border: none;
+          background-color: #fbfaf8;
+          color: #2c3e50;
+          font-family: "Arial", sans-serif;
+          font-family: "SourM";
+          cursor: pointer;
+          transition: all 0.3s ease;
+          .change-languages::-ms-expand {
+            display: none;
+            border: none;
+          }
+          .language {
+            padding: 8px;
+            font-size: 16px;
+            color: #2c3e50;
+            .language:hover {
+              color: #3498db;
+            }
+          }
+          .change-languages:hover {
+            border-color: #3498db;
+            border: none;
+            box-shadow: 0 2px 8px rgba(52, 152, 219, 0.3);
+          }
+          .change-languages:focus {
+            border: none;
+            outline: none;
+            border-color: #3498db;
+            box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+          }
+        }
+      }
+    }
+    .Header-Buttom {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0px;
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+      .Header-Logo {
+        display: flex;
+        gap: 10px;
+        .Header-logo-img {
+          .Logo {
+            width: 24px;
+            height: 24px;
+          }
+        }
+        .Header-Name {
+          font-size: 16px;
+          font-weight: 500;
+          font-family: "SourM";
+          align-self: center;
+          color: #2c3e50;
+          transition: font-size 0.9s ease, color 0.15s ease;
+          &:hover {
+            color: #00aced;
+            font-size: 17px;
+          }
+        }
+      }
+      .Header-menu-nav-items {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 20px;
+
+        .menu-nav-item {
+          align-self: center;
+          margin-top: 2px;
+          color: #2c3e50;
+          transition: color 0.3s ease;
+          &:hover {
+            color: #00aced;
+          }
+        }
+      }
+      .Header-Butttons {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        .Header-like {
+          align-self: center;
+          .heart {
+            width: 24px;
+            height: 24px;
+          }
+        }
+      }
+    }
+  }
+}

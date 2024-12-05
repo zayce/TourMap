@@ -6,12 +6,14 @@ import CardPayments from "./Pages/CardPayment/CardPayments";
 import { Home } from "./Pages/Home";
 import { AuthForm } from "./Pages/Registr/Registr";
 import { Footer } from "./AllPages/Footer/Footer";
+import { SwiperWall } from "./PromoutionComponent/SwiperWall";
 
 export const Appp = () => {
   return (
     <>
       <BrowserRouter>
         <Header />
+        <SwiperWall />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/CardPayment" element={<CardPayments />} />

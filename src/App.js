@@ -1,3 +1,4 @@
+// В файле App.js
 import { Header } from "./AllPages/Header";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
@@ -6,9 +7,8 @@ import CardPayments from "./Pages/CardPayment/CardPayments";
 import { Home } from "./Pages/Home";
 import { AuthForm } from "./Pages/Registr/Registr";
 import { Footer } from "./AllPages/Footer/Footer";
-import { SwiperWall } from "./PromoutionComponent/SwiperWall";
 
-export const Appp = () => {
+const App = () => {
   return (
     <>
       <BrowserRouter>
@@ -23,3 +23,5 @@ export const Appp = () => {
     </>
   );
 };
+
+export default App; // Экспортируем как default

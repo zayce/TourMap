@@ -124,8 +124,8 @@ export const TourComponent = () => {
             <div className="Beta-Img">
               <img src={attraction.img} className="img" alt={attraction.name} />
               <div className="overlay">
-                <div className="overlay-text">Тур на {attraction.person}</div>
-                <div className="overlay-text">Тур на {attraction.duo}</div>
+                <div className="overlay-text"> {attraction.person}</div>
+                <div className="overlay-text">{attraction.duo}</div>
               </div>
             </div>
             <div className="Beta-name">{attraction.name}</div>

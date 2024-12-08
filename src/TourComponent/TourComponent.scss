@@ -131,6 +131,7 @@
 .TourComponent-wrapper {
   margin-top: 50px;
   padding-bottom: 20px;
+  overflow-x: hidden; 
 
   .TourComponent-inner {
     width: 1240px;

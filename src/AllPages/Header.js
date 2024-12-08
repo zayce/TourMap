@@ -1,7 +1,7 @@
-import Face from "../AllPages/Allasessts/face.svg";
-import Twit from "../AllPages/Allasessts/twit.svg";
-import Inst from "./Allasessts/insta.svg";
-import Youtube from "./Allasessts/yout.svg";
+import Face from "../AllPages/Allasessts/face.png";
+import Twit from "../AllPages/Allasessts/twit.png";
+// import Inst from "./Allasessts/insta.svg";
+import Youtube from "./Allasessts/yout.png";
 import { Link } from "react-router-dom";
 
 import Logo from "./Allasessts/icons.png";
@@ -25,7 +25,7 @@ export const Header = () => {
                   <img src={Twit} className="social" />
                 </li>
                 <li className="item-social">
-                  <img src={Inst} className="social" />
+                  <img src={Twit} className="social" />
                 </li>
                 <li className="item-social">
                   <img src={Youtube} className="social" />

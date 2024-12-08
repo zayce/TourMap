@@ -1,50 +1,139 @@
-import React, { useState, useEffect } from "react";
 import "../TourComponent/TourComponent.scss";
 
+import Baku from "./asestsTour/baku.png";
+import qabala from "./asestsTour/qabala.png";
+import Sheki from "./asestsTour/Sheki.png";
+import Shusha from "./asestsTour/Susa.png";
+import Gandja from "./asestsTour/Gandja.jpg";
+import Lankoran from "./asestsTour/lankoran.jpg";
+import Shamaha from "./asestsTour/Shamaxa.jpg";
+import Quba from "./asestsTour/Quba.png";
+import Xacmaz from "./asestsTour/Xacmaz.jpg";
+import Shaxdag from "./asestsTour/Shahdag.jpg";
+import Shemkir from "./asestsTour/sHEMKIR.jpg";
+import Ismailli from "./asestsTour/Ismailli.jpg";
+
+import one from "./asestsTour/solo.png";
+import two from "./asestsTour/twov.png";
+
 export const TourComponent = () => {
-    const [attractions, setAttractions] = useState([]);
-    const [error, setError] = useState(null);
-  
-    useEffect(() => {
-        // Запрос данных с сервера
-        fetch('http://localhost:3000/attractions')
-          .then(response => {
-            if (!response.ok) {
-              throw new Error('Network response was not ok');
-            }
-            return response.json();  // Преобразуем ответ в JSON
-          })
-          .then(data => {
-            console.log('Полученные данные:', data); // Логируем данные
-            setAttractions(data);  // Сохраняем данные в состояние
-          })
-          .catch(err => {
-            console.error(err); // Логируем ошибку
-            setError('Ошибка при получении данных: ' + err.message);
-          });
-      }, []);
-      
+  const attractions = [
+    {
+      name: "Баку",
+      img: Baku,
+      id: 1,
+      state: "Popular",
+      person: one,
+      duo: two,
+    },
+    {
+      name: "Гянджа",
+      img: Gandja,
+      id: 2,
+      state: "Popular",
+      person: one,
+      duo: two,
+    },
+    {
+      name: "Шеки",
+      img: Sheki,
+      id: 3,
+      state: "Scenic",
+      person: one,
+      duo: two,
+    },
+    {
+      name: "Ленкорань",
+      img: Lankoran,
+      id: 4,
+      state: "Scenic",
+      person: one,
+      duo: two,
+    },
+    {
+      name: "Шамахы",
+      img: Shamaha,
+      id: 5,
+      state: "Scenic",
+      person: one,
+      duo: two,
+    },
+    {
+      name: "Шуша",
+      img: Shusha,
+      id: 6,
+      state: "Mountain",
+      person: one,
+      duo: two,
+    },
+    {
+      name: "Куба",
+      img: Quba,
+      id: 7,
+      state: "Mountain",
+      person: one,
+      duo: two,
+    },
+    {
+      name: "Габала",
+      img: qabala,
+      id: 8,
+      state: "Tourist",
+      person: one,
+      duo: two,
+    },
+    {
+      name: "Хачмаз",
+      img: Xacmaz,
+      id: 9,
+      state: "Tourist",
+      person: one,
+      duo: two,
+    },
+    {
+      name: "Гусар",
+      img: Shaxdag,
+      id: 10,
+      state: "Tourist",
+      person: one,
+      duo: two,
+    },
+    {
+      name: "Шамкир",
+      img: Shemkir,
+      id: 11,
+      state: "Tourist",
+      person: one,
+      duo: two,
+    },
+    {
+      name: "Исмаиллы",
+      img: Ismailli,
+      id: 12,
+      state: "Tourist",
+      person: one,
+      duo: two,
+    },
+  ];
 
   return (
-    <div>
-      {attractions.length > 0 ? (
-        attractions.map((attraction) => (
+    <div className="TourComponent-wrapper">
+      <div className="TourComponent-inner">
+        {attractions.map((attraction) => (
           <div key={attraction.id} className="Beta-Block">
             <div className="Beta-Img">
               <img src={attraction.img} className="img" alt={attraction.name} />
-            </div>
-            <div className="Beta-state">{attraction.state}</div>
-            <div className="Beta-Id">{attraction.id}</div>
-            <div className="Beta-info">
-              <div className="Beta-person">
-                <div>{attraction.person}</div>
+              <div className="overlay">
+                <div className="overlay-text">Тур на {attraction.person}</div>
+                <div className="overlay-text">Тур на {attraction.duo}</div>
               </div>
             </div>
+            <div className="Beta-name">{attraction.name}</div>
+            <div className="Beta-state">{attraction.state}</div>
+            <div className="Beta-Id">{attraction.id}</div>
           </div>
-        ))
-      ) : (
-        <div>Загружаем данные...</div> // Сообщение, пока данные не загружены
-      )}
+        ))}
+      </div>
     </div>
   );
 };

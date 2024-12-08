@@ -1,87 +1,235 @@
+// @font-face {
+//   font-family: "SourB";
+//   src: url("../Fonts/PTSans-Regular.ttf") format("truetype");
+// }
+
+// @font-face {
+//   font-family: "SourM";
+//   src: url("../Fonts/SourGummy-Medium.ttf") format("truetype");
+// }
+
+// .TourComponent-wrapper {
+//   margin-top: 50px;
+//   padding-bottom: 20px;
+
+//   .TourComponent-inner {
+//     width: 1240px;
+//     margin: 0 auto;
+//     display: flex;
+//     gap: 46.6px;
+//     flex-wrap: wrap;
+
+//     .Beta-Block {
+//       margin-top: 50px;
+//       position: relative;
+
+//       .Beta-Img {
+//         position: relative;
+
+//         .img {
+//           width: 275px;
+//           height: 310px;
+//           border-radius: 20px;
+//           transition: opacity 0.3s ease; /* Плавное изменение прозрачности */
+//         }
+
+//         /* Затемнение изображения на 90% при наведении */
+//         &:hover .img {
+//           opacity: 0.1; /* Уменьшаем непрозрачность на 90% */
+//         }
+
+//         /* Оверлей с текстом */
+//         .overlay {
+//           position: absolute;
+//           top: 0;
+//           left: 0;
+//           width: 100%;
+//           height: 100%;
+//           background-color: rgba(0, 0, 0, 0.4); /* Полупрозрачный черный фон */
+//           opacity: 0;
+//           display: flex;
+//           justify-content: center;
+//           align-items: center;
+//           transition: opacity 0.3s ease;
+//         }
+
+//         /* Показываем оверлей и текст при наведении */
+//         &:hover .overlay {
+//           opacity: 1; /* Показываем оверлей */
+//         }
+
+//         .overlay-text {
+//           color: white;
+//           font-family: SourB;
+//           font-size: 22px; /* Размер шрифта */
+//           font-weight: 500;
+//         }
+
+//         .Beta-info {
+//           color: white;
+//           text-align: center;
+//           display: flex;
+
+//           .Beta-person {
+//           }
+//           .Beta-Duo {
+//           }
+//         }
+//       }
+//     }
+
+//     .Beta-name {
+//       position: absolute;
+//       top: 16px;
+//       right: 10px;
+//       color: white;
+//       font-family: SourB;
+//       font-size: 30px;
+//       font-weight: 500;
+//     }
+
+//     .Beta-state {
+//       position: absolute;
+//       top: -20px;
+//       left: -40px;
+//       color: white;
+//       background-color: #ff4742;
+//       padding: 10px;
+//       border-radius: 20px;
+//     }
+
+//     .Beta-Id {
+//       font-family: SourM;
+//       text-align: center;
+//       width: 30px;
+//       color: white;
+//       position: absolute;
+//       font-size: 20px;
+//       top: 20px;
+//       left: 20px;
+//       border-bottom: 2px solid white;
+//       transition: color 0.3s ease;
+
+//       &:hover {
+//         color: #00aced;
+//         border-bottom: 2px solid #00aced;
+//       }
+//     }
+//   }
+// }
+
 @font-face {
   font-family: "SourB";
-  src: url("../Fonts/SourGummy-Bold.ttf") format("truetype");
+  src: url("../Fonts/PTSans-Regular.ttf") format("truetype");
 }
 
-.Beta-Block {
-  margin-top: 120px;
-  position: relative;
-  margin-left: 300px;
+@font-face {
+  font-family: "SourM";
+  src: url("../Fonts/SourGummy-Medium.ttf") format("truetype");
+}
 
-  .Beta-Img {
-    position: relative;
-    .img {
-      width: 400px;
-      height: 100%;
-      border-radius: 20px;
-      transition: opacity 0.3s ease; /* Плавное изменение прозрачности */
-    }
+.TourComponent-wrapper {
+  margin-top: 50px;
+  padding-bottom: 20px;
 
-    /* Затемнение изображения при наведении */
-    &:hover .img {
-      opacity: 0.5; /* Уменьшаем непрозрачность для затемнения */
-    }
+  .TourComponent-inner {
+    width: 1240px;
+    margin: 0 auto;
+    display: flex;
+    gap: 46.6px;
+    flex-wrap: wrap;
 
-    /* Оверлей с текстом */
-    .overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.4); /* Полупрозрачный черный фон */
-      opacity: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      transition: opacity 0.3s ease;
-    }
+    .Beta-Block {
+      margin-top: 50px;
+      position: relative;
 
-    /* Показываем оверлей и текст при наведении */
-    &:hover .overlay {
-      opacity: 1; /* Показываем оверлей */
-    }
+      .Beta-Img {
+        position: relative;
 
-    .Beta-info {
-      color: white;
-      text-align: center;
+        .img {
+          width: 275px;
+          height: 310px;
+          border-radius: 20px;
+          transition: opacity 0.3s ease;
+        }
 
-      .Beta-person,
-      .Beta-Inperson {
-        font-size: 18px;
-        margin-bottom: 10px;
+        &:hover .img {
+          opacity: 0.1;
+        }
 
-        div {
-          font-size: 16px;
+        /* Оверлей с текстом */
+        .overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.4); /* Полупрозрачный черный фон */
+          opacity: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: opacity 0.3s ease;
+        }
+
+        /* Показываем оверлей и текст при наведении */
+        &:hover .overlay {
+          opacity: 1;
+        }
+
+        .overlay-text {
+          color: white;
+          font-family: SourB;
+          font-size: 22px;
+          font-weight: 500;
+          text-align: center;
+          display: flex;
+        }
+
+        .Beta-info {
+          color: white;
+          text-align: center;
+          display: flex;
         }
       }
     }
-  }
 
-  .Beta-state {
-    position: absolute;
-    top: -20px;
-    left: -40px;
-    color: white;
-    background-color: #ff4742;
-    padding: 10px;
-    border-radius: 20px;
-  }
+    .Beta-name {
+      position: absolute;
+      top: 16px;
+      right: 10px;
+      color: white;
+      font-family: SourB;
+      font-size: 30px;
+      font-weight: 500;
+    }
 
-  .Beta-Id {
-    font-family: SourB;
-    text-align: center;
-    width: 30px;
-    color: white;
-    position: absolute;
-    font-size: 20px;
-    top: 20px;
-    left: 40px;
-    border-bottom: 2px solid white;
-    transition: color 0.3s ease;
-    &:hover {
-      color: #00aced;
-      border-bottom: 2px solid #00aced;
+    .Beta-state {
+      position: absolute;
+      top: -20px;
+      left: -40px;
+      color: white;
+      background-color: #ff4742;
+      padding: 10px;
+      border-radius: 20px;
+    }
+
+    .Beta-Id {
+      font-family: SourM;
+      text-align: center;
+      width: 30px;
+      color: white;
+      position: absolute;
+      font-size: 20px;
+      top: 20px;
+      left: 20px;
+      border-bottom: 2px solid white;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #00aced;
+        border-bottom: 2px solid #00aced;
+      }
     }
   }
 }

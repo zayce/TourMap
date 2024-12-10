@@ -12,6 +12,9 @@ import Xacmaz from "./asestsTour/Xacmaz.jpg";
 import Shaxdag from "./asestsTour/Shahdag.jpg";
 import Shemkir from "./asestsTour/sHEMKIR.jpg";
 import Ismailli from "./asestsTour/Ismailli.jpg";
+import Gazah from "./asestsTour/Gazah.jpg";
+import Zagatala from "./asestsTour/Zagatala.jpg";
+import Obb from "./asestsTour/Obb.jpg";
 
 import one from "./asestsTour/solo.png";
 import two from "./asestsTour/twov.png";
@@ -114,25 +117,63 @@ export const TourComponent = () => {
       person: one,
       duo: two,
     },
+    {
+      name: "Газах",
+      img: Gazah,
+      id: 12,
+      state: "Tourist",
+      person: one,
+      duo: two,
+    },
+    {
+      name: "Загатала",
+      img: Zagatala,
+      id: 12,
+      state: "Tourist",
+      person: one,
+      duo: two,
+    },
+    {
+      name: "Общий тур",
+      img: Obb,
+      id: 12,
+      state: "Tourist",
+      person: one,
+      duo: two,
+    },
   ];
 
   return (
     <div className="TourComponent-wrapper">
       <div className="TourComponent-inner">
-        {attractions.map((attraction) => (
-          <div key={attraction.id} className="Beta-Block">
-            <div className="Beta-Img">
-              <img src={attraction.img} className="img" alt={attraction.name} />
-              <div className="overlay">
-                <div className="overlay-text"> {attraction.person}</div>
-                <div className="overlay-text">{attraction.duo}</div>
+        <div className="Title">Туры по всем городам</div>
+        <div className="TourComponent">
+          {attractions.map((attraction) => (
+            <div key={attraction.id} className="Beta-Block">
+              <div className="Beta-Img">
+                <img
+                  src={attraction.img}
+                  className="img"
+                  alt={attraction.name}
+                />
+                <div className="overlay">
+                  <div className="overlay-text text">
+                    <img className="solo duo" src={attraction.person} />
+                    <div className="tur tur1">тур на одного </div>
+                  </div>
+                  <div className="overlay-text">
+                    {" "}
+                    <img className="solo" src={attraction.duo} />
+                    <div className="tur tur2">тур на двоих </div>
+                  </div>
+                </div>
               </div>
+              {/* <div className="Beta-state">{attraction.state}</div> */}
+              <div className="Beta-name">{attraction.name}</div>
+              <div className="Beta-Id">{attraction.id}</div>
             </div>
-            <div className="Beta-name">{attraction.name}</div>
-            <div className="Beta-state">{attraction.state}</div>
-            <div className="Beta-Id">{attraction.id}</div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );

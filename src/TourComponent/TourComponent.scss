@@ -1,123 +1,3 @@
-// @font-face {
-//   font-family: "SourB";
-//   src: url("../Fonts/PTSans-Regular.ttf") format("truetype");
-// }
-
-// @font-face {
-//   font-family: "SourM";
-//   src: url("../Fonts/SourGummy-Medium.ttf") format("truetype");
-// }
-
-// .TourComponent-wrapper {
-//   margin-top: 50px;
-//   padding-bottom: 20px;
-
-//   .TourComponent-inner {
-//     width: 1240px;
-//     margin: 0 auto;
-//     display: flex;
-//     gap: 46.6px;
-//     flex-wrap: wrap;
-
-//     .Beta-Block {
-//       margin-top: 50px;
-//       position: relative;
-
-//       .Beta-Img {
-//         position: relative;
-
-//         .img {
-//           width: 275px;
-//           height: 310px;
-//           border-radius: 20px;
-//           transition: opacity 0.3s ease; /* Плавное изменение прозрачности */
-//         }
-
-//         /* Затемнение изображения на 90% при наведении */
-//         &:hover .img {
-//           opacity: 0.1; /* Уменьшаем непрозрачность на 90% */
-//         }
-
-//         /* Оверлей с текстом */
-//         .overlay {
-//           position: absolute;
-//           top: 0;
-//           left: 0;
-//           width: 100%;
-//           height: 100%;
-//           background-color: rgba(0, 0, 0, 0.4); /* Полупрозрачный черный фон */
-//           opacity: 0;
-//           display: flex;
-//           justify-content: center;
-//           align-items: center;
-//           transition: opacity 0.3s ease;
-//         }
-
-//         /* Показываем оверлей и текст при наведении */
-//         &:hover .overlay {
-//           opacity: 1; /* Показываем оверлей */
-//         }
-
-//         .overlay-text {
-//           color: white;
-//           font-family: SourB;
-//           font-size: 22px; /* Размер шрифта */
-//           font-weight: 500;
-//         }
-
-//         .Beta-info {
-//           color: white;
-//           text-align: center;
-//           display: flex;
-
-//           .Beta-person {
-//           }
-//           .Beta-Duo {
-//           }
-//         }
-//       }
-//     }
-
-//     .Beta-name {
-//       position: absolute;
-//       top: 16px;
-//       right: 10px;
-//       color: white;
-//       font-family: SourB;
-//       font-size: 30px;
-//       font-weight: 500;
-//     }
-
-//     .Beta-state {
-//       position: absolute;
-//       top: -20px;
-//       left: -40px;
-//       color: white;
-//       background-color: #ff4742;
-//       padding: 10px;
-//       border-radius: 20px;
-//     }
-
-//     .Beta-Id {
-//       font-family: SourM;
-//       text-align: center;
-//       width: 30px;
-//       color: white;
-//       position: absolute;
-//       font-size: 20px;
-//       top: 20px;
-//       left: 20px;
-//       border-bottom: 2px solid white;
-//       transition: color 0.3s ease;
-
-//       &:hover {
-//         color: #00aced;
-//         border-bottom: 2px solid #00aced;
-//       }
-//     }
-//   }
-// }
-
 @font-face {
   font-family: "SourB";
   src: url("../Fonts/PTSans-Regular.ttf") format("truetype");
@@ -128,108 +8,162 @@
   src: url("../Fonts/SourGummy-Medium.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "RBSBI";
+  src: url("../Fonts/Rubik-SemiBoldItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PT";
+  src: url("../Fonts/Rubik-MediumItalic.ttf") format("truetype");
+}
+
 .TourComponent-wrapper {
   margin-top: 50px;
   padding-bottom: 20px;
-  overflow-x: hidden; 
+  overflow-x: hidden;
 
   .TourComponent-inner {
-    width: 1240px;
+    width: 1480px;
     margin: 0 auto;
-    display: flex;
-    gap: 46.6px;
-    flex-wrap: wrap;
 
-    .Beta-Block {
-      margin-top: 50px;
-      position: relative;
+    .Title {
+      text-align: center;
+      font-size: 70px;
+      color: #ff4742;
+      box-shadow: inset;
+      margin-bottom: 40px;
+      font-family: "PT";
+    }
 
-      .Beta-Img {
+    .TourComponent {
+      display: flex;
+      gap: 25px;
+      flex-wrap: wrap;
+
+      .Beta-Block {
+        margin-top: 50px;
         position: relative;
 
-        .img {
-          width: 275px;
-          height: 310px;
-          border-radius: 20px;
-          transition: opacity 0.3s ease;
-        }
+        .Beta-Img {
+          position: relative;
+          transition: transform 0.3s ease; /* Плавная анимация для увеличения */
 
-        &:hover .img {
-          opacity: 0.1;
-        }
+          .img {
+            width: 275px;
+            height: 310px;
+            border-radius: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Плавный эффект увеличения и тени */
+          }
 
-        /* Оверлей с текстом */
-        .overlay {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background-color: rgba(0, 0, 0, 0.4); /* Полупрозрачный черный фон */
-          opacity: 0;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          transition: opacity 0.3s ease;
-        }
+          /* Увеличиваем изображение при наведении */
+          &:hover .img {
+            transform: scale(1.08); /* Увеличение на 5% */
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Добавляем тень */
+          }
 
-        /* Показываем оверлей и текст при наведении */
-        &:hover .overlay {
-          opacity: 1;
-        }
+          /* Оверлей с текстом */
+          .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 20px;
+            /* Полупрозрачный черный фон */
+            opacity: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: opacity 0.3s ease;
+          }
 
-        .overlay-text {
-          color: white;
-          font-family: SourB;
-          font-size: 22px;
-          font-weight: 500;
-          text-align: center;
-          display: flex;
-        }
+          /* Показываем оверлей и текст при наведении */
+          &:hover .overlay {
+            opacity: 1;
+          }
 
-        .Beta-info {
-          color: white;
-          text-align: center;
-          display: flex;
+          .text {
+            border-right: 2px solid white;
+          }
+
+          .overlay-text {
+            color: white;
+            font-family: SourB;
+            font-size: 22px;
+            font-weight: 500;
+            text-align: center;
+
+            .solo {
+              width: 70px;
+              height: 100%;
+              border-radius: 50%;
+            }
+            .duo {
+              margin-right: 40px;
+            }
+            .tur {
+              font-size: 20px;
+              text-align: center;
+              transition: color 0.5s ease;
+              &:hover {
+                color: #00aced;
+              }
+            }
+            .tur1 {
+              margin-right: 15px;
+            }
+            .tur2 {
+              margin-left: 15px;
+            }
+          }
+
+          .Beta-info {
+            color: white;
+            text-align: center;
+            display: flex;
+          }
         }
       }
-    }
 
-    .Beta-name {
-      position: absolute;
-      top: 16px;
-      right: 10px;
-      color: white;
-      font-family: SourB;
-      font-size: 30px;
-      font-weight: 500;
-    }
+      .Beta-state {
+        position: absolute;
+        top: 16px;
+        right: 10px;
+        color: white;
+        font-family: SourB;
+        font-size: 30px;
+        font-weight: 500;
+      }
 
-    .Beta-state {
-      position: absolute;
-      top: -20px;
-      left: -40px;
-      color: white;
-      background-color: #ff4742;
-      padding: 10px;
-      border-radius: 20px;
-    }
+      .Beta-name {
+        font-family: RBSBI;
+        position: absolute;
+        top: -20px;
+        left: -15px;
+        color: white;
+        background-color: #ff4742;
+        padding: 10px;
+        border-radius: 20px;
+      }
 
-    .Beta-Id {
-      font-family: SourM;
-      text-align: center;
-      width: 30px;
-      color: white;
-      position: absolute;
-      font-size: 20px;
-      top: 20px;
-      left: 20px;
-      border-bottom: 2px solid white;
-      transition: color 0.3s ease;
+      .Beta-Id {
+        font-family: SourM;
+        text-align: center;
+        width: 30px;
+        color: white;
+        position: absolute;
+        font-size: 20px;
+        top: 20px;
+        left: 20px;
+        border-bottom: 2px solid white;
+        transition: color 0.3s ease;
 
-      &:hover {
-        color: #00aced;
-        border-bottom: 2px solid #00aced;
+        &:hover {
+          color: #00aced;
+          border-bottom: 2px solid #00aced;
+        }
       }
     }
   }

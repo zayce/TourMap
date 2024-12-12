@@ -1,3 +1,4 @@
+import { HomeQuestions } from "../HomeQuestions/HomeQuestions";
 import { SwiperWall } from "../PromoutionComponent/SwiperWall";
 import { TourComponent } from "../TourComponent/TourComponent";
 
@@ -10,6 +11,7 @@ export const Home = () => {
         <SwiperWall />
         <div className="Inner-home">
           <TourComponent />
+          <HomeQuestions />
         </div>
       </div>
     </>

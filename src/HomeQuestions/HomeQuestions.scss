@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "PT";
+  src: url("../Fonts/Rubik-MediumItalic.ttf") format("truetype");
+}
+
+.Title-Ques {
+  margin-top: 80px;
+  text-align: center;
+  font-size: 70px;
+  color: #ff4742;
+  box-shadow: inset;
+  margin-bottom: 40px;
+  font-family: "PT";
+}
+
+.Ques-wrapper {
+  margin-top: 40px;
+  .Ques-inner {
+    width: 1480px;
+    margin: 0 auto;
+  }
+}

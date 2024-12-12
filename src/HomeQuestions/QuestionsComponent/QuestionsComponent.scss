@@ -1,0 +1,73 @@
+@font-face {
+    font-family: "RBSB";
+    src: url("../../Fonts/Rubik-SemiBold.ttf") format("truetype");
+  }
+  
+  .Question-Components {
+    width: 740px;
+    border: 5px solid #ff4742;
+    border-radius: 15px; 
+    box-shadow: 0 6px 12px rgba(0, 0.2, 0.5, 0.7); 
+    overflow: hidden;
+    background-color: #fff;
+  
+    .Question-Blok {
+      border-bottom: 3px solid #ff4742;
+      &:last-child {
+        border-bottom: none;
+      }
+  
+      .Question-Element {
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: RBSB;
+        font-size: 28px;
+        background-color: #ff4742;
+        color: white;
+        cursor: pointer;
+
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  
+        &:hover {
+          background-color: #ff2f1f;
+          box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+          transform: translateY(-5px); 
+        }
+      }
+  
+      .Simvol {
+        font-size: 30px;
+        transition: transform 0.3s ease, color 0.3s ease;
+        color: white;
+      }
+  
+      .Simvol.open {
+        transform: rotate(180deg); 
+        color: #ff2f1f; 
+      }
+  
+      .Question-answer {
+        font-family: RBSB;
+        font-size: 20px;
+        color: #333;
+        background-color: #f9f9f9;
+        opacity: 0;
+        max-height: 0;
+        visibility: hidden;
+        transition: max-height 0.5s ease, opacity 0.3s ease, visibility 0s 0.5s;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+      }
+  
+      .Question-answer.active {
+        padding: 15px;
+        max-height: 1000px; 
+        opacity: 1;
+        visibility: visible;
+        transition: max-height 0.5s ease, opacity 0.3s ease;
+      }
+    }
+  }
+  

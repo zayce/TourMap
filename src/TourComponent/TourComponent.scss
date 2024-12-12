@@ -47,16 +47,16 @@
 
         .Beta-Img {
           position: relative;
-          transition: transform 0.3s ease; /* Плавная анимация для увеличения */
+          transition: transform 0.3s ease;
 
           .img {
             width: 275px;
             height: 310px;
             border-radius: 20px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Плавный эффект увеличения и тени */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
           }
 
-          /* Увеличиваем изображение при наведении */
+          
           &:hover .img {
             transform: scale(1.08); /* Увеличение на 5% */
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Добавляем тень */

@@ -120,7 +120,7 @@ export const TourComponent = () => {
     {
       name: "Газах",
       img: Gazah,
-      id: 12,
+      id: 13,
       state: "Tourist",
       person: one,
       duo: two,
@@ -128,7 +128,7 @@ export const TourComponent = () => {
     {
       name: "Загатала",
       img: Zagatala,
-      id: 12,
+      id: 14,
       state: "Tourist",
       person: one,
       duo: two,
@@ -136,7 +136,7 @@ export const TourComponent = () => {
     {
       name: "Общий тур",
       img: Obb,
-      id: 12,
+      id: 15,
       state: "Tourist",
       person: one,
       duo: two,

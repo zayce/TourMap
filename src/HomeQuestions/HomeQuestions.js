@@ -1,5 +1,6 @@
 import "./HomeQuestions.scss";
 import { Questions } from "./QuestionsComponent/QuestionsComponent";
+import { ReviewComponent } from "./ReviewComponent/ReviewComponent";
 
 export const HomeQuestions = () => {
   // Что включено в стоимость тура?
@@ -13,7 +14,7 @@ export const HomeQuestions = () => {
       <div className="Ques-wrapper">
         <div className="Ques-inner">
           <Questions />
-          <div></div>
+          <ReviewComponent />
         </div>
       </div>
     </>

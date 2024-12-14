@@ -1,0 +1,50 @@
+.Review-Wpapper {
+  border: 10px solid #ff4742;
+  width: 710px;
+  height: 592px;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0.2, 0.5, 0.7);
+  .Review-Inner {
+    border: 10px solid white;
+    padding: 10px;
+    height: 100%;
+    overflow-y: auto;
+    .Rewie-block {
+      border-radius: 20px;
+      border: 3px solid grey;
+      padding: 15px;
+      margin-bottom: 10px;
+      &:last-child {
+        margin-bottom: 0px;
+      }
+      .Rewies-Header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        .Rewiew-date {
+          display: flex;
+          gap: 10px;
+          .Rewiew-Name {
+            color: darkgray;
+            font-size: 10px;
+          }
+          .Rewiew-data {
+            color: darkgray;
+            font-size: 10px;
+          }
+        }
+      }
+      .Rewiew {
+        margin-bottom: 20px;
+        color: darkgray;
+        font-size: 14px;
+        word-wrap: break-word;
+        white-space: normal;
+      }
+      .Rewiew-like {
+        color: darkgray;
+        font-size: 14px;
+      }
+    }
+  }
+}

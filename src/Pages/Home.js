@@ -1,3 +1,4 @@
+import { Review } from "../CreatedRewiew/CreatedRewiew";
 import { HomeQuestions } from "../HomeQuestions/HomeQuestions";
 import { SwiperWall } from "../PromoutionComponent/SwiperWall";
 import { TourComponent } from "../TourComponent/TourComponent";
@@ -12,6 +13,7 @@ export const Home = () => {
         <div className="Inner-home">
           <TourComponent />
           <HomeQuestions />
+          <Review />
         </div>
       </div>
     </>

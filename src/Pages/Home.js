@@ -1,6 +1,7 @@
 import { Review } from "../CreatedRewiew/CreatedRewiew";
 import { HomeQuestions } from "../HomeQuestions/HomeQuestions";
 import { SwiperWall } from "../PromoutionComponent/SwiperWall";
+import { SwiperCitytourComponent } from "../SwiperCitytourComponent/SwiperCitytourComponent";
 import { TourComponent } from "../TourComponent/TourComponent";
 
 import "./Home.scss";
@@ -12,8 +13,9 @@ export const Home = () => {
         <SwiperWall />
         <div className="Inner-home">
           <TourComponent />
-          <HomeQuestions />
           <Review />
+          <HomeQuestions />
+          <SwiperCitytourComponent />
         </div>
       </div>
     </>

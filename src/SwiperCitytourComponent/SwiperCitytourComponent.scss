@@ -1,0 +1,96 @@
+@font-face {
+  font-family: "PT Sans";
+  src: url("../Fonts/Rubik-SemiBoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+.Brand {
+  width: 100%;
+  max-width: 1480px;
+  margin: 0 auto;
+
+  .Brand-Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+
+    .Brand-titles {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      position: relative;
+      .Brand-title {
+        font-family: "PT Sans", sans-serif;
+        font-weight: 700;
+        font-size: 70px;
+        color: wheat;
+        margin-left: 250px;
+        margin-top: 5px;
+        line-height: 142.34px;
+        text-align: center;
+      }
+
+      .Brand-Fon {
+        position: absolute;
+        font-family: PT Sans;
+        font-size: 35px;
+        font-weight: 700;
+        color: #ff4742;
+        width: 400px;
+        top: 55px;
+      }
+    }
+
+    .brend-button {
+      padding: 20px;
+      background-color: #ffffff;
+      border: none;
+      color: #6f7682;
+      transition: background-color 0.3s ease, color 0.3s ease;
+
+      &:hover {
+        background-color: #f1f2f6;
+        color: #4798de;
+      }
+
+      .Brend {
+        font-family: PT Sans, sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20.7px;
+        text-align: left;
+      }
+    }
+  }
+
+  .Swiper-container {
+    .Swiper {
+      justify-content: space-between;
+      .swiper-img {
+        width: 100%;
+        height: 300px;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .Swiper-name {
+        font-family: PT Sans, sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        color: #333;
+        margin-top: 10px;
+        text-align: center;
+        margin-bottom: 50px;
+        transition: color 0.3s ease;
+        &:hover {
+          color: #00aced;
+        }
+      }
+    }
+  }
+}

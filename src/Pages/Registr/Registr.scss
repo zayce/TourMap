@@ -1,3 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f8f3ed;
+}
+
 .AuthForm {
   max-width: 500px;
   margin: 0 auto;
@@ -7,7 +17,7 @@
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
-
+  margin-bottom: 40px;
   &:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   }
@@ -31,9 +41,9 @@
 }
 
 .tab-button.active {
-  background: #00aced;
+  background: #4a3c2f;
   color: #fff;
-  border: 1px solid #00aced;
+  border: 1px solid #4a3c2f;
   &:hover {
     background: #2c3e50;
   }
@@ -87,7 +97,7 @@
 }
 
 .submit-button {
-  background: #00aced;
+  background: #4a3c2f;
   color: #fff;
   border: none;
   padding: 10px;

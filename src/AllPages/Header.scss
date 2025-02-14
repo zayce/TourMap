@@ -14,7 +14,8 @@
 }
 
 .Wrapper {
-  background-color: #fbfaf8;
+  // background-color: #fbfaf8;
+  background-color: #f8f3ed;
   padding-top: 10px;
   padding-bottom: 20px;
   .Inner {
@@ -146,6 +147,12 @@
           transition: color 0.3s ease;
           &:hover {
             color: #00aced;
+          }
+          a {
+            align-self: center;
+            margin-top: 2px;
+            color: #2c3e50;
+            transition: color 0.3s ease;
           }
         }
       }

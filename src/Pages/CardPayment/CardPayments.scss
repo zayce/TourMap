@@ -7,7 +7,7 @@
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
-
+  margin-bottom: 20px;
   &:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   }
@@ -15,7 +15,7 @@
 
 .form-title {
   text-align: center;
-  color: #333;
+  color: #4a3c2f;
   margin-bottom: 20px;
   font-size: 24px;
   font-weight: bold;
@@ -35,7 +35,7 @@
     margin-bottom: 8px;
     font-size: 16px;
     font-weight: bold;
-    color: #333;
+    color: #4a3c2f;
     font-family: "Arial", sans-serif;
   }
 

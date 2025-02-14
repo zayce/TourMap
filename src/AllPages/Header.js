@@ -1,15 +1,18 @@
+import React from "react";
+import { Link } from "react-router-dom";
+import { useMyContext } from "../UseContext.js";
+
 import Face from "../AllPages/Allasessts/face.svg";
 import Twit from "../AllPages/Allasessts/twit.svg";
 import Inst from "./Allasessts/insta.svg";
 import Youtube from "./Allasessts/yout.svg";
-import { Link } from "react-router-dom";
-
 import Logo from "./Allasessts/icons.png";
 import heart from "./Allasessts/heart.webp";
-
 import "./Header.scss";
 
 export const Header = () => {
+  const { handleLanguageChange, language, translations } = useMyContext();
+
   return (
     <>
       <div className="Wrapper">
@@ -36,15 +39,24 @@ export const Header = () => {
             <div className="header-container-right">
               <Link to={"/Registr"}>
                 <button className="enter-buttons">
-                  <span className="enter">Логин / Регистрация</span>
+                  <span className="enter">{translations[language].login}</span>
                 </button>
               </Link>
 
-              <select className="change-languages">
-                <option className="language">Русский</option>
-                <option className="language">English</option>
-                <option className="language">Español</option>
-                <option className="language">Français</option>
+              <select
+                className="change-languages"
+                onChange={handleLanguageChange}
+                value={language}
+              >
+                <option className="language" value="ru">
+                  Русский
+                </option>
+                <option className="language" value="en">
+                  English
+                </option>
+                <option className="language" value="az">
+                  Azer
+                </option>
               </select>
             </div>
           </div>
@@ -68,7 +80,11 @@ export const Header = () => {
               <li className="menu-nav-item">календарь мероприятий</li>
               <li className="menu-nav-item">календарь мероприятий</li>
               <li className="menu-nav-item">календарь мероприятий</li>
-              <li className="menu-nav-item">календарь мероприятий</li>
+              <Link to={"/Rewiew"}>
+                <li className="menu-nav-item">
+                  {translations[language].leaveReview}
+                </li>
+              </Link>
             </ul>
             <div className="Header-Butttons">
               <div className="Header-search">
@@ -76,7 +92,7 @@ export const Header = () => {
                   viewBox="0 0 24 24"
                   width="24px"
                   height="24px"
-                  class="d Vb UmNoP"
+                  className="d Vb UmNoP"
                 >
                   <path
                     fill-rule="evenodd"

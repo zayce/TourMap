@@ -1,48 +1,47 @@
 @font-face {
   font-family: "SourM";
-  src: url("../Fonts/SourGummy-Medium.ttf") format("truetype");
+  src: url("../Fonts/Rubik-SemiBoldItalic.ttf") format("truetype");
 }
 
-#app {
-  height: 100%;
-}
-html,
-body {
-  position: relative;
-  height: 100%;
-}
-
-body {
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #000;
-  margin: 0;
-  padding: 0;
-}
-
-.swiper {
-  width: 100%;
-  height: 100%;
-}
-.Baner-Container {
-  display: flex;
-  object-fit: cover;
-  position: relative;
-  .Baner {
-    width: 100%;
-    height: 650px;
-  }
-  .Title-Travled {
-    font-family: "SourM";
-    position: absolute;
-    bottom: 50px;
-    left: 50px;
-    font-size: 36px;
-    color: white;
-    transition: font-size 0.9s ease, color 0.15s ease;
-    &:hover {
-      color: #00aced;
-      font-size: 40px;
+.Quote-Wrapper {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  .Quote-Inner {
+    width: 1480px;
+    margin: 0 auto;
+    display: flex;
+    gap: 40px;
+    justify-content: space-evenly;
+    .Quote-Block {
+      text-align: center;
+      align-self: center;
+      .Quote-First-Statement {
+        font-family: SourM;
+        font-size: 50px;
+        margin-bottom: 25px;
+        color: #4a3c2f;
+      }
+      .Quote-Second-Statement {
+        font-family: SourM;
+        font-size: 40px;
+        margin-bottom: 25px;
+        color: #4a3c2f;
+      }
+      .Quote-button {
+        padding: 10px 50px;
+        border: 2px solid #4a3c2f;
+        border-radius: 20px;
+        background-color: #f8f3ed;
+        transition: color 0.15s ease;
+        &:hover {
+          background-color: #ab9984;
+        }
+        .Quote {
+          color: #4a3c2f;
+          font-family: SourM;
+          font-size: 12px;
+        }
+      }
     }
   }
 }

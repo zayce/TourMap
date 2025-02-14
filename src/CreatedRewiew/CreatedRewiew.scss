@@ -9,24 +9,27 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: "PT", sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
-}
+// body {
+//   font-family: "PT", sans-serif;
+//   background-color: #f4f4f4;
+//   color: #333;
+// }
 
 .review-wrapper {
-  margin-top: 80px;
+  padding-top: 20px;
+  background-color: #f8f3ed;
+  padding-bottom: 80px;
   .review-inner {
     max-width: 100%;
     width: 1480px;
     margin: 0 auto;
+
     @media (max-width: 1600px) {
       width: 90%;
     }
     .review-title {
       font-size: 60px;
-      color: #ff4742;
+      color: #4a3c2f;
       font-family: "Rubik", sans-serif;
       margin-bottom: 40px;
       text-align: left;
@@ -53,6 +56,14 @@ body {
           flex-direction: column;
           font-size: 16px;
           color: #555;
+          .name,
+          .review,
+          .mail,
+          .rare {
+            color: #4a3c2f;
+            font-size: 20px;
+            font-family: "PT";
+          }
         }
         input,
         textarea {
@@ -64,7 +75,7 @@ body {
         }
         button.submit-btn {
           padding: 15px;
-          background-color: #ff4742;
+          background-color: #4a3c2f;
           color: white;
           font-size: 18px;
           border: none;
@@ -73,9 +84,9 @@ body {
           transition: background-color 0.3s ease;
           margin-top: 20px;
         }
-        button.submit-btn:hover {
-          background-color: #e34032;
-        }
+        // button.submit-btn:hover {
+        //   background-color: #e34032;
+        // }
       }
 
       .review-img {

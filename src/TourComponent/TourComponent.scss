@@ -30,7 +30,7 @@
     .Title {
       text-align: center;
       font-size: 70px;
-      color: #ff4742;
+      color: #4a3c2f;
       box-shadow: inset;
       margin-bottom: 40px;
       font-family: "PT";
@@ -56,7 +56,6 @@
             transition: transform 0.3s ease, box-shadow 0.3s ease;
           }
 
-          
           &:hover .img {
             transform: scale(1.08); /* Увеличение на 5% */
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Добавляем тень */
@@ -143,7 +142,7 @@
         top: -20px;
         left: -15px;
         color: white;
-        background-color: #ff4742;
+        background-color: #4a3c2f;
         padding: 10px;
         border-radius: 20px;
       }

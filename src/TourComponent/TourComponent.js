@@ -15,14 +15,16 @@ import Ismailli from "./asestsTour/Ismailli.jpg";
 import Gazah from "./asestsTour/Gazah.jpg";
 import Zagatala from "./asestsTour/Zagatala.jpg";
 import Obb from "./asestsTour/Obb.jpg";
+import { useMyContext } from "../UseContext.js";
 
 import one from "./asestsTour/solo.png";
 import two from "./asestsTour/twov.png";
 
 export const TourComponent = () => {
+  const { language, translations } = useMyContext();
   const attractions = [
     {
-      name: "Баку",
+      name: translations[language].baku,
       img: Baku,
       id: 1,
       state: "Popular",
@@ -30,7 +32,7 @@ export const TourComponent = () => {
       duo: two,
     },
     {
-      name: "Гянджа",
+      name: translations[language].Ganja,
       img: Gandja,
       id: 2,
       state: "Popular",
@@ -38,7 +40,7 @@ export const TourComponent = () => {
       duo: two,
     },
     {
-      name: "Шеки",
+      name: translations[language].Sheki,
       img: Sheki,
       id: 3,
       state: "Scenic",
@@ -46,7 +48,7 @@ export const TourComponent = () => {
       duo: two,
     },
     {
-      name: "Ленкорань",
+      name: translations[language].Lankaran,
       img: Lankoran,
       id: 4,
       state: "Scenic",
@@ -54,7 +56,7 @@ export const TourComponent = () => {
       duo: two,
     },
     {
-      name: "Шамахы",
+      name: translations[language].Shamakhi,
       img: Shamaha,
       id: 5,
       state: "Scenic",
@@ -62,7 +64,7 @@ export const TourComponent = () => {
       duo: two,
     },
     {
-      name: "Шуша",
+      name: translations[language].Shusha,
       img: Shusha,
       id: 6,
       state: "Mountain",
@@ -70,7 +72,7 @@ export const TourComponent = () => {
       duo: two,
     },
     {
-      name: "Куба",
+      name: translations[language].Cuba,
       img: Quba,
       id: 7,
       state: "Mountain",
@@ -78,7 +80,7 @@ export const TourComponent = () => {
       duo: two,
     },
     {
-      name: "Габала",
+      name: translations[language].Gabala,
       img: qabala,
       id: 8,
       state: "Tourist",
@@ -86,7 +88,7 @@ export const TourComponent = () => {
       duo: two,
     },
     {
-      name: "Хачмаз",
+      name: translations[language].Khachmaz,
       img: Xacmaz,
       id: 9,
       state: "Tourist",
@@ -94,7 +96,7 @@ export const TourComponent = () => {
       duo: two,
     },
     {
-      name: "Гусар",
+      name: translations[language].Shusha,
       img: Shaxdag,
       id: 10,
       state: "Tourist",
@@ -102,7 +104,7 @@ export const TourComponent = () => {
       duo: two,
     },
     {
-      name: "Шамкир",
+      name: translations[language].Shamkir,
       img: Shemkir,
       id: 11,
       state: "Tourist",
@@ -110,7 +112,7 @@ export const TourComponent = () => {
       duo: two,
     },
     {
-      name: "Исмаиллы",
+      name: translations[language].Ismailli,
       img: Ismailli,
       id: 12,
       state: "Tourist",
@@ -118,7 +120,7 @@ export const TourComponent = () => {
       duo: two,
     },
     {
-      name: "Газах",
+      name: translations[language].Gazakh,
       img: Gazah,
       id: 13,
       state: "Tourist",
@@ -126,7 +128,7 @@ export const TourComponent = () => {
       duo: two,
     },
     {
-      name: "Загатала",
+      name: translations[language].Zagatala,
       img: Zagatala,
       id: 14,
       state: "Tourist",
@@ -134,7 +136,7 @@ export const TourComponent = () => {
       duo: two,
     },
     {
-      name: "Общий тур",
+      name: translations[language].generalTour,
       img: Obb,
       id: 15,
       state: "Tourist",
@@ -146,7 +148,7 @@ export const TourComponent = () => {
   return (
     <div className="TourComponent-wrapper">
       <div className="TourComponent-inner">
-        <div className="Title">Туры по всем городам</div>
+        <div className="Title">{translations[language].tourMap}</div>
         <div className="TourComponent">
           {attractions.map((attraction) => (
             <div key={attraction.id} className="Beta-Block">

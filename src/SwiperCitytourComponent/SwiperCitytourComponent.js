@@ -15,20 +15,19 @@ import zoopark from "./SwiperAsessrs/zoopark.png";
 
 export const SwiperCitytourComponent = () => {
   const picture = [
-    { img: Baku, name: "Туры по Баку" },
-    { img: drovec, name: "Туры по Дворцам" },
-    { img: musei, name: "Туры по Музеям" },
-    { img: nature, name: "Туры по Природным достопремичательностям" },
-    { img: park, name: "Туры по Паркам" },
-    { img: zoopark, name: "Туры по Зоопарком" },
-    { img: Baku, name: "Туры по Баку" },
+    { img: Baku, name: "Баку" },
+    { img: drovec, name: "Дворцы" },
+    { img: musei, name: "Музеи" },
+    { img: nature, name: "Природные достопремичательности" },
+    { img: park, name: "Парки" },
+    { img: zoopark, name: "Зоопарки" },
   ];
 
   return (
     <div className="Brand">
       <div className="Brand-Header">
         <div className="Brand-titles">
-          <div className="Brand-title">Plaace</div>
+          <div className="Brand-title">Place</div>
           <div className="Brand-Fon">Популярные Места</div>
         </div>
         <button className="brend-button">

@@ -13,6 +13,7 @@ import nature from "./SwiperAsessrs/nature.png";
 import park from "./SwiperAsessrs/Park.png";
 import zoopark from "./SwiperAsessrs/zoopark.png";
 
+import { Link } from "react-router-dom";
 export const SwiperCitytourComponent = () => {
   const picture = [
     { img: Baku, name: "Баку" },
@@ -30,9 +31,11 @@ export const SwiperCitytourComponent = () => {
           <div className="Brand-title">Place</div>
           <div className="Brand-Fon">Популярные Места</div>
         </div>
-        <button className="brend-button">
-          <span className="Brend">Все Места</span>
-        </button>
+        <Link to={"/AllPlaces"}>
+          <button className="brend-button">
+            <span className="Brend">Все Места</span>
+          </button>
+        </Link>
       </div>
       <div className="Swiper-container">
         <Swiper

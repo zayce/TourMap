@@ -1,0 +1,73 @@
+.ChosenElement-wrapper {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ChosenElement-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ChosenElement-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ChosenElement-header h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.ChosenElement-state {
+  font-size: 1.2rem;
+  color: #777;
+  font-weight: 600;
+}
+
+.ChosenElement-content {
+  display: flex;
+  gap: 30px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.ChosenElement-img {
+  flex: 1;
+}
+
+.chosen-img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ChosenElement-info {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.ChosenElement-info p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.ChosenElement-info a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.ChosenElement-info a:hover {
+  text-decoration: underline;
+}

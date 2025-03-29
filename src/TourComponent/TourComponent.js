@@ -1,5 +1,7 @@
 import "../TourComponent/TourComponent.scss";
 
+import { Link } from "react-router-dom";
+
 import Baku from "./asestsTour/baku.png";
 import qabala from "./asestsTour/qabala.png";
 import Sheki from "./asestsTour/Sheki.png";
@@ -21,7 +23,8 @@ import one from "./asestsTour/solo.png";
 import two from "./asestsTour/twov.png";
 
 export const TourComponent = () => {
-  const { language, translations } = useMyContext();
+  const { language, translations, museums } = useMyContext();
+  console.log(museums, "museum");
   const attractions = [
     {
       name: translations[language].baku,
@@ -30,6 +33,7 @@ export const TourComponent = () => {
       state: "Popular",
       person: one,
       duo: two,
+      connect: "Baku",
     },
     {
       name: translations[language].Ganja,
@@ -151,29 +155,32 @@ export const TourComponent = () => {
         <div className="Title">{translations[language].tourMap}</div>
         <div className="TourComponent">
           {attractions.map((attraction) => (
-            <div key={attraction.id} className="Beta-Block">
-              <div className="Beta-Img">
-                <img
-                  src={attraction.img}
-                  className="img"
-                  alt={attraction.name}
-                />
-                <div className="overlay">
-                  <div className="overlay-text text">
-                    <img className="solo duo" src={attraction.person} />
-                    <div className="tur tur1">тур на одного </div>
-                  </div>
-                  <div className="overlay-text">
-                    {" "}
-                    <img className="solo" src={attraction.duo} />
-                    <div className="tur tur2">тур на двоих </div>
+            <Link key={attraction.id}>
+              <div className="Beta-Block">
+                <div className="Beta-Img">
+                  <img
+                    src={attraction.img}
+                    className="img"
+                    alt={attraction.name}
+                  />
+                  <div className="overlay">
+                    <div className="overlay-text text">
+                      <img
+                        className="solo duo"
+                        src={attraction.person}
+                        alt="person"
+                      />
+                      <div className="tur tur1">тур на одного</div>
+                    </div>
+                    <div className="overlay-text">
+                      <img className="solo" src={attraction.duo} alt="duo" />
+                      <div className="tur tur2">тур на двоих</div>
+                    </div>
                   </div>
                 </div>
+                <div className="Beta-name">{attraction.name}</div>
               </div>
-              {/* <div className="Beta-state">{attraction.state}</div> */}
-              <div className="Beta-name">{attraction.name}</div>
-              <div className="Beta-Id">{attraction.id}</div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

@@ -1,3 +1,4 @@
+
 import { HomeQuestions } from "../HomeQuestions/HomeQuestions";
 import { Quote } from "../PromoutionComponent/SwiperWall";
 
@@ -15,6 +16,7 @@ export const Home = () => {
           <TourComponent />
           <SwiperCitytourComponent />
           <HomeQuestions />
+
         </div>
       </div>
     </>

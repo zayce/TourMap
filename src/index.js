@@ -1,6 +1,6 @@
-// В файле index.js
 import React from "react";
-import ReactDOM from "react-dom"; // Импортируем из 'react-dom/client'
-import App from "./App"; // Теперь импортируем как default
+import ReactDOM from "react-dom/client"; // Important to import from 'react-dom/client'
+import App from "./App";
 
-ReactDOM.render(<App />, document.querySelector("#root"));
+const root = ReactDOM.createRoot(document.getElementById("root")); // Create root
+root.render(<App />); // Use the render

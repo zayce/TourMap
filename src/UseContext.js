@@ -1,5 +1,10 @@
 import { createContext, useContext, useState, useEffect } from "react";
 
+import HeydarAliyevCenter from "./assets/images/HeydarAliyevCenter.png";
+import CarpetMuseumBaku from "./assets/images/Carpet.png";
+import ArtMuseum from "./assets/images/ArtMuseum.png";
+import MiniBook from "./assets/images/MiniBook.jpg";
+
 const MyContext = createContext();
 
 export const MyProvider = ({ children }) => {
@@ -86,6 +91,202 @@ export const MyProvider = ({ children }) => {
       generalTour: "Ümumi tur",
     },
   };
+
+  const [punktMenu, setPunktMenu] = useState([]);
+
+  const [point, setPointed] = useState();
+
+  const [museums, setMuseums] = useState([]);
+
+  const traveled = [
+    {
+      img: HeydarAliyevCenter,
+      id: 1,
+      specialization: "Музей",
+      name: "Культурный центр Гейдара Алиева",
+      openClose: " Пн-Пт: 11:00-19:00",
+      timeBuild: "10 мая 2012 года",
+      adres: "Азербайджан, Баку, проспект Гейдара Алиева, 1",
+      rooms: "Количество выставочных залов: 5",
+      sayt: "Сайт: heydaraliyevcenter.az",
+      category: "Baku",
+    },
+    {
+      img: CarpetMuseumBaku,
+      id: 2,
+      specialization: "Музей",
+      name: "Азербайджанский музей Ковра",
+      openClose: " вт-пт 10:00–18:00; сб 11:00–19:00",
+      timeBuild: "13 марта 1967 года",
+      adres: "г. Баку, ул. Микаила Усейнова, 27.",
+      rooms: "Количество выставочных залов: 5",
+      sayt: "Сайт: azcarpetmuseum.az",
+      category: "Baku",
+    },
+    {
+      img: ArtMuseum,
+      id: 3,
+      specialization: "Музей",
+      name: "Музей современного искусства",
+      openClose: " вт-вс 11:00–21:00",
+      timeBuild: "20 марта 2009 года",
+      adres: " Азербайджан, Баку, улица Юсифа Сафарова, 5",
+      rooms: "Количество выставочных залов: 5",
+      sayt: "Сайт: azcarpetmuseum.az",
+      category: "Baku",
+    },
+    {
+      img: MiniBook,
+      id: 4,
+      specialization: "Музей",
+      name: "Бакинский музей миниатюрной книги",
+      openClose: " вт-cр,пт-вс 11:00–21:00",
+      timeBuild: "23 апреля 2002 года",
+      adres: " Баку, 1-й Замковский переулок, 67.",
+      rooms: "Количество выставочных залов: 5",
+      sayt: "Сайт: azcarpetmuseum.az",
+      category: "Baku",
+    },
+    {
+      img: HeydarAliyevCenter,
+      id: 5,
+      specialization: "Музей",
+      name: "Атешгях — храм огнепоклонников",
+      openClose: " вт-cр,пт-вс 11:00–21:00",
+      timeBuild: "1975 год",
+      adres: "Сураханы",
+      rooms: "Количество выставочных залов: 5",
+      sayt: "Сайт: ateshgahtemple.az",
+      category: "Baku",
+    },
+    {
+      img: HeydarAliyevCenter,
+      id: 6,
+      specialization: "Музей",
+      name: "Национальный музей истории Азербайджана",
+      openClose: "вт-вс 10:00–17:00",
+      timeBuild: "1920 год",
+      adres: "Баку, у. Тагиева Гаджи Зейналабдина, 4A",
+      rooms: "Количество выставочных залов: 5",
+      sayt: "Сайт: ateshgahtemple.az",
+      category: "Baku",
+    },
+    {
+      img: HeydarAliyevCenter,
+      id: 7,
+      specialization: "Музей",
+      name: "Музей азербайджанской литературы",
+      openClose: "ежедневно 11:00–17:00",
+      timeBuild: "1939 год",
+      adres: "Азербайджан, улица Истиглалият, 77",
+      rooms: "Количество выставочных залов: 5",
+      sayt: "Сайт: nizamimuseum.az/…",
+      category: "Baku",
+    },
+    {
+      img: HeydarAliyevCenter,
+      id: 8,
+      specialization: "Музей",
+      name: "Музейный центр",
+      openClose: "вт-вс 10:00–17:00",
+      timeBuild: "1955 год",
+      adres: "Азербайджан, Баку, проспект Нефтчилер, 49",
+      rooms: "Количество выставочных залов: 5",
+      sayt: "Сайт: museumcenter.az",
+      category: "Baku",
+    },
+    {
+      img: HeydarAliyevCenter,
+      id: 9,
+      specialization: "Музей",
+      name: "Музей независимости",
+      openClose: "вт-вс 10:00–17:00",
+      timeBuild: " 7 декабря 1919 года",
+      adres: "Азербайджан, Баку, проспект Нефтчилер, 49",
+      sayt: "Сайт: istiqlalmuzeyi.gov.az",
+      category: "Baku",
+    },
+    {
+      img: HeydarAliyevCenter,
+      id: 10,
+      specialization: "Музей",
+      name: "Дом-музей Самеда Вургуна",
+      openClose: "вт-вс 10:00–17:00",
+      // timeBuild: "1955 год",
+      adres: "ул. Тарлана Алиярбекова, 6",
+      sayt: "Сайт: museumcenter.az",
+      category: "Baku",
+    },
+    {
+      img: HeydarAliyevCenter,
+      id: 11,
+      specialization: "Музей",
+      name: "Дом-музей Узеира Гаджибекова",
+      openClose: "вт-вс 09:00–18:00",
+      timeBuild: "1955 год",
+      adres: "ул. Шамиля Азизбекова, 65",
+      rooms: "Количество выставочных залов: 5",
+      sayt: "Сайт: museumcenter.az",
+      category: "Baku",
+    },
+    {
+      img: HeydarAliyevCenter,
+      id: 12,
+      specialization: "Музей",
+      name: "Дом-музей Джафара Джаббарлы",
+      openClose: "вт-вс 9:00–18:00",
+      timeBuild: "1979 год",
+      adres: "Азербайджан, Баку, улица Исмаил-бека Куткашенского, 64A",
+      rooms: "Количество выставочных залов: 5",
+      sayt: "Сайт: museumcenter.az",
+      category: "Baku",
+    },
+    {
+      img: HeydarAliyevCenter,
+      id: 13,
+      specialization: "Музей",
+      name: "Музейный центр",
+      openClose: "вт-вс 10:00–17:00",
+      timeBuild: "1955 год",
+      adres: "Азербайджан, Баку, проспект Нефтчилер, 49",
+      rooms: "Количество выставочных залов: 5",
+      sayt: "Сайт: museumcenter.az",
+      category: "Baku",
+    },
+    {
+      img: HeydarAliyevCenter,
+      id: 14,
+      specialization: "Музей",
+      name: "Музей Гейдара Алиева",
+      openClose: "вт-вс 9:00–18:00",
+      timeBuild: "-",
+      adres: "Heydər Əliyev prospekti, 43",
+      rooms: "Количество выставочных залов: 5",
+      sayt: "-",
+      category: "Gandja",
+    },
+    {
+      img: HeydarAliyevCenter,
+      id: 15,
+      specialization: "Музей",
+      name: "Историко-этнографический музей Гянджи",
+      openClose: "вт-вс 9:00–18:00",
+      timeBuild: "1924 год",
+      adres: "пр. Ататюрка, 424. ",
+      rooms: "Количество выставочных залов: 5",
+      sayt: "-",
+      category: "Gandja",
+    },
+  ];
+
+  // useEffect(() => {
+  //   // Запрос к серверу для получения данных
+  //   fetch("http://localhost:3001/traveled")
+  //     .then((response) => response.json()) // Преобразуем ответ в JSON
+  //     .then((data) => setMuseums(data)) // Устанавливаем данные в состояние
+  //     .catch((error) => console.error("Ошибка:", error)); // Обработка ошибок
+  // }, []);
+
   const [language, setLanguage] = useState("ru");
   const handleLanguageChange = (event) => {
     setLanguage(event.target.value);
@@ -93,7 +294,14 @@ export const MyProvider = ({ children }) => {
 
   return (
     <MyContext.Provider
-      value={{ handleLanguageChange, language, translations }}
+      value={{
+        handleLanguageChange,
+        language,
+        translations,
+        punktMenu,
+        museums,
+        traveled,
+      }}
     >
       {children}
     </MyContext.Provider>

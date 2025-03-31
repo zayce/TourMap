@@ -3,7 +3,16 @@ import { createContext, useContext, useState, useEffect } from "react";
 import HeydarAliyevCenter from "./assets/images/HeydarAliyevCenter.png";
 import CarpetMuseumBaku from "./assets/images/Carpet.png";
 import ArtMuseum from "./assets/images/ArtMuseum.png";
-import MiniBook from "./assets/images/MiniBook.jpg";
+import MiniBook from "./assets/images/MiniBook.png";
+import FireXram from "./assets/images/FireXram.png";
+import NationalMusey from "./assets/images/NationalMusey.png";
+import Literaturi from "./assets/images/LiteraturiMuseum.png";
+import CentralMusei from "./assets/images/CentralMusei.png";
+import IsteglalMusei from "./assets/images/IsteglalMusei.png";
+import VurgunOlace from "./assets/images/Vurgunhouse.png";
+import UzeirHouse from "./assets/images/UzeirHouse.png";
+import JafarJabbarliHousem from "./assets/images/jafarjabbarlihousem.png";
+import GanjaHistory from "./assets/images/GanjaHistory.png";
 
 const MyContext = createContext();
 
@@ -148,7 +157,7 @@ export const MyProvider = ({ children }) => {
       category: "Baku",
     },
     {
-      img: HeydarAliyevCenter,
+      img: FireXram,
       id: 5,
       specialization: "Музей",
       name: "Атешгях — храм огнепоклонников",
@@ -160,7 +169,7 @@ export const MyProvider = ({ children }) => {
       category: "Baku",
     },
     {
-      img: HeydarAliyevCenter,
+      img: NationalMusey,
       id: 6,
       specialization: "Музей",
       name: "Национальный музей истории Азербайджана",
@@ -172,7 +181,7 @@ export const MyProvider = ({ children }) => {
       category: "Baku",
     },
     {
-      img: HeydarAliyevCenter,
+      img: Literaturi,
       id: 7,
       specialization: "Музей",
       name: "Музей азербайджанской литературы",
@@ -184,7 +193,7 @@ export const MyProvider = ({ children }) => {
       category: "Baku",
     },
     {
-      img: HeydarAliyevCenter,
+      img: CentralMusei,
       id: 8,
       specialization: "Музей",
       name: "Музейный центр",
@@ -196,7 +205,7 @@ export const MyProvider = ({ children }) => {
       category: "Baku",
     },
     {
-      img: HeydarAliyevCenter,
+      img: IsteglalMusei,
       id: 9,
       specialization: "Музей",
       name: "Музей независимости",
@@ -207,7 +216,7 @@ export const MyProvider = ({ children }) => {
       category: "Baku",
     },
     {
-      img: HeydarAliyevCenter,
+      img: VurgunOlace,
       id: 10,
       specialization: "Музей",
       name: "Дом-музей Самеда Вургуна",
@@ -218,7 +227,7 @@ export const MyProvider = ({ children }) => {
       category: "Baku",
     },
     {
-      img: HeydarAliyevCenter,
+      img: UzeirHouse,
       id: 11,
       specialization: "Музей",
       name: "Дом-музей Узеира Гаджибекова",
@@ -230,7 +239,7 @@ export const MyProvider = ({ children }) => {
       category: "Baku",
     },
     {
-      img: HeydarAliyevCenter,
+      img: JafarJabbarliHousem,
       id: 12,
       specialization: "Музей",
       name: "Дом-музей Джафара Джаббарлы",
@@ -242,32 +251,8 @@ export const MyProvider = ({ children }) => {
       category: "Baku",
     },
     {
-      img: HeydarAliyevCenter,
+      img: GanjaHistory,
       id: 13,
-      specialization: "Музей",
-      name: "Музейный центр",
-      openClose: "вт-вс 10:00–17:00",
-      timeBuild: "1955 год",
-      adres: "Азербайджан, Баку, проспект Нефтчилер, 49",
-      rooms: "Количество выставочных залов: 5",
-      sayt: "Сайт: museumcenter.az",
-      category: "Baku",
-    },
-    {
-      img: HeydarAliyevCenter,
-      id: 14,
-      specialization: "Музей",
-      name: "Музей Гейдара Алиева",
-      openClose: "вт-вс 9:00–18:00",
-      timeBuild: "-",
-      adres: "Heydər Əliyev prospekti, 43",
-      rooms: "Количество выставочных залов: 5",
-      sayt: "-",
-      category: "Gandja",
-    },
-    {
-      img: HeydarAliyevCenter,
-      id: 15,
       specialization: "Музей",
       name: "Историко-этнографический музей Гянджи",
       openClose: "вт-вс 9:00–18:00",

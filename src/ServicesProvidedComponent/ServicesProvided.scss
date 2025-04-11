@@ -1,0 +1,108 @@
+.ServicesProvided-Wrapper {
+    margin-top: 70px;
+  .ServicesProvided-Inner {
+    width: 100%;
+    max-width: 1480px;
+    margin: 0 auto;
+    display: flex;
+    gap: 10px;
+    height: 600px; 
+
+    .ServicesProvided-Profile {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      overflow: hidden;
+      transition: flex 0.5s ease;
+
+      .ServicesProvided-img {
+        flex: 1;
+        height: 100%;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: transform 0.4s ease;
+        }
+      }
+
+      .ServicesProvided-Block {
+        position: absolute;
+        bottom: 30px;
+        left: 20px;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 15px 20px;
+        border-radius: 16px;
+        color: white;
+
+        .ServicesProvided-Name {
+          font-size: 22px;
+          font-weight: bold;
+          transition: opacity 0.3s ease;
+          opacity: 1;
+        }
+
+        .ServicesProvided-Opis {
+          opacity: 0;
+          max-height: 0;
+          overflow: hidden;
+          transition: opacity 0.4s ease, max-height 0.4s ease;
+          font-size: 18px;
+          margin-top: 8px;
+        }
+
+        .ServicesProvided-button {
+          margin-top: 10px;
+          opacity: 1;
+          transition: opacity 0.3s ease;
+        }
+      }
+
+      &:hover {
+        .ServicesProvided-Opis {
+          opacity: 1;
+          max-height: 100px;
+        }
+
+        .ServicesProvided-img img {
+            transform: scale(1);
+        }
+      }
+    }
+
+ 
+    &:has(.ServicesProvided-Profile:hover) {
+      .ServicesProvided-Profile {
+        flex: 1;
+
+        .ServicesProvided-Block {
+          opacity: 0 !important;
+          pointer-events: none;
+          transition: opacity 0.4s ease !important;
+        }
+      }
+
+
+      .ServicesProvided-Profile:hover {
+        flex: 3;
+
+        .ServicesProvided-Block {
+          opacity: 1 !important;
+
+          .ServicesProvided-Name,
+          .ServicesProvided-button {
+            opacity: 1 !important;
+            max-height: none !important;
+          }
+
+          .ServicesProvided-Opis {
+            opacity: 1 !important;
+            max-height: 100px !important;
+          }
+        }
+      }
+    }
+  }
+}

@@ -27,77 +27,152 @@
   .Allplaces-Inner {
     width: 1480px;
     margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
-    .AllPlaces-card {
-      width: 350px;
-      border-radius: 20px;
-      overflow: hidden;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s, box-shadow 0.3s;
-      background: #fff;
-      height: 396px;
-      position: relative;
-      .card:hover {
-        transform: translateY(-8px);
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-      }
+    .AllPlaces-Title {
+      margin-top: 40px;
+      margin-bottom: 20px;
+      font-size: 70px;
+      color: #4a3c2f;
+      font-family: SourM;
+    }
+    .AllPlaces-Buttons {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 40px;
+      .Button {
+        position: relative;
+        padding: 12px 24px;
+        border: 2px solid transparent;
+        background-color: #f8f3ed;
+        border-radius: 10px;
 
-      .AllPlaces-Img {
-        .card-image {
-          width: 100%;
-          height: 200px;
-          object-fit: cover;
+        cursor: pointer;
+        overflow: hidden; // Обрезка эффектов, выходящих за пределы
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+
+        // Градиентный фон при наведении
+        &::before {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 300%;
+          height: 300%;
+          background: linear-gradient(45deg, #4a3c2f,  #4a3c2f);
+          transition: width 0.5s ease, height 0.5s ease, top 0.5s ease,
+            left 0.5s ease;
+          z-index: 1;
+          border-radius: 50%;
+          transform: translate(-50%, -50%);
         }
-      }
-      .card-content {
-        padding: 16px;
-        flex-grow: 1;
 
-        .AllPlaces-Name {
-          font-family: PT;
+        .Button-Word {
+          position: relative;
+          z-index: 2;
+          color: #f8f3ed;
+          font-family: "SourM";
           font-size: 18px;
-          color: #4a3c2f;
-          margin-bottom: 12px;
+          font-weight: 600;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          transition: color 0.3s ease, transform 0.3s ease;
         }
-        .AllPlaces-Menu {
-          list-style: none;
-          padding: 0;
-          margin: 0 0 12px 0;
-          .Allplaces-Item {
-            font-size: 14px;
-            margin-bottom: 4px;
-            display: flex;
-            align-items: center;
-            .clock {
-              width: 17px;
-              height: 17px;
-            }
-            .time {
-              font-size: 15px;
-              margin-left: 10px;
-              font-family: PT;
-            }
+
+        &:hover {
+          transform: scale(1.1) rotate(2deg);
+          box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2);
+
+          .Button-Word {
+            color: white;
+            transform: translateY(-6px);
+          }
+
+          &::before {
+            width: 400%;
+            height: 400%;
+            top: -50%;
+            left: -50%;
           }
         }
-        .AllPlaces-Button {
-          align-items: center; /* Центрируем по горизонтали */
-          padding: 8px 16px;
-          border: none;
-          border-radius: 8px;
-          background: #f0f0f0;
-          cursor: pointer;
-          transition: background 0.3s;
-          position: absolute; /* Используем абсолютное позиционирование */
-          bottom: 8px; /* Можно настроить отступ снизу */
-          left: 50%; /* Позиционируем по центру относительно родителя */
-          transform: translateX(
-            -50%
-          ); /* Сдвигаем на 50% ширины кнопки, чтобы центрировать */
+
+        &:active {
+          transform: scale(0.98);
         }
-        .AllPlaces-Button:hover {
-          background: #e0e0e0;
+      }
+    }
+
+    .Allplaces-Block {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      .AllPlaces-card {
+        width: 350px;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+        background: #fff;
+        height: 396px;
+        position: relative;
+        .card:hover {
+          transform: translateY(-8px);
+          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .AllPlaces-Img {
+          .card-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+          }
+        }
+        .card-content {
+          padding: 16px;
+          flex-grow: 1;
+
+          .AllPlaces-Name {
+            font-family: PT;
+            font-size: 18px;
+            color: #4a3c2f;
+            margin-bottom: 12px;
+          }
+          .AllPlaces-Menu {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 12px 0;
+            .Allplaces-Item {
+              font-size: 14px;
+              margin-bottom: 4px;
+              display: flex;
+              align-items: center;
+              .clock {
+                width: 17px;
+                height: 17px;
+              }
+              .time {
+                font-size: 15px;
+                margin-left: 10px;
+                font-family: PT;
+              }
+            }
+          }
+          .AllPlaces-Button {
+            align-items: center; /* Центрируем по горизонтали */
+            padding: 8px 16px;
+            border: none;
+            border-radius: 8px;
+            background: #f0f0f0;
+            cursor: pointer;
+            transition: background 0.3s;
+            position: absolute; /* Используем абсолютное позиционирование */
+            bottom: 8px; /* Можно настроить отступ снизу */
+            left: 50%; /* Позиционируем по центру относительно родителя */
+            transform: translateX(
+              -50%
+            ); /* Сдвигаем на 50% ширины кнопки, чтобы центрировать */
+          }
+          .AllPlaces-Button:hover {
+            background: #e0e0e0;
+          }
         }
       }
     }

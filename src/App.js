@@ -10,6 +10,7 @@ import { Footer } from "./AllPages/Footer/Footer";
 import { Review } from "./CreatedRewiew/CreatedRewiew";
 import { MyProvider } from "./UseContext";
 import { AllPlaces } from "./AllPlacesComponent/AllPlaces";
+import { Season } from "./ServicesProvidedComponent/SeasonComponent/Season";
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
             <Route path="/Registr" element={<AuthForm />} />
             <Route path="/Rewiew" element={<Review />} />
             <Route path="/AllPlaces" element={<AllPlaces />} />
+            <Route path="/Season/:postId" element={<Season />} />
           </Routes>
           <Footer />
         </BrowserRouter>

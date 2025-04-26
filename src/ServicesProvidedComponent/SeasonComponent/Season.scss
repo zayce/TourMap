@@ -1,0 +1,110 @@
+@font-face {
+  font-family: "PT Sans";
+  src: url("../../Fonts/Rubik-SemiBoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+.Season-Wrapper {
+  margin-top: 70px;
+
+  .Season-Inner {
+    width: 100%;
+    max-width: 1480px;
+    margin: 0 auto;
+
+    .Season-Title {
+      text-align: center;
+      font-family: "PT Sans";
+      font-size: 50px;
+      font-weight: 700;
+      color: #4a3c2f;
+      margin-bottom: 40px;
+    }
+
+    .Season-Imgs-Grups {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 40px;
+
+      .Season-Big-Img {
+        position: relative;
+        overflow: hidden;
+        border-radius: 24px;
+        width: 100%;
+        max-width: 460px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeInUp 0.8s ease forwards;
+
+        &:hover {
+          transform: scale(1.03);
+          box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+
+          .Big {
+            transform: scale(1.05);
+            filter: brightness(75%);
+          }
+
+          .Season-Overlay {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
+        .Big {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          display: block;
+          transition: transform 0.4s ease, filter 0.4s ease;
+        }
+
+        .Season-Overlay {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          padding: 20px;
+          background: rgba(0, 0, 0, 0.4);
+          color: #fff;
+          font-size: 20px;
+          font-weight: bold;
+          font-family: "PT Sans";
+          opacity: 0;
+          transform: translateY(20px);
+          transition: opacity 0.4s ease, transform 0.4s ease;
+          backdrop-filter: blur(4px);
+          text-align: center;
+          letter-spacing: 0.5px;
+        }
+      }
+    }
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .Season-Title {
+    font-size: 36px;
+  }
+
+  .Season-Imgs-Grups {
+    flex-direction: column;
+    align-items: center;
+
+    .Season-Big-Img {
+      max-width: 90%;
+    }
+  }
+}

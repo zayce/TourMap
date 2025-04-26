@@ -49,6 +49,10 @@ export const AllPlaces = () => {
                       <span className="Word">Адрес:</span>{" "}
                       <span className="time">{e.adres}</span>
                     </li>
+                    <li className="Allplaces-Item">
+                      <span className="Word">Город:</span>{" "}
+                      <span className="time">{e.category}</span>
+                    </li>
                   </ul>
                   <button className="AllPlaces-Button">Подробнее</button>
                 </div>

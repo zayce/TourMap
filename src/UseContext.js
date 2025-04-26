@@ -13,6 +13,21 @@ import VurgunOlace from "./assets/images/Vurgunhouse.png";
 import UzeirHouse from "./assets/images/UzeirHouse.png";
 import JafarJabbarliHousem from "./assets/images/jafarjabbarlihousem.png";
 import GanjaHistory from "./assets/images/GanjaHistory.png";
+import MuzeyGandjs from "./assets/images/MuzeyGandjs.png";
+import ShekiMuzet from "./assets/images/ShekiMuzey.png";
+import WinterShekiMuzey from "./assets/images/WinterMuzey.png";
+
+import GS from "./ServicesProvidedComponent/asestss/GabalaSeason.png";
+import NS from "./ServicesProvidedComponent/asestss/NabranSeason.png";
+import SHS from "./ServicesProvidedComponent/asestss/ShekiSeason.png";
+
+import SHW from "./ServicesProvidedComponent/asestss/SahdagWinter.png";
+import TufWin from "./ServicesProvidedComponent/asestss/TufanWinter.png";
+import HinWin from "./ServicesProvidedComponent/asestss/HinaligWinter.png";
+
+import SS from "./ServicesProvidedComponent/asestss/ShekiSpring.png";
+import SG from "./ServicesProvidedComponent/asestss/SpringGax.png";
+import Ls from "./ServicesProvidedComponent/asestss/LerikSpring.png";
 
 const MyContext = createContext();
 
@@ -262,15 +277,67 @@ export const MyProvider = ({ children }) => {
       sayt: "-",
       category: "Gandja",
     },
+    {
+      img: MuzeyGandjs,
+      id: 14,
+      specialization: "Музей",
+      name: "Музей Гейдара Алиева",
+      openClose: "вт-вс 9:00–18:00",
+      timeBuild: "",
+      adres: "Проспект Гейдара Алиева, 430",
+      rooms: "Количество выставочных залов: 5",
+      sayt: "-",
+      category: "Gandja",
+    },
+    {
+      img: ShekiMuzet,
+      id: 15,
+      specialization: "Музей",
+      name: "Дворец Шекинских ханов",
+      openClose: "вт-вс 9:00–18:00",
+      timeBuild: "1797 год",
+      adres: "пр. Ататюрка, 424. ",
+      rooms: "Количество выставочных залов: 5",
+      sayt: "-",
+      category: "Sheki",
+    },
+    {
+      img: WinterShekiMuzey,
+      id: 15,
+      specialization: "Музей",
+      name: "Дворец Шекинских ханов",
+      openClose: "вт-вс 9:00–18:00",
+      timeBuild: "1797 год",
+      adres: "пр. Ататюрка, 424. ",
+      rooms: "Количество выставочных залов: 5",
+      sayt: "-",
+      category: "Sheki",
+    },
   ];
 
-  // useEffect(() => {
-  //   // Запрос к серверу для получения данных
-  //   fetch("http://localhost:3001/traveled")
-  //     .then((response) => response.json()) // Преобразуем ответ в JSON
-  //     .then((data) => setMuseums(data)) // Устанавливаем данные в состояние
-  //     .catch((error) => console.error("Ошибка:", error)); // Обработка ошибок
-  // }, []);
+  const [season, setSeason] = useState([]);
+
+  const addToDesc = (product) => {
+    setSeason([{ ...product, postId: 1 }]);
+  };
+
+  const SeasonData = [
+    {
+      id: 1,
+      img: GS,
+      postId: 1,
+      name: "Габала",
+      title: "Чeм интересен путешествие в Габалу",
+    },
+    { id: 2, img: NS, postId: 1, name: "Набран" },
+    { id: 3, img: SHS, postId: 1, name: "Шеки" },
+    { id: 4, img: SHW, postId: 3, name: "Шахдаг" },
+    { id: 5, img: TufWin, postId: 3, name: "Туфандаг" },
+    { id: 6, img: HinWin, postId: 3, name: "Хыналыг" },
+    { id: 7, img: SS, postId: 2, name: "Шеки" },
+    { id: 8, img: SG, postId: 2, name: "Гах" },
+    { id: 9, img: Ls, postId: 2, name: "Лерик" },
+  ];
 
   const [language, setLanguage] = useState("ru");
   const handleLanguageChange = (event) => {
@@ -286,6 +353,9 @@ export const MyProvider = ({ children }) => {
         punktMenu,
         museums,
         traveled,
+        SeasonData,
+        addToDesc,
+        season,
       }}
     >
       {children}

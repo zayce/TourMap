@@ -1,5 +1,6 @@
 import { HomeQuestions } from "../HomeQuestions/HomeQuestions";
 import { Quote } from "../PromoutionComponent/SwiperWall";
+import { Season } from "../ServicesProvidedComponent/SeasonComponent/Season";
 import { ServicesProvided } from "../ServicesProvidedComponent/ServicesProvided";
 
 import { SwiperCitytourComponent } from "../SwiperCitytourComponent/SwiperCitytourComponent";

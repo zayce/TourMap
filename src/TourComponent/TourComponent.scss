@@ -22,6 +22,7 @@
   margin-top: 50px;
   padding-bottom: 20px;
   overflow-x: hidden;
+  animation: fadeIn 1s ease-out;
 
   .TourComponent-inner {
     width: 1480px;
@@ -165,5 +166,15 @@
         }
       }
     }
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

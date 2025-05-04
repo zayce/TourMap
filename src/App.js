@@ -11,6 +11,7 @@ import { Review } from "./CreatedRewiew/CreatedRewiew";
 import { MyProvider } from "./UseContext";
 import { AllPlaces } from "./AllPlacesComponent/AllPlaces";
 import { Season } from "./ServicesProvidedComponent/SeasonComponent/Season";
+import { SelectedObject } from "./SelectedObjectComponent/SelectedObject";
 
 const App = () => {
   return (
@@ -25,6 +26,10 @@ const App = () => {
             <Route path="/Rewiew" element={<Review />} />
             <Route path="/AllPlaces" element={<AllPlaces />} />
             <Route path="/Season/:postId" element={<Season />} />
+            <Route
+              path="/SelectedObject/:specialization"
+              element={<SelectedObject />}
+            />
           </Routes>
           <Footer />
         </BrowserRouter>

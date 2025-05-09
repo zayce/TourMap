@@ -76,8 +76,13 @@ export const Header = () => {
             </Link>
 
             <ul className="Header-menu-nav-items">
-              <li className="menu-nav-item">календарь мероприятий</li>
-              <li className="menu-nav-item">календарь мероприятий</li>
+              <Link to={"/HomeQuestions"}>
+                <li className="menu-nav-item">календарь мероприятий</li>
+              </Link>
+              <Link to={"/AboutUs"}>
+                <li className="menu-nav-item">О Нас</li>
+              </Link>
+
               <li className="menu-nav-item">календарь мероприятий</li>
               <li className="menu-nav-item">календарь мероприятий</li>
               <Link to={"/Rewiew"}>

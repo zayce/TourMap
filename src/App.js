@@ -12,6 +12,8 @@ import { MyProvider } from "./UseContext";
 import { AllPlaces } from "./AllPlacesComponent/AllPlaces";
 import { Season } from "./ServicesProvidedComponent/SeasonComponent/Season";
 import { SelectedObject } from "./SelectedObjectComponent/SelectedObject";
+import { HomeQuestions } from "./HomeQuestions/HomeQuestions";
+import { AboutUs } from "./AboutUsComponent/AboutUs";
 
 const App = () => {
   return (
@@ -30,6 +32,8 @@ const App = () => {
               path="/SelectedObject/:specialization"
               element={<SelectedObject />}
             />
+            <Route path="/HomeQuestions" element={<HomeQuestions />} />
+            <Route path="/AboutUs" element={<AboutUs />} />
           </Routes>
           <Footer />
         </BrowserRouter>

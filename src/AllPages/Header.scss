@@ -138,21 +138,36 @@
         margin: 0;
         padding: 0;
         display: flex;
-        gap: 20px;
+        gap: 30px;
+        justify-content: center; /* Центрирование элементов */
+        align-items: center;
 
         .menu-nav-item {
-          align-self: center;
-          margin-top: 2px;
-          color: #2c3e50;
-          transition: color 0.3s ease;
+          font-family: "PT Sans", sans-serif;
+          font-size: 18px;
+          font-weight: 600;
+          color: #333;
+          padding: 10px 15px;
+          border-radius: 30px; /* Скругленные углы */
+          transition: background-color 0.3s ease, color 0.3s ease;
+
+          /* Эффект при наведении */
           &:hover {
-            color: #00aced;
+            color: #ffffff;
+            background-color: #4a3c2f; /* Цвет фона при наведении */
+            cursor: pointer;
           }
+
+          /* Убираем стандартное подчеркивание на ссылках */
           a {
-            align-self: center;
-            margin-top: 2px;
-            color: #2c3e50;
+            color: inherit; /* Наследуем цвет от родителя */
+            text-decoration: none; /* Убираем подчеркивание */
             transition: color 0.3s ease;
+          }
+
+          /* Фокусировка на элементе */
+          &:focus {
+            outline: 2px solid #00aced; /* Плавное выделение при фокусе */
           }
         }
       }

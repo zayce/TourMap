@@ -16,6 +16,9 @@ import GanjaHistory from "./assets/images/GanjaHistory.png";
 import MuzeyGandjs from "./assets/images/MuzeyGandjs.png";
 import ShekiMuzet from "./assets/images/ShekiMuzey.png";
 import WinterShekiMuzey from "./assets/images/WinterMuzey.png";
+import ShekiMuzeyKravoed from "./assets/images/ShekiMuzeyKravoed.png";
+import LankoranMuzey from "./assets/images/LankoranMuzey.png";
+import LankoranHaziMuzey from "./assets/images/LankoranHaziHouseMuzey.png";
 
 import GS from "./ServicesProvidedComponent/asestss/GabalaSeason.png";
 import NS from "./ServicesProvidedComponent/asestss/NabranSeason.png";
@@ -341,6 +344,45 @@ export const MyProvider = ({ children }) => {
       rooms: "Количество выставочных залов: 5",
       sayt: "-",
       category: "Sheki",
+    },
+    {
+      img: ShekiMuzeyKravoed,
+      id: 18,
+      specialization: "Музей",
+      special: "Музей",
+      name: "Шекинский историко-краеведческий музей",
+      openClose: "вт-вс 9:00–18:00",
+      timeBuild: " сентябрь 1925 года",
+      adres: "Азербайджан, Шеки, улица Мирза Фатали Ахундова",
+      rooms: "Количество выставочных залов: 5",
+      sayt: "-",
+      category: "Sheki",
+    },
+    {
+      img: LankoranMuzey,
+      id: 19,
+      specialization: "Музей",
+      special: "Музей",
+      name: "Дом Мир Ахмада Хана",
+      openClose: "вт-вс 9:00–17:00",
+      timeBuild: "1797 год",
+      adres: "Улица Ширали Ахундова, Ленкорань",
+      rooms: "Количество выставочных залов: 5",
+      sayt: "-",
+      category: "Ленкорань",
+    },
+    {
+      img: LankoranHaziMuzey,
+      id: 20,
+      specialization: "Музей",
+      special: "Музей",
+      name: "Дом-музей Ази Асланова",
+      openClose: "вт-вс 9:00–17:00",
+      timeBuild: "1969 года.",
+      adres: "Ленкорань, Гаибова Исмета 19",
+      rooms: "Количество выставочных залов: 5",
+      sayt: "-",
+      category: "Ленкорань",
     },
   ];
 

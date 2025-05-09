@@ -1,4 +1,4 @@
-import { HomeQuestions } from "../HomeQuestions/HomeQuestions";
+import { AboutUs } from "../AboutUsComponent/AboutUs";
 import { Quote } from "../PromoutionComponent/SwiperWall";
 import { Season } from "../ServicesProvidedComponent/SeasonComponent/Season";
 import { ServicesProvided } from "../ServicesProvidedComponent/ServicesProvided";
@@ -15,9 +15,9 @@ export const Home = () => {
         <Quote />
         <div className="Inner-home">
           <TourComponent />
+          <AboutUs />
           <SwiperCitytourComponent />
           <ServicesProvided />
-          <HomeQuestions />
         </div>
       </div>
     </>

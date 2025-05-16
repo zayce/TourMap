@@ -19,6 +19,10 @@ import WinterShekiMuzey from "./assets/images/WinterMuzey.png";
 import ShekiMuzeyKravoed from "./assets/images/ShekiMuzeyKravoed.png";
 import LankoranMuzey from "./assets/images/LankoranMuzey.png";
 import LankoranHaziMuzey from "./assets/images/LankoranHaziHouseMuzey.png";
+import ShamaxiMuzey from "./assets/images/ShamaxiMuzey.png";
+import CarpetShusaMuzey from "./assets/images/CarpetShusaMuzey.png";
+import MavzouleyShusa from "./assets/images/MouvsoleyShusha.png";
+import BulBulMuzeyShusha from "./assets/images/BulBulMuzeyShusha.png";
 
 import GS from "./ServicesProvidedComponent/asestss/GabalaSeason.png";
 import NS from "./ServicesProvidedComponent/asestss/NabranSeason.png";
@@ -383,6 +387,84 @@ export const MyProvider = ({ children }) => {
       rooms: "Количество выставочных залов: 5",
       sayt: "-",
       category: "Ленкорань",
+    },
+    {
+      img: ShamaxiMuzey,
+      id: 21,
+      specialization: "Музей",
+      special: "Музей",
+      name: "Шемахи́нская Астрофизи́ческая Обсервато́рия",
+      openClose: "вт-вс 9:00–17:00",
+      timeBuild: "17 ноября 1959 года",
+      adres: "Пиркули, Шемахы, Азербайджан.",
+      rooms: "Количество выставочных залов: 5",
+      sayt: "-",
+      category: "Шамахы",
+    },
+    {
+      img: CarpetShusaMuzey,
+      id: 22,
+      specialization: "Музей",
+      special: "Музей",
+      name: "Музей ковров",
+      openClose: "вт-вс 9:00–17:00",
+      timeBuild: "26 сентября 1985",
+      adres: "Шуша, Азербайджан.",
+      rooms: "Количество выставочных залов: 5",
+      sayt: "http://www.azcarpetmuseum.az/ru/shusha-history",
+      category: "Шуша",
+    },
+    {
+      img: MavzouleyShusa,
+      id: 23,
+      specialization: "Музей",
+      special: "Музей",
+      name: "Мавзолей Вагифа",
+      openClose: "вт-вс 9:00–17:00",
+      timeBuild: "1982",
+      adres: "Шуша, Азербайджан.",
+      rooms: "Количество выставочных залов: 5",
+      sayt: "-",
+      category: "Шуша",
+    },
+    {
+      img: BulBulMuzeyShusha,
+      id: 24,
+      specialization: "Музей",
+      special: "Музей",
+      name: "Дом-музей Бульбуль",
+      openClose: "вт-вс 9:00–17:00",
+      timeBuild: "1983",
+      adres: "Шуша, Азербайджан.",
+      rooms: "Количество выставочных залов: 5",
+      sayt: "-",
+      category: "Шуша",
+    },
+    {
+      img: BulBulMuzeyShusha,
+      id: 25,
+      specialization: "Музей",
+      special: "Музей",
+      name: "Дом-музей Бульбуль",
+      openClose: "вт-вс 9:00–17:00",
+      timeBuild: "1983",
+      adres: "Шуша, Азербайджан.",
+      rooms: "Количество выставочных залов: 5",
+      sayt: "-",
+      category: "Губа",
+    },
+    {
+      img: BulBulMuzeyShusha,
+      id: 25,
+      specialization: "Музей",
+      special: "Музей",
+      name: "Дом-музей Бульбуль",
+      openClose: "вт-вс 9:00–17:00",
+      timeBuild: "1983",
+      adres: "Шуша, Азербайджан.",
+      rooms: "Количество выставочных залов: 5",
+      sayt: "-",
+      category: "Губа",
     },
   ];
 

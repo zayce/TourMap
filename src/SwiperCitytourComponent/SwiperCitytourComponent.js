@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import "./SwiperCitytourComponent.scss";
 
@@ -15,7 +15,7 @@ import park from "./SwiperAsessrs/Park.png";
 import zoopark from "./SwiperAsessrs/zoopark.png";
 
 export const SwiperCitytourComponent = () => {
-  const { specialization } = useParams();
+  // const { specialization } = useParams();
   const brandRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
 
@@ -33,7 +33,7 @@ export const SwiperCitytourComponent = () => {
       ([entry]) => {
         if (entry.isIntersecting) {
           setIsVisible(true);
-          observer.disconnect(); 
+          observer.disconnect();
         }
       },
       { threshold: 0.2 }

@@ -22,20 +22,34 @@
     .AboutUs-TextBlock {
       font-size: 18px;
       line-height: 1.8;
-      max-width: 750px;
       color: #7f8c8d;
       margin-bottom: 50px;
-      .AboutUs-Paragraph {
-        margin-bottom: 20px;
-        color: #34495e;
+      display: flex;
+      gap: 50px;
+      .AboutUs-TextBlocs {
+        max-width: 700px;
+        .AboutUs-Paragraph {
+          margin-bottom: 20px;
+          color: #34495e;
+        }
+
+        .AboutUs-Slogan {
+          margin-top: 30px;
+          font-weight: 800;
+          font-size: 27пшеpx;
+          text-align: left;
+          color: #4a3c2f;
+        }
+      }
+      .AboutUs-TextBlock-Img {
+        display: flex;
+        justify-content: flex-start;
       }
 
-      .AboutUs-Slogan {
-        margin-top: 30px;
-        font-weight: 800;
-        font-size: 27пшеpx;
-        text-align: left;
-        color: #4a3c2f;
+      .AboutUs-Icon {
+        width: 400px;
+        height: 400px;
+        stroke: #4a3c2f;
       }
     }
   }

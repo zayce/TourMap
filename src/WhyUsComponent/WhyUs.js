@@ -2,28 +2,31 @@ import React from "react";
 import "./WhyUs.scss";
 import { motion } from "framer-motion";
 import { FaLightbulb, FaUsers, FaRoute, FaMapSigns } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 export const WhyUs = () => {
+  const { t } = useTranslation();
+
   const cards = [
     {
       icon: FaUsers,
-      title: "Для молодёжи от молодёжи",
-      desc: "Сайт сделан молодым программистом специально для тех, кто хочет путешествовать смело и без стресса.",
+      title: t("whyUsFfreind"),
+      desc: t("whyUsFfreindOpis"),
     },
     {
       icon: FaLightbulb,
-      title: "Просто и понятно",
-      desc: "Интерфейс максимально лёгкий — справится каждый. Мы убрали всё лишнее, чтобы ты быстро нашёл нужное.",
+      title: t("simpleClear"),
+      desc: t("simpleClearDesc"),
     },
     {
       icon: FaMapSigns,
-      title: "Полезные советы",
-      desc: "Помогаем молодым туристам ориентироваться, бронировать и готовиться к путешествию шаг за шагом.",
+      title: t("helpfulTips"),
+      desc: t("helpfulTipsDesc"),
     },
     {
       icon: FaRoute,
-      title: "Туры для духа приключений",
-      desc: "Мы отбираем маршруты, которые вдохновляют — для тех, кто хочет исследовать, а не просто отдыхать.",
+      title: t("adventurousTours"),
+      desc: t("adventurousToursDesc"),
     },
   ];
 
@@ -34,7 +37,7 @@ export const WhyUs = () => {
       animate={{ opacity: 1 }}
       transition={{ duration: 0.8 }}
     >
-      <div className="WhyUs-Title">Почему именно мы?</div>
+      <div className="WhyUs-Title">{t("whyUs")}</div>
 
       <motion.div
         className="WhyUs-Cards"

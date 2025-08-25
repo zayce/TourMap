@@ -1,0 +1,147 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "SourM";
+  src: url("../Fonts/SourGummy-Medium.ttf") format("truetype");
+}
+.CalendarPicker-Wrapper {
+  margin: 40px 0;
+  padding: 20px;
+}
+
+.CalendarPicker-inner {
+  width: 100%;
+  max-width: 1480px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.CalendarPicker-Block {
+  border-radius: 30px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.CalendarPicker-Title {
+  font-family: SourM;
+  font-size: 60px;
+  margin-bottom: 30px;
+  color: #3c2f27;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.CalendarPicker-Icon {
+  font-size: 50px;
+  color: #2563eb;
+}
+
+.CalendarPicker {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+}
+
+.CalendarPicker-Date {
+  margin-top: 30px;
+  font-size: 24px;
+  color: #4a3c2f;
+  font-family: SourM;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.CalendarPicker-Date-Change {
+  background: #dbeafe;
+  color: #2563eb;
+  font-size: 22px;
+  padding: 8px 16px;
+  border-radius: 10px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.CalendarPicker-Tours {
+  margin-top: 30px;
+  text-align: center;
+}
+.CalendarPicker-Tours h4 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #3c2f27;
+  margin-bottom: 10px;
+}
+.CalendarPicker-Tours ul {
+  list-style: none;
+  padding: 0;
+}
+.CalendarPicker-Tours li {
+  font-size: 18px;
+  margin-bottom: 6px;
+  color: #1f2937;
+}
+
+.CalendarPicker-NoTours {
+  margin-top: 30px;
+  font-size: 18px;
+  color: #9ca3af;
+  font-style: italic;
+}
+
+.CalendarPicker-BookBtn {
+  margin-top: 40px;
+  background-color: #2563eb;
+  color: #fff;
+  font-size: 20px;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-family: "SourM";
+  transition: background-color 0.3s ease;
+}
+.CalendarPicker-BookBtn:hover {
+  background-color: #1e40af;
+}
+
+/* Кастомизация react-calendar */
+.custom-calendar {
+  border: none;
+  width: 100%;
+  font-family: "SourM", sans-serif;
+}
+
+.custom-calendar button {
+  background: none;
+  border: none;
+  padding: 10px 0;
+  border-radius: 12px;
+  transition: 0.2s ease;
+  font-size: 16px;
+  color: #4a3c2f;
+}
+
+.custom-calendar button:hover {
+  background-color: #f1ece6;
+}
+
+.custom-calendar__tile--now {
+  background-color: #fcefc7 !important;
+  border-radius: 12px;
+}
+
+.custom-calendar__tile--active {
+  background-color: #2563eb !important;
+  color: white !important;
+  border-radius: 12px;
+}
+
+.custom-calendar__navigation button {
+  color: #4a3c2f;
+  font-size: 20px;
+  margin: 5px;
+}/*# sourceMappingURL=CustomCalendar.css.map */

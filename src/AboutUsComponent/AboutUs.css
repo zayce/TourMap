@@ -1,0 +1,103 @@
+@charset "UTF-8";
+.AboutUs-Wrapper {
+  margin-top: 50px;
+  margin-bottom: 60px;
+  padding: 40px 0;
+}
+.AboutUs-Wrapper .AboutUs-Inner {
+  width: 90%;
+  max-width: 1480px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 15px;
+}
+.AboutUs-Wrapper .AboutUs-Inner .AboutUs-Title {
+  font-size: 50px;
+  font-weight: 800;
+  text-align: left;
+  margin-bottom: 30px;
+  color: #4a3c2f;
+}
+.AboutUs-Wrapper .AboutUs-Inner .AboutUs-TextBlock {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #7f8c8d;
+  margin-bottom: 50px;
+  display: flex;
+  gap: 50px;
+}
+.AboutUs-Wrapper .AboutUs-Inner .AboutUs-TextBlock .AboutUs-TextBlocs {
+  max-width: 700px;
+}
+.AboutUs-Wrapper .AboutUs-Inner .AboutUs-TextBlock .AboutUs-TextBlocs .AboutUs-Paragraph {
+  margin-bottom: 20px;
+  color: #34495e;
+}
+.AboutUs-Wrapper .AboutUs-Inner .AboutUs-TextBlock .AboutUs-TextBlocs .AboutUs-Slogan {
+  margin-top: 30px;
+  font-weight: 800;
+  font-size: 27пшеpx;
+  text-align: left;
+  color: #4a3c2f;
+}
+.AboutUs-Wrapper .AboutUs-Inner .AboutUs-TextBlock .AboutUs-TextBlock-Img {
+  display: flex;
+  justify-content: flex-start;
+}
+.AboutUs-Wrapper .AboutUs-Inner .AboutUs-TextBlock .AboutUs-Icon {
+  width: 400px;
+  height: 400px;
+  stroke: #4a3c2f;
+}
+
+.AboutUs-Benefits {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.Benefit-Item {
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+.Benefit-Item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+.Benefit-Item .Benefit-Icon {
+  width: 36px;
+  height: 36px;
+  color: #4a3c2f; /* Яркий акцент для иконки */
+  flex-shrink: 0;
+  transition: color 0.3s ease;
+}
+.Benefit-Item .Benefit-Text {
+  font-size: 18px;
+  color: #2c3e50;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.Benefit-Item .Benefit-Item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 6px;
+  width: 100%;
+  background-color: wheat; /* Акцентная линия сверху */
+}
+
+.Benefit-Item:hover .Benefit-Icon {
+  color: wheat; /* Цвет иконки при наведении */
+}/*# sourceMappingURL=AboutUs.css.map */

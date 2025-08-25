@@ -2,6 +2,8 @@ import { useMyContext } from "../UseContext";
 import { useParams } from "react-router-dom";
 import "../SelectedObjectComponent/SelectedObject.scss";
 import clock from "../AllPlacesComponent/clock.png";
+import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 export const SelectedObject = () => {
   const { traveled } = useMyContext();
@@ -9,7 +11,7 @@ export const SelectedObject = () => {
   const filteredObjects = traveled.filter(
     (e) => e.specialization === specialization
   );
-
+  const { t } = useTranslation();
   return (
     <>
       <div className="Selected-Object-wrapper">
@@ -23,12 +25,12 @@ export const SelectedObject = () => {
                   <img src={e.img} className="Selected-Object-card-image" />
                 </div>
                 <div className="Selected-Object-card-content">
-                  <div className="Selected-Object-Name">{e.name}</div>
+                  <div className="Selected-Object-Name"> {t(e.name)}</div>
                   <ul className="Selected-Object-Menu">
                     <li className="Selected-Object-Item">
                       <img src={clock} className="Selected-Object-clock" />
                       <span className="Selected-Object-time">
-                        {e.openClose}
+                        {t(e.openClose)}
                       </span>
                     </li>
                     <li className="Selected-Object-Item">
@@ -36,23 +38,29 @@ export const SelectedObject = () => {
                         Дата открытия:
                       </span>
                       <span className="Selected-Object-time">
-                        {e.timeBuild}
+                        {t(e.timeBuild)}
                       </span>
                     </li>
                     <li className="Selected-Object-Item">
                       <span className="Selected-Object-Word">Адрес:</span>
-                      <span className="Selected-Object-time">{e.adres}</span>
+                      <span className="Selected-Object-time">{t(e.adres)}</span>
                     </li>
                     <li className="Selected-Object-Item">
                       <span className="Selected-Object-Word">Город:</span>
-                      <span className="Selected-Object-time">{e.category}</span>
+                      <span className="Selected-Object-time">
+                        {t(e.category)}
+                      </span>
                     </li>
                     <li className="Selected-Object-Item">
                       <span className="Selected-Object-Word">Тип:</span>
-                      <span className="Selected-Object-time">{e.special}</span>
+                      <span className="Selected-Object-time">
+                        {t(e.special)}
+                      </span>
                     </li>
                   </ul>
-                  <button className="AllPlaces-Button">Подробнее</button>
+                  <Link to={`/desc/${e.id}`}>
+                    <button className="AllPlaces-Button">Подробнее</button>
+                  </Link>
                 </div>
               </div>
             ))}

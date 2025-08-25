@@ -1,6 +1,7 @@
+import React from "react";
 import "../TourComponent/TourComponent.scss";
-
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 import Baku from "./asestsTour/baku.png";
 import qabala from "./asestsTour/qabala.png";
@@ -17,17 +18,16 @@ import Ismailli from "./asestsTour/Ismailli.jpg";
 import Gazah from "./asestsTour/Gazah.jpg";
 import Zagatala from "./asestsTour/Zagatala.jpg";
 import Obb from "./asestsTour/Obb.jpg";
-import { useMyContext } from "../UseContext.js";
 
 import one from "./asestsTour/solo.png";
 import two from "./asestsTour/twov.png";
 
 export const TourComponent = () => {
-  const { language, translations, museums } = useMyContext();
-  console.log(museums, "museum");
+  const { t } = useTranslation();
+
   const attractions = [
     {
-      name: translations[language].baku,
+      category: t("Bakı"),
       img: Baku,
       id: 1,
       state: "Popular",
@@ -36,7 +36,7 @@ export const TourComponent = () => {
       connect: "Baku",
     },
     {
-      name: translations[language].Ganja,
+      category: t("Gəncə"),
       img: Gandja,
       id: 2,
       state: "Popular",
@@ -44,7 +44,7 @@ export const TourComponent = () => {
       duo: two,
     },
     {
-      name: translations[language].Sheki,
+      category: t("Şəki"),
       img: Sheki,
       id: 3,
       state: "Scenic",
@@ -52,7 +52,7 @@ export const TourComponent = () => {
       duo: two,
     },
     {
-      name: translations[language].Lankaran,
+      category: t("Lənkəran"),
       img: Lankoran,
       id: 4,
       state: "Scenic",
@@ -60,7 +60,7 @@ export const TourComponent = () => {
       duo: two,
     },
     {
-      name: translations[language].Shamakhi,
+      category: t("Şamaxı"),
       img: Shamaha,
       id: 5,
       state: "Scenic",
@@ -68,7 +68,7 @@ export const TourComponent = () => {
       duo: two,
     },
     {
-      name: translations[language].Shusha,
+      category: t("Qarabağ"),
       img: Shusha,
       id: 6,
       state: "Mountain",
@@ -76,7 +76,7 @@ export const TourComponent = () => {
       duo: two,
     },
     {
-      name: translations[language].Cuba,
+      category: t("Quba"),
       img: Quba,
       id: 7,
       state: "Mountain",
@@ -84,7 +84,7 @@ export const TourComponent = () => {
       duo: two,
     },
     {
-      name: translations[language].Gabala,
+      category: t("Gabala"),
       img: qabala,
       id: 8,
       state: "Tourist",
@@ -92,7 +92,7 @@ export const TourComponent = () => {
       duo: two,
     },
     {
-      name: translations[language].Khachmaz,
+      category: t("Xaçmaz"),
       img: Xacmaz,
       id: 9,
       state: "Tourist",
@@ -100,7 +100,7 @@ export const TourComponent = () => {
       duo: two,
     },
     {
-      name: translations[language].Shusha,
+      category: t("Qusar"),
       img: Shaxdag,
       id: 10,
       state: "Tourist",
@@ -108,7 +108,7 @@ export const TourComponent = () => {
       duo: two,
     },
     {
-      name: translations[language].Shamkir,
+      category: t("Şəmkir"),
       img: Shemkir,
       id: 11,
       state: "Tourist",
@@ -116,7 +116,7 @@ export const TourComponent = () => {
       duo: two,
     },
     {
-      name: translations[language].Ismailli,
+      category: t("Ismayilli"),
       img: Ismailli,
       id: 12,
       state: "Tourist",
@@ -124,7 +124,7 @@ export const TourComponent = () => {
       duo: two,
     },
     {
-      name: translations[language].Gazakh,
+      category: t("Gazakh"),
       img: Gazah,
       id: 13,
       state: "Tourist",
@@ -132,7 +132,7 @@ export const TourComponent = () => {
       duo: two,
     },
     {
-      name: translations[language].Zagatala,
+      category: t("Zagatala"),
       img: Zagatala,
       id: 14,
       state: "Tourist",
@@ -140,7 +140,7 @@ export const TourComponent = () => {
       duo: two,
     },
     {
-      name: translations[language].generalTour,
+      category: t("Qarışıq yerlər"),
       img: Obb,
       id: 15,
       state: "Tourist",
@@ -152,10 +152,10 @@ export const TourComponent = () => {
   return (
     <div className="TourComponent-wrapper">
       <div className="TourComponent-inner">
-        <div className="Title">{translations[language].tourMap}</div>
+        <div className="Title">{t("tourMap")}</div>
         <div className="TourComponent">
           {attractions.map((attraction) => (
-            <Link key={attraction.id}>
+            <Link to={`/CityTourComponent/${attraction.category}`}>
               <div className="Beta-Block">
                 <div className="Beta-Img">
                   <img
@@ -170,15 +170,15 @@ export const TourComponent = () => {
                         src={attraction.person}
                         alt="person"
                       />
-                      <div className="tur tur1">тур на одного</div>
+                      <div className="tur tur1">{t("tourForOne")}</div>
                     </div>
                     <div className="overlay-text">
                       <img className="solo" src={attraction.duo} alt="duo" />
-                      <div className="tur tur2">тур на двоих</div>
+                      <div className="tur tur2">{t("tourForTwo")}</div>
                     </div>
                   </div>
                 </div>
-                <div className="Beta-name">{attraction.name}</div>
+                <div className="Beta-name">{attraction.category}</div>
               </div>
             </Link>
           ))}

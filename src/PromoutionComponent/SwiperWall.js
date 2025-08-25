@@ -1,29 +1,28 @@
+import React from "react";
+import { useTranslation } from "react-i18next";
 import Baku from "./asests/sticer.jpeg";
-import { useMyContext } from "../UseContext.js";
+import { Link } from "react-router-dom";
 import "./SwiperWall.scss";
 
 export const Quote = () => {
-  const { language, translations } = useMyContext();
+  const { t } = useTranslation();
+
   return (
-    <>
-      <div className="Quote-Wrapper">
-        <div className="Quote-Inner">
-          <div className="Quote-Block">
-            <div className="Quote-First-Statement">
-              {translations[language].firstQuote},
-            </div>
-            <div className="Quote-Second-Statement">
-              {translations[language].secondQuote}.
-            </div>
+    <div className="Quote-Wrapper">
+      <div className="Quote-Inner">
+        <div className="Quote-Block">
+          <div className="Quote-First-Statement">{t("firstQuote")},</div>
+          <div className="Quote-Second-Statement">{t("secondQuote")}.</div>
+          <Link to={"/AboutUs"}>
             <button className="Quote-button">
-              <span className="Quote">{translations[language].learnMore}</span>
+              <span className="Quote">{t("learnMore")}</span>
             </button>
-          </div>
-          <div>
-            <img src={Baku} />
-          </div>
+          </Link>
+        </div>
+        <div>
+          <img src={Baku} alt="Baku" />
         </div>
       </div>
-    </>
+    </div>
   );
 };

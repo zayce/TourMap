@@ -1,0 +1,96 @@
+@font-face {
+  font-family: "PT Sans";
+  src: url("../Fonts/Rubik-SemiBoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+.Brand {
+  width: 100%;
+  max-width: 1480px;
+  margin: 0 auto;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.Brand.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.Brand .Brand-Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.Brand .Brand-Header .Brand-titles {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+}
+.Brand .Brand-Header .Brand-titles .Brand-title {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 70px;
+  color: wheat;
+  margin-left: 250px;
+  margin-top: 5px;
+  line-height: 142.34px;
+  text-align: center;
+}
+.Brand .Brand-Header .Brand-titles .Brand-Fon {
+  position: absolute;
+  font-family: "PT Sans";
+  font-size: 35px;
+  font-weight: 700;
+  color: #4a3c2f;
+  width: 400px;
+  top: 55px;
+}
+.Brand .Brand-Header .brend-button {
+  padding: 20px;
+  background-color: #f8f3ed;
+  border: none;
+  color: #6f7682;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 35px;
+  cursor: pointer;
+}
+.Brand .Brand-Header .brend-button:hover {
+  background-color: #f1f2f6;
+  color: #4a3c2f;
+}
+.Brand .Brand-Header .brend-button .Brend {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20.7px;
+  text-align: left;
+}
+.Brand .Swiper-container .Swiper {
+  justify-content: space-between;
+}
+.Brand .Swiper-container .Swiper .swiper-img {
+  width: 100%;
+  height: 300px;
+}
+.Brand .Swiper-container .Swiper .swiper-img img {
+  border-radius: 30px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.Brand .Swiper-container .Swiper .Swiper-name {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #4a3c2f;
+  margin-top: 10px;
+  text-align: center;
+  margin-bottom: 50px;
+  transition: color 0.3s ease;
+}
+.Brand .Swiper-container .Swiper .Swiper-name:hover {
+  color: #4a3c2f;
+}/*# sourceMappingURL=SwiperCitytourComponent.css.map */

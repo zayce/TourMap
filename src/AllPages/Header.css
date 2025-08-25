@@ -1,0 +1,176 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "SourM";
+  src: url("../Fonts/SourGummy-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "SourB";
+  src: url("../Fonts/SourGummy-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "SourR";
+  src: url("../Fonts/SourGummy-Regular.ttf") format("truetype");
+}
+.Wrapper {
+  background-color: #f8f3ed;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.Wrapper .Inner {
+  width: 1480px;
+  margin: 0 auto;
+}
+.Wrapper .Inner .Header-Top-Container {
+  display: flex;
+  justify-content: space-between;
+}
+.Wrapper .Inner .Header-Top-Container .Header-left-container {
+  display: flex;
+  gap: 40px;
+}
+.Wrapper .Inner .Header-Top-Container .Header-left-container .menu-social {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+.Wrapper .Inner .Header-Top-Container .Header-left-container .menu-social .item-social {
+  align-self: center;
+  margin-top: 2px;
+}
+.Wrapper .Inner .Header-Top-Container .Header-left-container .number-company {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "SourM";
+  align-self: center;
+  color: #2c3e50;
+  transition: font-size 0.9s ease, color 0.15s ease;
+}
+.Wrapper .Inner .Header-Top-Container .Header-left-container .number-company:hover {
+  color: #00aced;
+  font-size: 17px;
+}
+.Wrapper .Inner .Header-Top-Container .header-container-right .enter-buttons {
+  margin-right: 20px;
+  border: none;
+  background-color: #fbfaf8;
+}
+.Wrapper .Inner .Header-Top-Container .header-container-right .enter-buttons .enter {
+  color: #2c3e50;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+.Wrapper .Inner .Header-Top-Container .header-container-right .enter-buttons .enter:hover {
+  color: #00aced;
+}
+.Wrapper .Inner .Header-Top-Container .header-container-right .change-languages {
+  font-size: 16px;
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  background-color: #fbfaf8;
+  color: #2c3e50;
+  font-family: "Arial", sans-serif;
+  font-family: "SourM";
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.Wrapper .Inner .Header-Top-Container .header-container-right .change-languages .change-languages::-ms-expand {
+  display: none;
+  border: none;
+}
+.Wrapper .Inner .Header-Top-Container .header-container-right .change-languages .language {
+  padding: 8px;
+  font-size: 16px;
+  color: #2c3e50;
+}
+.Wrapper .Inner .Header-Top-Container .header-container-right .change-languages .language .language:hover {
+  color: #3498db;
+}
+.Wrapper .Inner .Header-Top-Container .header-container-right .change-languages .change-languages:hover {
+  border-color: #3498db;
+  border: none;
+  box-shadow: 0 2px 8px rgba(52, 152, 219, 0.3);
+}
+.Wrapper .Inner .Header-Top-Container .header-container-right .change-languages .change-languages:focus {
+  border: none;
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+.Wrapper .Inner .Header-Buttom {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0px;
+}
+.Wrapper .Inner .Header-Buttom a {
+  text-decoration: none;
+  color: inherit;
+}
+.Wrapper .Inner .Header-Buttom .Header-Logo {
+  display: flex;
+  gap: 10px;
+}
+.Wrapper .Inner .Header-Buttom .Header-Logo .Header-logo-img .Logo {
+  width: 24px;
+  height: 24px;
+}
+.Wrapper .Inner .Header-Buttom .Header-Logo .Header-Name {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "SourM";
+  align-self: center;
+  color: #2c3e50;
+  transition: font-size 0.9s ease, color 0.15s ease;
+}
+.Wrapper .Inner .Header-Buttom .Header-Logo .Header-Name:hover {
+  color: #00aced;
+  font-size: 17px;
+}
+.Wrapper .Inner .Header-Buttom .Header-menu-nav-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 30px;
+  justify-content: center; /* Центрирование элементов */
+  align-items: center;
+}
+.Wrapper .Inner .Header-Buttom .Header-menu-nav-items .menu-nav-item {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  padding: 10px 15px;
+  border-radius: 30px; /* Скругленные углы */
+  transition: background-color 0.3s ease, color 0.3s ease;
+  /* Эффект при наведении */
+  /* Убираем стандартное подчеркивание на ссылках */
+  /* Фокусировка на элементе */
+}
+.Wrapper .Inner .Header-Buttom .Header-menu-nav-items .menu-nav-item:hover {
+  color: #ffffff;
+  background-color: #4a3c2f; /* Цвет фона при наведении */
+  cursor: pointer;
+}
+.Wrapper .Inner .Header-Buttom .Header-menu-nav-items .menu-nav-item a {
+  color: inherit; /* Наследуем цвет от родителя */
+  text-decoration: none; /* Убираем подчеркивание */
+  transition: color 0.3s ease;
+}
+.Wrapper .Inner .Header-Buttom .Header-menu-nav-items .menu-nav-item:focus {
+  outline: 2px solid #00aced; /* Плавное выделение при фокусе */
+}
+.Wrapper .Inner .Header-Buttom .Header-Butttons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.Wrapper .Inner .Header-Buttom .Header-Butttons .Header-like {
+  align-self: center;
+}
+.Wrapper .Inner .Header-Buttom .Header-Butttons .Header-like .heart {
+  width: 24px;
+  height: 24px;
+}/*# sourceMappingURL=Header.css.map */

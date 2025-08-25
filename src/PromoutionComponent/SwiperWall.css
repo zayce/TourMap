@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "SourM";
+  src: url("../Fonts/Rubik-SemiBoldItalic.ttf") format("truetype");
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.Quote-Wrapper {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  animation: fadeIn 1s ease-out;
+}
+.Quote-Wrapper .Quote-Inner {
+  width: 1480px;
+  margin: 0 auto;
+  display: flex;
+  gap: 40px;
+  justify-content: space-evenly;
+}
+.Quote-Wrapper .Quote-Inner .Quote-Block {
+  text-align: center;
+  align-self: center;
+}
+.Quote-Wrapper .Quote-Inner .Quote-Block .Quote-First-Statement {
+  font-family: SourM;
+  font-size: 50px;
+  margin-bottom: 25px;
+  color: #4a3c2f;
+}
+.Quote-Wrapper .Quote-Inner .Quote-Block .Quote-Second-Statement {
+  font-family: SourM;
+  font-size: 40px;
+  margin-bottom: 25px;
+  color: #4a3c2f;
+}
+.Quote-Wrapper .Quote-Inner .Quote-Block .Quote-button {
+  padding: 10px 50px;
+  border: 2px solid #4a3c2f;
+  border-radius: 20px;
+  background-color: #f8f3ed;
+  transition: color 0.15s ease;
+}
+.Quote-Wrapper .Quote-Inner .Quote-Block .Quote-button:hover {
+  background-color: #ab9984;
+}
+.Quote-Wrapper .Quote-Inner .Quote-Block .Quote-button .Quote {
+  color: #4a3c2f;
+  font-family: SourM;
+  font-size: 12px;
+}/*# sourceMappingURL=SwiperWall.css.map */

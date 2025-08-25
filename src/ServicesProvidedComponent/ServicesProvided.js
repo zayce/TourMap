@@ -1,37 +1,39 @@
-import { Link } from "react-router-dom"; // Убедись, что импортирован Link
+import { Link } from "react-router-dom";
 import "./ServicesProvided.scss";
-
 import Summer from "./asestss/Summer.png";
 import SpAu from "./asestss/Spring-Autumn.png";
 import Winter from "./asestss/winter.png";
 import { useMyContext } from "../UseContext";
+import { useTranslation } from "react-i18next"; // Импортируем useTranslation
 
 const servicesData = [
   {
     id: 1,
     image: Summer,
-    title: "Summer",
-    description: "Летние путешествия",
+    title: "summer", // Используем ключ для перевода
+    description: "summerDescription", // Используем ключ для перевода
     postId: 1,
   },
   {
     id: 2,
     image: SpAu,
-    title: "Spring-Autumn",
-    description: "Весна и осень",
+    title: "springAutumn", // Используем ключ для перевода
+    description: "springAutumnDescription", // Используем ключ для перевода
     postId: 2,
   },
   {
     id: 3,
     image: Winter,
-    title: "Winter",
-    description: "Зимние путешествия",
+    title: "winter", // Используем ключ для перевода
+    description: "winterDescription", // Используем ключ для перевода
     postId: 3,
   },
 ];
 
 export const ServicesProvided = () => {
+  const { t } = useTranslation(); // Получаем функцию t для перевода
   const { addToDesc } = useMyContext();
+
   return (
     <div className="ServicesProvided-Wrapper">
       <div className="ServicesProvided-Inner">
@@ -45,12 +47,12 @@ export const ServicesProvided = () => {
                 <img src={service.image} alt={service.title} />
               </div>
               <div className="ServicesProvided-Block">
-                <div className="ServicesProvided-Name">{service.title}</div>
+                <div className="ServicesProvided-Name">{t(service.title)}</div>
                 <div className="ServicesProvided-Opis">
-                  {service.description}
+                  {t(service.description)}
                 </div>
                 <button className="ServicesProvided-button">
-                  <span className="ServicesProvided-word">Читать далее</span>
+                  <span className="ServicesProvided-word">{t("readMore")}</span>
                 </button>
               </div>
             </Link>

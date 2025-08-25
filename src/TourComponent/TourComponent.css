@@ -1,0 +1,161 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "SourB";
+  src: url("../Fonts/PTSans-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "SourM";
+  src: url("../Fonts/SourGummy-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "RBSBI";
+  src: url("../Fonts/Rubik-SemiBoldItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "PT";
+  src: url("../Fonts/Rubik-MediumItalic.ttf") format("truetype");
+}
+.TourComponent-wrapper {
+  margin-top: 50px;
+  padding-bottom: 20px;
+  overflow-x: hidden;
+  animation: fadeIn 1s ease-out;
+}
+.TourComponent-wrapper .TourComponent-inner {
+  width: 1480px;
+  margin: 0 auto;
+}
+.TourComponent-wrapper .TourComponent-inner .Title {
+  text-align: center;
+  font-size: 70px;
+  color: #4a3c2f;
+  box-shadow: inset;
+  margin-bottom: 40px;
+  font-family: "PT";
+}
+.TourComponent-wrapper .TourComponent-inner .TourComponent {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+.TourComponent-wrapper .TourComponent-inner .TourComponent .Beta-Block {
+  margin-top: 50px;
+  position: relative;
+}
+.TourComponent-wrapper .TourComponent-inner .TourComponent .Beta-Block .Beta-Img {
+  position: relative;
+  transition: transform 0.3s ease;
+  /* Оверлей с текстом */
+  /* Показываем оверлей и текст при наведении */
+}
+.TourComponent-wrapper .TourComponent-inner .TourComponent .Beta-Block .Beta-Img .img {
+  width: 275px;
+  height: 310px;
+  border-radius: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.TourComponent-wrapper .TourComponent-inner .TourComponent .Beta-Block .Beta-Img:hover .img {
+  transform: scale(1.08); /* Увеличение на 5% */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Добавляем тень */
+}
+.TourComponent-wrapper .TourComponent-inner .TourComponent .Beta-Block .Beta-Img .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
+  /* Полупрозрачный черный фон */
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease;
+}
+.TourComponent-wrapper .TourComponent-inner .TourComponent .Beta-Block .Beta-Img:hover .overlay {
+  opacity: 1;
+}
+.TourComponent-wrapper .TourComponent-inner .TourComponent .Beta-Block .Beta-Img .text {
+  border-right: 2px solid white;
+}
+.TourComponent-wrapper .TourComponent-inner .TourComponent .Beta-Block .Beta-Img .overlay-text {
+  color: white;
+  font-family: SourB;
+  font-size: 22px;
+  font-weight: 500;
+  text-align: center;
+}
+.TourComponent-wrapper .TourComponent-inner .TourComponent .Beta-Block .Beta-Img .overlay-text .solo {
+  width: 70px;
+  height: 100%;
+  border-radius: 50%;
+}
+.TourComponent-wrapper .TourComponent-inner .TourComponent .Beta-Block .Beta-Img .overlay-text .duo {
+  margin-right: 40px;
+}
+.TourComponent-wrapper .TourComponent-inner .TourComponent .Beta-Block .Beta-Img .overlay-text .tur {
+  font-size: 20px;
+  text-align: center;
+  transition: color 0.5s ease;
+}
+.TourComponent-wrapper .TourComponent-inner .TourComponent .Beta-Block .Beta-Img .overlay-text .tur:hover {
+  color: #00aced;
+}
+.TourComponent-wrapper .TourComponent-inner .TourComponent .Beta-Block .Beta-Img .overlay-text .tur1 {
+  margin-right: 15px;
+}
+.TourComponent-wrapper .TourComponent-inner .TourComponent .Beta-Block .Beta-Img .overlay-text .tur2 {
+  margin-left: 15px;
+}
+.TourComponent-wrapper .TourComponent-inner .TourComponent .Beta-Block .Beta-Img .Beta-info {
+  color: white;
+  text-align: center;
+  display: flex;
+}
+.TourComponent-wrapper .TourComponent-inner .TourComponent .Beta-state {
+  position: absolute;
+  top: 16px;
+  right: 10px;
+  color: white;
+  font-family: SourB;
+  font-size: 30px;
+  font-weight: 500;
+}
+.TourComponent-wrapper .TourComponent-inner .TourComponent .Beta-name {
+  font-family: RBSBI;
+  position: absolute;
+  top: -20px;
+  left: -15px;
+  color: white;
+  background-color: #4a3c2f;
+  padding: 10px;
+  border-radius: 20px;
+}
+.TourComponent-wrapper .TourComponent-inner .TourComponent .Beta-Id {
+  font-family: SourM;
+  text-align: center;
+  width: 30px;
+  color: white;
+  position: absolute;
+  font-size: 20px;
+  top: 20px;
+  left: 20px;
+  border-bottom: 2px solid white;
+  transition: color 0.3s ease;
+}
+.TourComponent-wrapper .TourComponent-inner .TourComponent .Beta-Id:hover {
+  color: #00aced;
+  border-bottom: 2px solid #00aced;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}/*# sourceMappingURL=TourComponent.css.map */

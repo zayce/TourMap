@@ -1,0 +1,88 @@
+.ServicesProvided-Wrapper {
+  margin-top: 70px;
+}
+.ServicesProvided-Wrapper .ServicesProvided-Inner {
+  width: 100%;
+  max-width: 1480px;
+  margin: 0 auto;
+  display: flex;
+  gap: 10px;
+  height: 600px;
+}
+.ServicesProvided-Wrapper .ServicesProvided-Inner .ServicesProvided-Profile {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  transition: flex 0.5s ease;
+}
+.ServicesProvided-Wrapper .ServicesProvided-Inner .ServicesProvided-Profile .ServicesProvided-img {
+  flex: 1;
+  height: 100%;
+}
+.ServicesProvided-Wrapper .ServicesProvided-Inner .ServicesProvided-Profile .ServicesProvided-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: transform 0.4s ease;
+}
+.ServicesProvided-Wrapper .ServicesProvided-Inner .ServicesProvided-Profile .ServicesProvided-Block {
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 15px 20px;
+  border-radius: 16px;
+  color: white;
+}
+.ServicesProvided-Wrapper .ServicesProvided-Inner .ServicesProvided-Profile .ServicesProvided-Block .ServicesProvided-Name {
+  font-size: 22px;
+  font-weight: bold;
+  transition: opacity 0.3s ease;
+  opacity: 1;
+}
+.ServicesProvided-Wrapper .ServicesProvided-Inner .ServicesProvided-Profile .ServicesProvided-Block .ServicesProvided-Opis {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.4s ease, max-height 0.4s ease;
+  font-size: 18px;
+  margin-top: 8px;
+}
+.ServicesProvided-Wrapper .ServicesProvided-Inner .ServicesProvided-Profile .ServicesProvided-Block .ServicesProvided-button {
+  margin-top: 10px;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+.ServicesProvided-Wrapper .ServicesProvided-Inner .ServicesProvided-Profile:hover .ServicesProvided-Opis {
+  opacity: 1;
+  max-height: 100px;
+}
+.ServicesProvided-Wrapper .ServicesProvided-Inner .ServicesProvided-Profile:hover .ServicesProvided-img img {
+  transform: scale(1);
+}
+.ServicesProvided-Wrapper .ServicesProvided-Inner:has(.ServicesProvided-Profile:hover) .ServicesProvided-Profile {
+  flex: 1;
+}
+.ServicesProvided-Wrapper .ServicesProvided-Inner:has(.ServicesProvided-Profile:hover) .ServicesProvided-Profile .ServicesProvided-Block {
+  opacity: 0 !important;
+  pointer-events: none;
+  transition: opacity 0.4s ease !important;
+}
+.ServicesProvided-Wrapper .ServicesProvided-Inner:has(.ServicesProvided-Profile:hover) .ServicesProvided-Profile:hover {
+  flex: 3;
+}
+.ServicesProvided-Wrapper .ServicesProvided-Inner:has(.ServicesProvided-Profile:hover) .ServicesProvided-Profile:hover .ServicesProvided-Block {
+  opacity: 1 !important;
+}
+.ServicesProvided-Wrapper .ServicesProvided-Inner:has(.ServicesProvided-Profile:hover) .ServicesProvided-Profile:hover .ServicesProvided-Block .ServicesProvided-Name,
+.ServicesProvided-Wrapper .ServicesProvided-Inner:has(.ServicesProvided-Profile:hover) .ServicesProvided-Profile:hover .ServicesProvided-Block .ServicesProvided-button {
+  opacity: 1 !important;
+  max-height: none !important;
+}
+.ServicesProvided-Wrapper .ServicesProvided-Inner:has(.ServicesProvided-Profile:hover) .ServicesProvided-Profile:hover .ServicesProvided-Block .ServicesProvided-Opis {
+  opacity: 1 !important;
+  max-height: 100px !important;
+}/*# sourceMappingURL=ServicesProvided.css.map */

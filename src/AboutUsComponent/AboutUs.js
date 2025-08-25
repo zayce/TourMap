@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import {
@@ -10,8 +10,11 @@ import {
   Globe,
 } from "lucide-react";
 import "../AboutUsComponent/AboutUs.scss";
+import { useTranslation } from "react-i18next";
 
 export const AboutUs = () => {
+  const { t } = useTranslation();
+
   useEffect(() => {
     AOS.init({
       duration: 800,
@@ -24,35 +27,16 @@ export const AboutUs = () => {
     <div className="AboutUs-Wrapper" data-aos="fade-up">
       <div className="AboutUs-Inner">
         <div className="AboutUs-Title" data-aos="fade-right">
-          О Нас
+          {t("aboutUs")}
         </div>
 
         <div className="AboutUs-TextBlock" data-aos="fade-left">
           <div className="AboutUs-TextBlocs">
-            <div className="AboutUs-Paragraph">
-              Мы — платформа нового поколения для тех, кто хочет открыть
-              Азербайджан по-настоящему.
-            </div>
-            <div className="AboutUs-Paragraph">
-              Сайт разработан с нуля молодым энтузиастом, чтобы вдохновить
-              молодёжь и сделать внутренний туризм доступнее. Здесь вы найдёте
-              только реальные маршруты, живые места и удобную навигацию — всё,
-              чтобы путешествовать стало проще и интереснее.
-            </div>
-            <div className="AboutUs-Paragraph">
-              Мы отбираем маршруты вручную, с вниманием к деталям, будто
-              планируем поездку для себя. Без шаблонов, без сухих описаний —
-              только визуально, стильно и актуально.
-            </div>
-            <div className="AboutUs-Paragraph">
-              Платформа охватывает не только Баку, но и скрытые жемчужины
-              Азербайджана — от природы и музеев до дворцов и зоопарков. Хотите
-              сбежать на уикенд или найти фотогеничное место? Мы уже подготовили
-              лучшие идеи.
-            </div>
-            <div className="AboutUs-Slogan">
-              Твоя страна — твои маршруты. Добро пожаловать в путь.
-            </div>
+            <div className="AboutUs-Paragraph">{t("aboutUsFirstParagrf")}</div>
+            <div className="AboutUs-Paragraph">{t("aboutUsSecondParagrf")}</div>
+            <div className="AboutUs-Paragraph">{t("aboutUsThirdParagrf")}</div>
+            <div className="AboutUs-Paragraph">{t("aboutUsFourParagrf")}</div>
+            <div className="AboutUs-Slogan">{t("aboutUsFiveParagrf")}</div>
           </div>
 
           <div className="AboutUs-TextBlock-Img" data-aos="zoom-in">
@@ -92,27 +76,27 @@ export const AboutUs = () => {
         <div className="AboutUs-Benefits" data-aos="fade-up">
           <div className="Benefit-Item" data-aos="fade-up" data-aos-delay="100">
             <MapPin className="Benefit-Icon" />
-            Локальный туризм — акцент на реальные места
+            {t("aboutUsFirstItem")}
           </div>
           <div className="Benefit-Item" data-aos="fade-up" data-aos-delay="200">
             <Sparkles className="Benefit-Icon" />
-            Удобный дизайн — ничего лишнего
+            {t("aboutUsSecondItem")}
           </div>
           <div className="Benefit-Item" data-aos="fade-up" data-aos-delay="300">
             <Star className="Benefit-Icon" />
-            Подбор по интересам — музеи, природа, дворцы
+            {t("aboutUsThirdItem")}
           </div>
           <div className="Benefit-Item" data-aos="fade-up" data-aos-delay="400">
             <Users className="Benefit-Icon" />
-            Для молодёжи — легко, современно, доступно
+            {t("aboutUsFourItem")}
           </div>
           <div className="Benefit-Item" data-aos="fade-up" data-aos-delay="500">
             <HeartHandshake className="Benefit-Icon" />
-            Поддержка пользователей — мы открыты к обратной связи
+            {t("aboutUsFiveItem")}
           </div>
           <div className="Benefit-Item" data-aos="fade-up" data-aos-delay="600">
             <Globe className="Benefit-Icon" />
-            Сделано вручную — без шаблонов, с душой
+            {t("aboutUsSixItem")}
           </div>
         </div>
       </div>

@@ -1,57 +1,80 @@
 import { useMyContext } from "../UseContext";
 import "./AllPlaces.scss";
 import clock from "./clock.png";
+import { useParams } from "react-router-dom";
+import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 export const AllPlaces = () => {
   const { traveled } = useMyContext();
+  const { specialization } = useParams();
+  const { t } = useTranslation();
+
+  const [selectedCategory, setSelectedCategory] = useState("all");
+
+  const categories = [
+    { key: "all", label: t("allPlaces") },
+    { key: "popular", label: t("popularPlaces") },
+    { key: "museums", label: t("museums") },
+    { key: "parks", label: t("parks") },
+    { key: "nature", label: t("nature") },
+    { key: "attractive", label: t("EntertainmentAndActiveRecreation") },
+  ];
+
+  const filteredObjects =
+    selectedCategory === "all"
+      ? traveled
+      : traveled.filter((e) => e.special === selectedCategory);
+
   return (
     <>
       <div className="AllPlaces-Wrapper">
         <div className="Allplaces-Inner">
           <div className="Allplces-Title-Button">
-            <div className="AllPlaces-Title">Все Места</div>
+            <div className="AllPlaces-Title">{t("allPlaces")}</div>
             <div className="AllPlaces-Buttons">
-              <button className="Button">
-                <span className="Button-Word">Все</span>
-              </button>
-              <button className="Button">
-                <span className="Button-Word">Популярные</span>
-              </button>
-              <button className="Button">
-                <span className="Button-Word">Музей</span>
-              </button>
-              <button className="Button">
-                <span className="Button-Word">Парки</span>
-              </button>
-              <button className="Button">
-                <span className="Button-Word">Атракционы</span>
-              </button>
+              {categories.map((cat) => (
+                <button
+                  key={cat.key}
+                  className={`Button ${
+                    selectedCategory === cat.key ? "active" : ""
+                  }`}
+                  onClick={() => setSelectedCategory(cat.key)}
+                >
+                  <span className="Button-Word">{cat.label}</span>
+                </button>
+              ))}
             </div>
           </div>
+
           <div className="Allplaces-Block">
-            {traveled.map((e) => (
+            {filteredObjects.map((e) => (
               <div className="AllPlaces-card" key={e.id}>
                 <div className="AllPlaces-Img">
                   <img src={e.img} className="card-image" />
                 </div>
-                <div class="card-content">
-                  <div className="AllPlaces-Name">{e.name}</div>
+                <div className="card-content">
+                  <div className="AllPlaces-Name">{t(e.name)}</div>
                   <ul className="AllPlaces-Menu">
                     <li className="Allplaces-Item">
                       <img src={clock} className="clock" />
-                      <span className="time">{e.openClose}</span>
+                      <span className="time">{t(e.openClose)}</span>
                     </li>
                     <li className="Allplaces-Item">
-                      <span className="Word">Дата открытия:</span>{" "}
-                      <span className="time">{e.timeBuild}</span>
+                      <span className="Word">{t("city")}:</span>
+                      <span className="time">{t(e.city)}</span>
                     </li>
                     <li className="Allplaces-Item">
-                      <span className="Word">Адрес:</span>{" "}
-                      <span className="time">{e.adres}</span>
+                      <span className="Word">{t("category")}:</span>
+                      <span className="time">{t(e.special)}</span>
                     </li>
                     <li className="Allplaces-Item">
-                      <span className="Word">Город:</span>{" "}
-                      <span className="time">{e.category}</span>
+                      <span className="Word">{t("category")}:</span>
+                      <span className="time">{t(e.timeBuild)}</span>
+                    </li>
+                    <li className="Allplaces-Item">
+                      <span className="Word">{t("category")}:</span>
+                      <span className="time">{t(e.openClose)}</span>
                     </li>
                   </ul>
                   <button className="AllPlaces-Button">Подробнее</button>

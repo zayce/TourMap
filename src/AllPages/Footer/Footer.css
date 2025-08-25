@@ -1,0 +1,163 @@
+.Footer-wrapper {
+  background-color: #f8f3ed;
+  padding-top: 20px;
+}
+.Footer-wrapper .Footer-inner {
+  width: 100%;
+  max-width: 1480px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  padding: 50px 20px;
+}
+.Footer-wrapper .Footer-inner .Footersss {
+  display: flex;
+}
+.Footer-wrapper .Footer-inner .Footersss .Footer-Imgs-block {
+  flex: 1;
+  margin-right: 20px;
+}
+.Footer-wrapper .Footer-inner .Footersss .Footer-Imgs-block .Footer-Logo {
+  margin-bottom: 20px;
+}
+.Footer-wrapper .Footer-inner .Footersss .Footer-Imgs-block .Footer-Logo {
+  display: flex;
+  gap: 10px;
+}
+.Footer-wrapper .Footer-inner .Footersss .Footer-Imgs-block .Footer-Logo .Footer-logo-img .Logo {
+  width: 24px;
+  height: 24px;
+}
+.Footer-wrapper .Footer-inner .Footersss .Footer-Imgs-block .Footer-Logo .Footer-Name {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "SourM";
+  align-self: center;
+  color: #2c3e50;
+  transition: font-size 0.9s ease, color 0.15s ease;
+}
+.Footer-wrapper .Footer-inner .Footersss .Footer-Imgs-block .Footer-Logo .Footer-Name:hover {
+  color: #00aced;
+  font-size: 17px;
+}
+.Footer-wrapper .Footer-inner .Footersss .Footer-Imgs-block .Footer-Social-text,
+.Footer-wrapper .Footer-inner .Footersss .Footer-Imgs-block .Footer-adds {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+.Footer-wrapper .Footer-inner .Footersss .Footer-Imgs-block .Footer-Social-Imgs,
+.Footer-wrapper .Footer-inner .Footersss .Footer-Imgs-block .footer-Cards {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.Footer-wrapper .Footer-inner .Footersss .Footer-Imgs-block .Footer-Social-Imgs img,
+.Footer-wrapper .Footer-inner .Footersss .Footer-Imgs-block .footer-Cards img {
+  max-width: 100%;
+  height: auto;
+  width: 30px;
+}
+.Footer-wrapper .Footer-inner .Footersss .Menus {
+  display: flex;
+  flex: 2;
+  gap: 50px;
+  justify-content: space-evenly;
+}
+.Footer-wrapper .Footer-inner .Footersss .Menus .Footer-Menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.Footer-wrapper .Footer-inner .Footersss .Menus .Footer-Menu .Menu-Footer-header-item {
+  margin-bottom: 20px;
+  font-family: PT Sans, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20.7px;
+  text-align: left;
+  color: black;
+}
+.Footer-wrapper .Footer-inner .Footersss .Menus .Footer-Menu .Menu-Footer-items {
+  margin-bottom: 10px;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18.75px;
+  text-align: left;
+  color: #6f7682;
+}
+.Footer-wrapper .Footer-inner .Footersss .Menus .Footer-Menu .Menu-Footer-items a {
+  text-decoration: none;
+  color: inherit;
+}
+.Footer-wrapper .Footer-inner .Footersss .Menus .Footer-Menu .Menu-Footer-items:hover {
+  color: #4798de;
+}
+.Footer-wrapper .Footer-inner .Footersss .Menus .Footer-Menu .Menu-Footer-items:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 1200px) {
+  .Footer-inner {
+    padding: 40px 20px;
+  }
+}
+@media (max-width: 990px) {
+  .Footer-inner {
+    flex-direction: column;
+    align-items: center;
+  }
+  .Footer-Imgs-block {
+    margin-right: 0;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .Menus {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .Footer-inner {
+    padding: 20px 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  .Footer-Imgs-block {
+    margin-bottom: 20px;
+  }
+  .Footer-Logo img {
+    max-width: 100%;
+    height: auto;
+  }
+  .Footer-Social-text,
+  .Footer-adds {
+    font-size: 14px;
+  }
+  .Footer-Social-Imgs,
+  .footer-Cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  .Footer-Social-Imgs img,
+  .footer-Cards img {
+    width: 30px;
+  }
+  .Menus {
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+    align-items: center;
+  }
+  .Footer-Menu {
+    text-align: center;
+  }
+  .Menu-Footer-header-item,
+  .Menu-Footer-items {
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=Footer.css.map */

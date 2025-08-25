@@ -5,63 +5,50 @@ import "./Season.scss";
 export const Season = () => {
   const { SeasonData, language, translations } = useMyContext();
   const { postId } = useParams();
+
   const filteredSeason = SeasonData.filter(
     (place) => place.postId === parseInt(postId)
   );
-  
 
   return (
     <div className="Season-Wrapper">
       <div className="Season-Inner">
+        {/* Заголовок с переводом */}
         <div className="Season-Title">
-          {postId === "1"
-            ? "Куда стоит съездить летом?"
-            : postId === "2"
-            ? "Куда стоит съездить весной/осенью?"
-            : "Куда стоит съездить зимой?"}
+          {translations.seasonTitles?.[postId] || ""}
         </div>
+
         <div className="Season-Imgs-Grups">
           {filteredSeason.map((place) => (
-            <>
-              <div className="Season-Big-Img" key={place.id}>
-                <img src={place.img} className="Big" />
-                <div className="Season-Overlay">{place.name}</div>
-              </div>
-            </>
+            <div className="Season-Big-Img" key={place.id}>
+              <img src={place.img} alt={place.name} className="Big" />
+              <div className="Season-Overlay">{place.name}</div>
+            </div>
           ))}
+
           {filteredSeason.map((element) => (
             <div className="Season-Titles" key={element.id}>
               {element.title}
             </div>
           ))}
+
+          {/* Пример заполнения блоков с мультиязычностью */}
           <div className="Season-Blocks">
-            <div className="Season-Block">
-              <div className="Season-Title"></div>
-              <div className="Season-desc-Block">
-                <div className="Season-desc-Text"></div>
-                <div className="Season-desc-img">
-                  <img />
+            {filteredSeason.map((element) => (
+              <div className="Season-Block" key={`block-${element.id}`}>
+                <div className="Season-Title">
+                  {translations.seasonBlocksTitle?.[element.id] || ""}
+                </div>
+                <div className="Season-desc-Block">
+                  <div className="Season-desc-Text">
+                    {translations.seasonBlocksDesc?.[element.id] || ""}
+                  </div>
+                  <div className="Season-desc-img">
+                    <img src={element.blockImg} alt={element.title} />
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="Season-Block">
-              <div className="Season-Title"></div>
-              <div className="Season-desc-Block">
-                <div className="Season-desc-Text"></div>
-                <div className="Season-desc-img">
-                  <img />
-                </div>
-              </div>
-            </div>
-            <div className="Season-Block">
-              <div className="Season-Title"></div>
-              <div className="Season-desc-Block">
-                <div className="Season-desc-Text"></div>
-                <div className="Season-desc-img">
-                  <img />
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>

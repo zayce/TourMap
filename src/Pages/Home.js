@@ -1,7 +1,5 @@
-import { AboutUs } from "../AboutUsComponent/AboutUs";
 import { CalendarPicker } from "../CalendarComponent/Calendar";
-import LocationMarkerAnimation from "../LocalMarkerAnimationComponent/LocalMarkerAnimation";
-
+import { HomeMap } from "../HomemapComponent/HomeMap";
 import { Quote } from "../PromoutionComponent/SwiperWall";
 import { Season } from "../ServicesProvidedComponent/SeasonComponent/Season";
 import { ServicesProvided } from "../ServicesProvidedComponent/ServicesProvided";
@@ -21,10 +19,11 @@ export const Home = () => {
         </div> */}
         <Quote />
         <div className="Inner-home">
-          <TourComponent />
           <WhyUs />
+          <TourComponent />
           <SwiperCitytourComponent />
           <ServicesProvided />
+          <HomeMap />
           <CalendarPicker />
         </div>
       </div>

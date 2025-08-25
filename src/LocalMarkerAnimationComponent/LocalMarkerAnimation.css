@@ -1,0 +1,8 @@
+@charset "UTF-8";
+.location-marker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px; /* Высота для анимации */
+  width: 100%; /* Занимает всю ширину */
+}/*# sourceMappingURL=LocalMarkerAnimation.css.map */

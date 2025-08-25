@@ -1,0 +1,17 @@
+@charset "UTF-8";
+.Wrapper-Home {
+  background-color: #f8f3ed;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.Wrapper-Home .Inner-Home {
+  width: 1480px;
+  margin: 0 auto;
+}
+.Wrapper-Home .Inner-Home .hero-animation-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px; /* Высота секции для анимации */
+  margin-bottom: 50px; /* Отступ между анимацией и следующими блоками */
+}/*# sourceMappingURL=Home.css.map */

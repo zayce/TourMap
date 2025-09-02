@@ -81,7 +81,9 @@ export const Header = () => {
               <Link to={"/AboutUs"}>
                 <li className="menu-nav-item">{t("aboutUs")}</li>
               </Link>
-              <li className="menu-nav-item">{t("eventCalendar")}</li>
+              <Link to={"/AllPlaces"}>
+                <li className="menu-nav-item">{t("allPlaces")}</li>
+              </Link>
               <li className="menu-nav-item">{t("eventCalendar")}</li>
               <Link to={"/Rewiew"}>
                 <li className="menu-nav-item">{t("leaveReview")}</li>

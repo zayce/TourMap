@@ -15,8 +15,8 @@ import Xacmaz from "./asestsTour/Xacmaz.jpg";
 import Shaxdag from "./asestsTour/Shahdag.jpg";
 import Shemkir from "./asestsTour/sHEMKIR.jpg";
 import Ismailli from "./asestsTour/Ismailli.jpg";
-import Gazah from "./asestsTour/Gazah.jpg";
-import Zagatala from "./asestsTour/Zagatala.jpg";
+import Qobustan from "./asestsTour/Qobustan.png";
+import Seki from "./asestsTour/Seki.png";
 import Obb from "./asestsTour/Obb.jpg";
 
 import one from "./asestsTour/solo.png";
@@ -75,14 +75,14 @@ export const TourComponent = () => {
       person: one,
       duo: two,
     },
-    {
-      category: t("Quba"),
-      img: Quba,
-      id: 7,
-      state: "Mountain",
-      person: one,
-      duo: two,
-    },
+    // {
+    //   category: t("Quba"),
+    //   img: Quba,
+    //   id: 7,
+    //   state: "Mountain",
+    //   person: one,
+    //   duo: two,
+    // },
     {
       category: t("Gabala"),
       img: qabala,
@@ -123,17 +123,17 @@ export const TourComponent = () => {
       person: one,
       duo: two,
     },
+    // {
+    //   category: t("Qax"),
+    //   img: Seki,
+    //   id: 13,
+    //   state: "Tourist",
+    //   person: one,
+    //   duo: two,
+    // },
     {
-      category: t("Gazakh"),
-      img: Gazah,
-      id: 13,
-      state: "Tourist",
-      person: one,
-      duo: two,
-    },
-    {
-      category: t("Zagatala"),
-      img: Zagatala,
+      category: t("Qobustan"),
+      img: Qobustan,
       id: 14,
       state: "Tourist",
       person: one,

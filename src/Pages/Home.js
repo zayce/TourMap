@@ -24,7 +24,7 @@ export const Home = () => {
           <SwiperCitytourComponent />
           <ServicesProvided />
           <HomeMap />
-          <CalendarPicker />
+          {/* <CalendarPicker /> */}
         </div>
       </div>
     </>

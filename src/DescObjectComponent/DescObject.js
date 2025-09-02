@@ -17,8 +17,6 @@ import {
   FaMoneyBill,
 } from "react-icons/fa";
 
-const position = [40.39614304461201, 49.86782382165357]; // Точные координаты Heydar Aliyev Center
-
 delete L.Icon.Default.prototype._getIconUrl;
 
 L.Icon.Default.mergeOptions({
@@ -104,7 +102,7 @@ export const DescObject = () => {
                 <div className="DescObject-Infos-Component-One-Text">
                   {t(selectedItem.titleDescitemTopOpis)}
                 </div>
-                <img src={selectedItem.DescFirstHeydar} />
+                <img className="img-component-text" src={selectedItem.DescFirstHeydar} />
               </div>
 
               <div className="DescObject-Infos-Title">
@@ -118,46 +116,13 @@ export const DescObject = () => {
                 </div>
               </div>
             </div>
-
-            {/* <div className="DescObject-Bottom-Block fadeInUp">
-              <div className="DescObject-Bottom-Top-Block-Title">
-                История и значение
-              </div>
-              <div className="DescObject-Bottom-Content">
-                <p>
-                  Проект Культурного центра Гейдара Алиева был задуман как
-                  символ новой эры Азербайджана — страны, соединяющей Восток и
-                  Запад, традиции и инновации. Его архитектура отказывается от
-                  прямых углов, отражая идею бесконечного диалога, открытости и
-                  постоянного развития.
-                </p>
-                <p>
-                  Здание построено по проекту <strong>Захи Хадид</strong>, одной
-                  из самых влиятельных архитекторов XXI века. Её почерк — это
-                  текучие формы, живые линии и ощущение движения. Каждый изгиб
-                  центра словно повторяет пульс города, его ритм и душу.
-                </p>
-                <p>
-                  Внутри располагаются музей, выставочные залы,
-                  конференц-пространства и библиотека. Здесь проходят
-                  международные симпозиумы, художественные экспозиции и
-                  образовательные инициативы, направленные на развитие
-                  культурной среды Азербайджана.
-                </p>
-                <p className="DescObject-fact">
-                  💡 Интересный факт: архитектурная концепция центра входит в
-                  десятку самых узнаваемых построек мира по версии{" "}
-                  <em>ArchDaily</em>.
-                </p>
-              </div>
-            </div> */}
           </div>
         </div>
 
         <div className="DescObject-map">
-          <h3>Где находится центр?</h3>
+          <h3>Где находится объект?</h3>
           <MapContainer
-            center={position}
+            center={selectedItem.position}
             zoom={16}
             scrollWheelZoom={false}
             style={{ height: "500px", width: "100%", borderRadius: "12px" }}
@@ -166,8 +131,10 @@ export const DescObject = () => {
               url="https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png"
               attribution='&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
             />
-            <Marker position={position}>
-              <Popup>Центр Гейдара Алиева</Popup>
+            <Marker position={selectedItem.position}>
+              {" "}
+              {/* 👈 и тут */}
+              <Popup>{t(selectedItem.name)}</Popup>
             </Marker>
           </MapContainer>
         </div>

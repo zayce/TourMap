@@ -25,16 +25,13 @@
       gap: 10px;
       margin-bottom: 40px;
       flex-wrap: wrap;
-      min-height: 420px;
       .CityTourComponent-card {
         align-items: stretch;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         min-height: 100%;
-        flex: 0 0 calc(33.33% - 15px); 
-        max-width: 320px;
-        width: 100%;
+        flex: 0 0 calc(33.33% - 15px);
         border-radius: 20px;
         overflow: hidden;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);

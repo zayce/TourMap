@@ -47,9 +47,7 @@ export const SelectedObject = () => {
                     </li>
                     <li className="Selected-Object-Item">
                       <span className="Selected-Object-Word">Город:</span>
-                      <span className="Selected-Object-time">
-                        {t(e.category)}
-                      </span>
+                      <span className="Selected-Object-time">{t(e.city)}</span>
                     </li>
                     <li className="Selected-Object-Item">
                       <span className="Selected-Object-Word">Тип:</span>

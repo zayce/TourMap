@@ -14,9 +14,9 @@ export const AllPlaces = () => {
 
   const categories = [
     { key: "all", label: t("allPlaces") },
-    { key: "popular", label: t("popularPlaces") },
+    { key: "Palaces", label: t("Palaces") },
     { key: "museums", label: t("museums") },
-    { key: "parks", label: t("parks") },
+    // { key: "parks", label: t("parks") },
     { key: "nature", label: t("nature") },
     { key: "attractive", label: t("EntertainmentAndActiveRecreation") },
   ];

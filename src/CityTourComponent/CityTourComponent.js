@@ -47,11 +47,11 @@ export const CityTourComponent = () => {
                   </li>
                   <li className="CityTourComponent-Item">
                     <span className="CityTourComponent-Word">Город:</span>
-                    <span className="CityTourComponent-time">{e.category}</span>
+                    <span className="CityTourComponent-time">{t(e.city)}</span>
                   </li>
                   <li className="CityTourComponent-Item">
                     <span className="CityTourComponent-Word">Тип:</span>
-                    <span className="CityTourComponent-time">{e.special}</span>
+                    <span className="CityTourComponent-time">{t(e.specialTranslate)}</span>
                   </li>
                 </ul>
                 <Link to={`/desc/${e.id}`}>

@@ -34,6 +34,7 @@ export const TourComponent = () => {
       person: one,
       duo: two,
       connect: "Baku",
+      city: t("baku"),
     },
     {
       category: t("Gəncə"),
@@ -42,6 +43,7 @@ export const TourComponent = () => {
       state: "Popular",
       person: one,
       duo: two,
+      city: t("Ganja"),
     },
     {
       category: t("Şəki"),
@@ -50,6 +52,7 @@ export const TourComponent = () => {
       state: "Scenic",
       person: one,
       duo: two,
+      city: t("Sheki"),
     },
     {
       category: t("Lənkəran"),
@@ -58,6 +61,7 @@ export const TourComponent = () => {
       state: "Scenic",
       person: one,
       duo: two,
+      city: t("Lankaran"),
     },
     {
       category: t("Şamaxı"),
@@ -66,6 +70,7 @@ export const TourComponent = () => {
       state: "Scenic",
       person: one,
       duo: two,
+      city: t("Shamakhi"),
     },
     {
       category: t("Qarabağ"),
@@ -74,6 +79,7 @@ export const TourComponent = () => {
       state: "Mountain",
       person: one,
       duo: two,
+      city: t("Karabakh"),
     },
     // {
     //   category: t("Quba"),
@@ -84,12 +90,13 @@ export const TourComponent = () => {
     //   duo: two,
     // },
     {
-      category: t("Gabala"),
+      category: t("Qəbələ"),
       img: qabala,
       id: 8,
       state: "Tourist",
       person: one,
       duo: two,
+      city: t("Gabala"),
     },
     {
       category: t("Xaçmaz"),
@@ -98,15 +105,16 @@ export const TourComponent = () => {
       state: "Tourist",
       person: one,
       duo: two,
+      city: t("Khachmaz"),
     },
-    {
-      category: t("Qusar"),
-      img: Shaxdag,
-      id: 10,
-      state: "Tourist",
-      person: one,
-      duo: two,
-    },
+    // {
+    //   category: t("Qusar"),
+    //   img: Shaxdag,
+    //   id: 10,
+    //   state: "Tourist",
+    //   person: one,
+    //   duo: two,
+    // },
     {
       category: t("Şəmkir"),
       img: Shemkir,
@@ -114,6 +122,7 @@ export const TourComponent = () => {
       state: "Tourist",
       person: one,
       duo: two,
+      city: t("Shamkir"),
     },
     {
       category: t("Ismayilli"),
@@ -122,6 +131,7 @@ export const TourComponent = () => {
       state: "Tourist",
       person: one,
       duo: two,
+      city: t("Ismailli"),
     },
     // {
     //   category: t("Qax"),
@@ -138,6 +148,7 @@ export const TourComponent = () => {
       state: "Tourist",
       person: one,
       duo: two,
+      city: t("Gobustan"),
     },
     {
       category: t("Qarışıq yerlər"),
@@ -146,6 +157,7 @@ export const TourComponent = () => {
       state: "Tourist",
       person: one,
       duo: two,
+      city: t("Mixed places"),
     },
   ];
 
@@ -178,7 +190,7 @@ export const TourComponent = () => {
                     </div>
                   </div>
                 </div>
-                <div className="Beta-name">{attraction.category}</div>
+                <div className="Beta-name">{attraction.city}</div>
               </div>
             </Link>
           ))}

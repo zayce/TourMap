@@ -32,7 +32,6 @@
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         transition: transform 0.3s, box-shadow 0.3s;
         background: #fff;
-        height: 396px;
         position: relative;
         .card:hover {
           transform: translateY(-8px);
@@ -46,7 +45,7 @@
           }
         }
         .Selected-Object-card-content {
-          padding: 16px;
+          padding: 16px 16px 30px 16px;
           flex-grow: 1;
           .Selected-Object-Name {
             font-family: PT;

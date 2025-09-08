@@ -20,7 +20,8 @@
   animation: fadeIn 1s ease-out;
 
   .Quote-Inner {
-    width: 1480px;
+    width: 100%;
+    max-width: 1480px;
     margin: 0 auto;
     display: flex;
     gap: 40px;
@@ -59,6 +60,186 @@
           color: #4a3c2f;
           font-family: SourM;
           font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .Quote-Wrapper {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    animation: fadeIn 1s ease-out;
+
+    .Quote-Inner {
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      gap: 20px;
+      justify-content: space-evenly;
+
+      .Quote-Block {
+        text-align: center;
+        align-self: center;
+
+        .Quote-First-Statement {
+          font-family: SourM;
+          font-size: 40px;
+          margin-bottom: 25px;
+          color: #4a3c2f;
+        }
+
+        .Quote-Second-Statement {
+          font-family: SourM;
+          font-size: 30px;
+          margin-bottom: 25px;
+          color: #4a3c2f;
+        }
+
+        .Quote-button {
+          padding: 10px 50px;
+          border: 2px solid #4a3c2f;
+          border-radius: 20px;
+          background-color: #f8f3ed;
+          transition: color 0.15s ease;
+
+          &:hover {
+            background-color: #ab9984;
+          }
+
+          .Quote {
+            color: #4a3c2f;
+            font-family: SourM;
+            font-size: 12px;
+          }
+        }
+      }
+      .Quote-Img {
+        img {
+          width: 350px;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Quote-Wrapper {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    animation: fadeIn 1s ease-out;
+
+    .Quote-Inner {
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+      display: flex;
+      gap: 10px;
+      justify-content: space-evenly;
+
+      .Quote-Block {
+        text-align: center;
+        align-self: center;
+
+        .Quote-First-Statement {
+          font-family: SourM;
+          font-size: 30px;
+          margin-bottom: 15px;
+          color: #4a3c2f;
+        }
+
+        .Quote-Second-Statement {
+          font-family: SourM;
+          font-size: 20px;
+          margin-bottom: 15px;
+          color: #4a3c2f;
+        }
+
+        .Quote-button {
+          padding: 10px 30px;
+          border: 2px solid #4a3c2f;
+          border-radius: 20px;
+          background-color: #f8f3ed;
+          transition: color 0.15s ease;
+
+          &:hover {
+            background-color: #ab9984;
+          }
+
+          .Quote {
+            color: #4a3c2f;
+            font-family: SourM;
+            font-size: 12px;
+          }
+        }
+      }
+      .Quote-Img {
+        img {
+          width: 320px;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .Quote-Wrapper {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    animation: fadeIn 1s ease-out;
+
+    .Quote-Inner {
+      width: 100%;
+      max-width: 520px;
+      margin: 0 auto;
+      display: flex;
+      gap: 10px;
+      justify-content: space-evenly;
+
+      .Quote-Block {
+        text-align: center;
+        align-self: center;
+
+        .Quote-First-Statement {
+          font-family: SourM;
+          font-size: 20px;
+          margin-bottom: 10px;
+          color: #4a3c2f;
+        }
+
+        .Quote-Second-Statement {
+          font-family: SourM;
+          font-size: 17px;
+          margin-bottom: 10px;
+          color: #4a3c2f;
+        }
+
+        .Quote-button {
+          padding: 5px 8px;
+          border: 2px solid #4a3c2f;
+          border-radius: 20px;
+          background-color: #f8f3ed;
+          transition: color 0.15s ease;
+
+          &:hover {
+            background-color: #ab9984;
+          }
+
+          .Quote {
+            color: #4a3c2f;
+            font-family: SourM;
+            font-size: 12px;
+          }
+        }
+      }
+      .Quote-Img {
+        img {
+          width: 280px;
+          height: 100%;
         }
       }
     }

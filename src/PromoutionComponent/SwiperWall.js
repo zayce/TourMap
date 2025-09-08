@@ -19,7 +19,7 @@ export const Quote = () => {
             </button>
           </Link>
         </div>
-        <div>
+        <div className="Quote-Img">
           <img src={Baku} alt="Baku" />
         </div>
       </div>

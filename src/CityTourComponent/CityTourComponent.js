@@ -24,40 +24,48 @@ export const CityTourComponent = () => {
               <div className="CityTourComponent-Img">
                 <img src={e.img} className="CityTourComponent-card-image" />
               </div>
-              <div className="CityTourComponent-card-content">
-                <div className="CityTourComponent-Name">{t(e.name)}</div>
-                <ul className="CityTourComponent-Menu">
-                  <li className="CityTourComponent-Item">
-                    <img src={clock} className="CityTourComponent-clock" />
-                    <span className="CityTourComponent-time">
-                      {t(e.openClose)}
-                    </span>
-                  </li>
-                  <li className="CityTourComponent-Item">
-                    <span className="CityTourComponent-Word">
-                      Дата открытия:
-                    </span>
-                    <span className="CityTourComponent-time">
-                      {t(e.timeBuild)}
-                    </span>
-                  </li>
-                  <li className="CityTourComponent-Item">
-                    <span className="CityTourComponent-Word">Адрес:</span>
-                    <span className="CityTourComponent-time">{t(e.adres)}</span>
-                  </li>
-                  <li className="CityTourComponent-Item">
-                    <span className="CityTourComponent-Word">Город:</span>
-                    <span className="CityTourComponent-time">{t(e.city)}</span>
-                  </li>
-                  <li className="CityTourComponent-Item">
-                    <span className="CityTourComponent-Word">Тип:</span>
-                    <span className="CityTourComponent-time">{t(e.specialTranslate)}</span>
-                  </li>
-                </ul>
-                <Link to={`/desc/${e.id}`}>
-                  <button className="AllPlaces-Button">Подробнее</button>
-                </Link>
-              </div>
+              <Link to={`/desc/${e.id}`}>
+                <div className="CityTourComponent-card-content">
+                  <div className="CityTourComponent-Name">{t(e.name)}</div>
+                  <ul className="CityTourComponent-Menu">
+                    <li className="CityTourComponent-Item">
+                      <img src={clock} className="CityTourComponent-clock" />
+                      <span className="CityTourComponent-time">
+                        {t(e.openClose)}
+                      </span>
+                    </li>
+                    <li className="CityTourComponent-Item">
+                      <span className="CityTourComponent-Word">
+                        Дата открытия:
+                      </span>
+                      <span className="CityTourComponent-time">
+                        {t(e.timeBuild)}
+                      </span>
+                    </li>
+                    <li className="CityTourComponent-Item">
+                      <span className="CityTourComponent-Word">Адрес:</span>
+                      <span className="CityTourComponent-time">
+                        {t(e.adres)}
+                      </span>
+                    </li>
+                    <li className="CityTourComponent-Item">
+                      <span className="CityTourComponent-Word">Город:</span>
+                      <span className="CityTourComponent-time">
+                        {t(e.city)}
+                      </span>
+                    </li>
+                    <li className="CityTourComponent-Item">
+                      <span className="CityTourComponent-Word">Тип:</span>
+                      <span className="CityTourComponent-time">
+                        {t(e.specialTranslate)}
+                      </span>
+                    </li>
+                  </ul>
+                  <Link to={`/desc/${e.id}`}>
+                    <button className="AllPlaces-Button">Подробнее</button>
+                  </Link>
+                </div>
+              </Link>
             </div>
           ))}
         </div>

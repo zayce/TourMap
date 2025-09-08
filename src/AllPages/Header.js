@@ -91,9 +91,6 @@ export const Header = () => {
 
             <div className="Header-Butttons">
               <div className="Header-search">{/* SVG иконка поиска */}</div>
-              <div className="Header-like">
-                <img src={heart} className="heart" />
-              </div>
               <Link to={"/CardPayment"}>
                 <div className="Header-like">
                   <img src={Twit} className="heart" />

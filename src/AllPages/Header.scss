@@ -19,7 +19,8 @@
   padding-top: 10px;
   padding-bottom: 20px;
   .Inner {
-    width: 1480px;
+    width: 100%;
+    max-width: 1480px;
     margin: 0 auto;
     .Header-Top-Container {
       display: flex;
@@ -139,7 +140,7 @@
         padding: 0;
         display: flex;
         gap: 30px;
-        justify-content: center; /* Центрирование элементов */
+        justify-content: center;
         align-items: center;
 
         .menu-nav-item {
@@ -148,26 +149,23 @@
           font-weight: 600;
           color: #333;
           padding: 10px 15px;
-          border-radius: 30px; /* Скругленные углы */
+          border-radius: 30px;
           transition: background-color 0.3s ease, color 0.3s ease;
 
-          /* Эффект при наведении */
           &:hover {
             color: #ffffff;
-            background-color: #4a3c2f; /* Цвет фона при наведении */
+            background-color: #4a3c2f;
             cursor: pointer;
           }
 
-          /* Убираем стандартное подчеркивание на ссылках */
           a {
-            color: inherit; /* Наследуем цвет от родителя */
-            text-decoration: none; /* Убираем подчеркивание */
+            color: inherit;
+            text-decoration: none;
             transition: color 0.3s ease;
           }
 
-          /* Фокусировка на элементе */
           &:focus {
-            outline: 2px solid #00aced; /* Плавное выделение при фокусе */
+            outline: 2px solid #00aced;
           }
         }
       }
@@ -180,6 +178,874 @@
           .heart {
             width: 24px;
             height: 24px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .Wrapper {
+    background-color: #f8f3ed;
+    // background-color: #7C5E47;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    .Inner {
+      width: 100%;
+      max-width: 950px;
+      margin: 0 auto;
+      .Header-Top-Container {
+        display: flex;
+        justify-content: space-between;
+        .Header-left-container {
+          display: flex;
+          gap: 20px;
+          .menu-social {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 10px;
+
+            .item-social {
+              align-self: center;
+              margin-top: 2px;
+            }
+          }
+          .number-company {
+            font-size: 14px;
+            font-weight: 500;
+            font-family: "SourM";
+            align-self: center;
+            color: #2c3e50;
+            transition: font-size 0.9s ease, color 0.15s ease;
+            &:hover {
+              color: #00aced;
+              font-size: 16px;
+            }
+          }
+        }
+        .header-container-right {
+          .enter-buttons {
+            margin-right: 15px;
+            border: none;
+            background-color: #fbfaf8;
+            .enter {
+              color: #2c3e50;
+              font-size: 18px;
+              transition: color 0.3s ease;
+              &:hover {
+                color: #00aced;
+              }
+            }
+          }
+          .change-languages {
+            font-size: 15px;
+            padding: 7px;
+            border-radius: 7px;
+            border: none;
+            background-color: #fbfaf8;
+            color: #2c3e50;
+            font-family: "Arial", sans-serif;
+            font-family: "SourM";
+            cursor: pointer;
+            transition: all 0.3s ease;
+            .change-languages::-ms-expand {
+              display: none;
+              border: none;
+            }
+            .language {
+              padding: 7px;
+              font-size: 14px;
+              color: #2c3e50;
+              .language:hover {
+                color: #3498db;
+              }
+            }
+            .change-languages:hover {
+              border-color: #3498db;
+              border: none;
+              box-shadow: 0 2px 8px rgba(52, 152, 219, 0.3);
+            }
+            .change-languages:focus {
+              border: none;
+              outline: none;
+              border-color: #3498db;
+              box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+            }
+          }
+        }
+      }
+      .Header-Buttom {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0px;
+        a {
+          text-decoration: none;
+          color: inherit;
+        }
+        .Header-Logo {
+          display: flex;
+          gap: 8px;
+          .Header-logo-img {
+            .Logo {
+              width: 20px;
+              height: 20px;
+            }
+          }
+          .Header-Name {
+            font-size: 14px;
+            font-weight: 500;
+            font-family: "SourM";
+            align-self: center;
+            color: #2c3e50;
+            transition: font-size 0.9s ease, color 0.15s ease;
+            &:hover {
+              color: #00aced;
+              font-size: 15px;
+            }
+          }
+        }
+        .Header-menu-nav-items {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          display: flex;
+          gap: 15px;
+          justify-content: center;
+          align-items: center;
+
+          .menu-nav-item {
+            font-family: "PT Sans", sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            color: #333;
+            padding: 0px 13px;
+            border-radius: 30px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+
+            &:hover {
+              color: #ffffff;
+              background-color: #4a3c2f;
+              cursor: pointer;
+            }
+
+            a {
+              color: inherit;
+              text-decoration: none;
+              transition: color 0.3s ease;
+            }
+
+            &:focus {
+              outline: 2px solid #00aced;
+            }
+          }
+        }
+        .Header-Butttons {
+          display: flex;
+          gap: 8px;
+          align-items: center;
+          .Header-like {
+            align-self: center;
+            .heart {
+              width: 20px;
+              height: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .Wrapper {
+    background-color: #f8f3ed;
+    // background-color: #7C5E47;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    .Inner {
+      width: 100%;
+      max-width: 700px;
+      margin: 0 auto;
+      .Header-Top-Container {
+        display: flex;
+        justify-content: space-between;
+        .Header-left-container {
+          display: flex;
+          gap: 20px;
+          .menu-social {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 10px;
+
+            .item-social {
+              align-self: center;
+              margin-top: 2px;
+            }
+          }
+          .number-company {
+            font-size: 14px;
+            font-weight: 500;
+            font-family: "SourM";
+            align-self: center;
+            color: #2c3e50;
+            transition: font-size 0.9s ease, color 0.15s ease;
+            &:hover {
+              color: #00aced;
+              font-size: 16px;
+            }
+          }
+        }
+        .header-container-right {
+          .enter-buttons {
+            margin-right: 15px;
+            border: none;
+            background-color: #fbfaf8;
+            .enter {
+              color: #2c3e50;
+              font-size: 18px;
+              transition: color 0.3s ease;
+              &:hover {
+                color: #00aced;
+              }
+            }
+          }
+          .change-languages {
+            font-size: 15px;
+            padding: 7px;
+            border-radius: 7px;
+            border: none;
+            background-color: #fbfaf8;
+            color: #2c3e50;
+            font-family: "Arial", sans-serif;
+            font-family: "SourM";
+            cursor: pointer;
+            transition: all 0.3s ease;
+            .change-languages::-ms-expand {
+              display: none;
+              border: none;
+            }
+            .language {
+              padding: 7px;
+              font-size: 14px;
+              color: #2c3e50;
+              .language:hover {
+                color: #3498db;
+              }
+            }
+            .change-languages:hover {
+              border-color: #3498db;
+              border: none;
+              box-shadow: 0 2px 8px rgba(52, 152, 219, 0.3);
+            }
+            .change-languages:focus {
+              border: none;
+              outline: none;
+              border-color: #3498db;
+              box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+            }
+          }
+        }
+      }
+      .Header-Buttom {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0px;
+        a {
+          text-decoration: none;
+          color: inherit;
+        }
+        .Header-Logo {
+          display: flex;
+          gap: 8px;
+          .Header-logo-img {
+            .Logo {
+              width: 20px;
+              height: 20px;
+            }
+          }
+          .Header-Name {
+            font-size: 14px;
+            font-weight: 500;
+            font-family: "SourM";
+            align-self: center;
+            color: #2c3e50;
+            transition: font-size 0.9s ease, color 0.15s ease;
+            &:hover {
+              color: #00aced;
+              font-size: 15px;
+            }
+          }
+        }
+        .Header-menu-nav-items {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          display: flex;
+          gap: 0px;
+          justify-content: center;
+          align-items: center;
+
+          .menu-nav-item {
+            font-family: "PT Sans", sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            color: #333;
+            padding: 0px 13px;
+            border-radius: 30px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+
+            &:hover {
+              color: #ffffff;
+              background-color: #4a3c2f;
+              cursor: pointer;
+            }
+
+            a {
+              color: inherit;
+              text-decoration: none;
+              transition: color 0.3s ease;
+            }
+
+            &:focus {
+              outline: 2px solid #00aced;
+            }
+          }
+        }
+        .Header-Butttons {
+          display: flex;
+          gap: 8px;
+          align-items: center;
+          .Header-like {
+            align-self: center;
+            .heart {
+              width: 20px;
+              height: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Wrapper {
+    background-color: #f8f3ed;
+    // background-color: #7C5E47;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    .Inner {
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+      .Header-Top-Container {
+        display: flex;
+        justify-content: space-between;
+        .Header-left-container {
+          display: flex;
+          gap: 20px;
+          .menu-social {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 10px;
+
+            .item-social {
+              align-self: center;
+              margin-top: 2px;
+            }
+          }
+          .number-company {
+            font-size: 14px;
+            font-weight: 500;
+            font-family: "SourM";
+            align-self: center;
+            color: #2c3e50;
+            transition: font-size 0.9s ease, color 0.15s ease;
+            &:hover {
+              color: #00aced;
+              font-size: 16px;
+            }
+          }
+        }
+        .header-container-right {
+          .enter-buttons {
+            margin-right: 15px;
+            border: none;
+            background-color: #fbfaf8;
+            .enter {
+              color: #2c3e50;
+              font-size: 18px;
+              transition: color 0.3s ease;
+              &:hover {
+                color: #00aced;
+              }
+            }
+          }
+          .change-languages {
+            font-size: 15px;
+            padding: 7px;
+            border-radius: 7px;
+            border: none;
+            background-color: #fbfaf8;
+            color: #2c3e50;
+            font-family: "Arial", sans-serif;
+            font-family: "SourM";
+            cursor: pointer;
+            transition: all 0.3s ease;
+            .change-languages::-ms-expand {
+              display: none;
+              border: none;
+            }
+            .language {
+              padding: 7px;
+              font-size: 14px;
+              color: #2c3e50;
+              .language:hover {
+                color: #3498db;
+              }
+            }
+            .change-languages:hover {
+              border-color: #3498db;
+              border: none;
+              box-shadow: 0 2px 8px rgba(52, 152, 219, 0.3);
+            }
+            .change-languages:focus {
+              border: none;
+              outline: none;
+              border-color: #3498db;
+              box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+            }
+          }
+        }
+      }
+      .Header-Buttom {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0px;
+        a {
+          text-decoration: none;
+          color: inherit;
+        }
+        .Header-Logo {
+          display: flex;
+          gap: 8px;
+          .Header-logo-img {
+            .Logo {
+              width: 20px;
+              height: 20px;
+            }
+          }
+          .Header-Name {
+            font-size: 14px;
+            font-weight: 500;
+            font-family: "SourM";
+            align-self: center;
+            color: #2c3e50;
+            transition: font-size 0.9s ease, color 0.15s ease;
+            &:hover {
+              color: #00aced;
+              font-size: 15px;
+            }
+          }
+        }
+        .Header-menu-nav-items {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          display: flex;
+          gap: 0px;
+          justify-content: center;
+          align-items: center;
+
+          .menu-nav-item {
+            font-family: "PT Sans", sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            color: #333;
+            padding: 0px 8px;
+            border-radius: 30px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+
+            &:hover {
+              color: #ffffff;
+              background-color: #4a3c2f;
+              cursor: pointer;
+            }
+
+            a {
+              color: inherit;
+              text-decoration: none;
+              transition: color 0.3s ease;
+            }
+
+            &:focus {
+              outline: 2px solid #00aced;
+            }
+          }
+        }
+        .Header-Butttons {
+          display: flex;
+          gap: 8px;
+          align-items: center;
+          .Header-like {
+            align-self: center;
+            .heart {
+              width: 20px;
+              height: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Wrapper {
+    background-color: #f8f3ed;
+    // background-color: #7C5E47;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    .Inner {
+      width: 100%;
+      max-width: 540px;
+      margin: 0 auto;
+      .Header-Top-Container {
+        display: flex;
+        justify-content: space-between;
+        .Header-left-container {
+          display: flex;
+          gap: 18px;
+          .menu-social {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 10px;
+
+            .item-social {
+              align-self: center;
+              margin-top: 2px;
+            }
+          }
+          .number-company {
+            font-size: 14px;
+            font-weight: 500;
+            font-family: "SourM";
+            align-self: center;
+            color: #2c3e50;
+            transition: font-size 0.9s ease, color 0.15s ease;
+            &:hover {
+              color: #00aced;
+              font-size: 16px;
+            }
+          }
+        }
+        .header-container-right {
+          .enter-buttons {
+            margin-right: 15px;
+            border: none;
+            background-color: #fbfaf8;
+            .enter {
+              color: #2c3e50;
+              font-size: 18px;
+              transition: color 0.3s ease;
+              &:hover {
+                color: #00aced;
+              }
+            }
+          }
+          .change-languages {
+            font-size: 15px;
+            padding: 7px;
+            border-radius: 7px;
+            border: none;
+            background-color: #fbfaf8;
+            color: #2c3e50;
+            font-family: "Arial", sans-serif;
+            font-family: "SourM";
+            cursor: pointer;
+            transition: all 0.3s ease;
+            .change-languages::-ms-expand {
+              display: none;
+              border: none;
+            }
+            .language {
+              padding: 7px;
+              font-size: 14px;
+              color: #2c3e50;
+              .language:hover {
+                color: #3498db;
+              }
+            }
+            .change-languages:hover {
+              border-color: #3498db;
+              border: none;
+              box-shadow: 0 2px 8px rgba(52, 152, 219, 0.3);
+            }
+            .change-languages:focus {
+              border: none;
+              outline: none;
+              border-color: #3498db;
+              box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+            }
+          }
+        }
+      }
+      .Header-Buttom {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0px;
+        a {
+          text-decoration: none;
+          color: inherit;
+        }
+        .Header-Logo {
+          display: flex;
+          gap: 8px;
+          .Header-logo-img {
+            .Logo {
+              width: 20px;
+              height: 20px;
+            }
+          }
+          .Header-Name {
+            font-size: 13px;
+            font-weight: 500;
+            font-family: "SourM";
+            align-self: center;
+            color: #2c3e50;
+            transition: font-size 0.9s ease, color 0.15s ease;
+            &:hover {
+              color: #00aced;
+              font-size: 14px;
+            }
+          }
+        }
+        .Header-menu-nav-items {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          display: flex;
+          gap: 0px;
+          justify-content: center;
+          align-items: center;
+          .menu-nav-item {
+            font-family: "PT Sans", sans-serif;
+            font-size: 13px;
+            font-weight: 600;
+            color: #333;
+            padding: 0px 5px;
+            border-radius: 20px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+
+            &:hover {
+              color: #ffffff;
+              background-color: #4a3c2f;
+              cursor: pointer;
+            }
+
+            a {
+              color: inherit;
+              text-decoration: none;
+              transition: color 0.3s ease;
+            }
+
+            &:focus {
+              outline: 2px solid #00aced;
+            }
+          }
+        }
+        .Header-Butttons {
+          display: flex;
+          gap: 8px;
+          align-items: center;
+          .Header-like {
+            align-self: center;
+            .heart {
+              width: 20px;
+              height: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .Wrapper {
+    background-color: #f8f3ed;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    .Inner {
+      width: 100%;
+      max-width: 450px;
+      margin: 0 auto;
+      .Header-Top-Container {
+        display: flex;
+        justify-content: space-between;
+        .Header-left-container {
+          display: flex;
+          gap: 10px;
+          .menu-social {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 7px;
+
+            .item-social {
+              align-self: center;
+              margin-top: 2px;
+            }
+          }
+          .number-company {
+            font-size: 10px;
+            font-weight: 500;
+            font-family: "SourM";
+            align-self: center;
+            color: #2c3e50;
+            transition: font-size 0.9s ease, color 0.15s ease;
+            &:hover {
+              color: #00aced;
+              font-size: 10px;
+            }
+          }
+        }
+        .header-container-right {
+          .enter-buttons {
+            margin-right: 10px;
+            border: none;
+            background-color: #fbfaf8;
+            .enter {
+              color: #2c3e50;
+              font-size: 14px;
+              transition: color 0.3s ease;
+              &:hover {
+                color: #00aced;
+              }
+            }
+          }
+          .change-languages {
+            font-size: 12px;
+            padding: 4px;
+            border-radius: 7px;
+            border: none;
+            background-color: #fbfaf8;
+            color: #2c3e50;
+            font-family: "Arial", sans-serif;
+            font-family: "SourM";
+            cursor: pointer;
+            transition: all 0.3s ease;
+            .change-languages::-ms-expand {
+              display: none;
+              border: none;
+            }
+            .language {
+              padding: 4px;
+              font-size: 12px;
+              color: #2c3e50;
+              .language:hover {
+                color: #3498db;
+              }
+            }
+            .change-languages:hover {
+              border-color: #3498db;
+              border: none;
+              box-shadow: 0 2px 8px rgba(52, 152, 219, 0.3);
+            }
+            .change-languages:focus {
+              border: none;
+              outline: none;
+              border-color: #3498db;
+              box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+            }
+          }
+        }
+      }
+      .Header-Buttom {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px 0px;
+        a {
+          text-decoration: none;
+          color: inherit;
+        }
+        .Header-Logo {
+          display: flex;
+          gap: 4px;
+          .Header-logo-img {
+            .Logo {
+              width: 10px;
+              height: 10px;
+            }
+          }
+          .Header-Name {
+            font-size: 10px;
+            font-weight: 500;
+            font-family: "SourM";
+            align-self: center;
+            color: #2c3e50;
+            transition: font-size 0.9s ease, color 0.15s ease;
+            &:hover {
+              color: #00aced;
+              font-size: 10px;
+            }
+          }
+        }
+        .Header-menu-nav-items {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          display: flex;
+          gap: 0px;
+          justify-content: center;
+          align-items: center;
+
+          .menu-nav-item {
+            font-family: "PT Sans", sans-serif;
+            font-size: 10px;
+            font-weight: 600;
+            color: #333;
+            padding: 0px 8px;
+            border-radius: 30px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+
+            &:hover {
+              color: #ffffff;
+              background-color: #4a3c2f;
+              cursor: pointer;
+            }
+
+            a {
+              color: inherit;
+              text-decoration: none;
+              transition: color 0.3s ease;
+            }
+
+            &:focus {
+              outline: 2px solid #00aced;
+            }
+          }
+        }
+        .Header-Butttons {
+          display: flex;
+          gap: 5px;
+          align-items: center;
+          .Header-like {
+            align-self: center;
+            .heart {
+              width: 10px;
+              height: 10px;
+            }
           }
         }
       }

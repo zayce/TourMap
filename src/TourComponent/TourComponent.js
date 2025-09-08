@@ -10,13 +10,11 @@ import Shusha from "./asestsTour/Susa.png";
 import Gandja from "./asestsTour/Gandja.jpg";
 import Lankoran from "./asestsTour/lankoran.jpg";
 import Shamaha from "./asestsTour/Shamaxa.jpg";
-import Quba from "./asestsTour/Quba.png";
+
 import Xacmaz from "./asestsTour/Xacmaz.jpg";
-import Shaxdag from "./asestsTour/Shahdag.jpg";
 import Shemkir from "./asestsTour/sHEMKIR.jpg";
 import Ismailli from "./asestsTour/Ismailli.jpg";
 import Qobustan from "./asestsTour/Qobustan.png";
-import Seki from "./asestsTour/Seki.png";
 import Obb from "./asestsTour/Obb.jpg";
 
 import one from "./asestsTour/solo.png";

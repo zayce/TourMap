@@ -16,7 +16,8 @@
 .Ques-wrapper {
   margin-top: 40px;
   .Ques-inner {
-    width: 1480px;
+    width: 100%;
+    max-width: 1480px;
     margin: 0 auto;
     display: flex;
     gap: 30px;

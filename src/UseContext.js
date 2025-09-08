@@ -1753,7 +1753,7 @@ export const MyProvider = ({ children }) => {
       titleDescitemTopOpis: "yeddigozelTitleOpis",
       position: [40.9769265788676, 47.91395824901245],
     },
-    {
+    {           
       img: QizilBashNature,
       descImgMain: QizilbashMainNature,
       DescFirstHeydar: QizalbashDescNature,

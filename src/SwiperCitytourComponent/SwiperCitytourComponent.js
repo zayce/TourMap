@@ -22,7 +22,7 @@ export const SwiperCitytourComponent = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   const picture = [
-    { img: Baku, name: t("baku"), specialization: "Баку" },
+    // { img: Baku, name: t("baku"), specialization: "Баку" },
     { img: drovec, name: t("palaces"), specialization: "Дворцы" },
     { img: musei, name: t("museums"), specialization: "Музей" },
     { img: nature, name: t("nature"), specialization: "nature" },
@@ -31,7 +31,7 @@ export const SwiperCitytourComponent = () => {
       name: t("EntertainmentAndActiveRecreation"),
       specialization: "Attractive",
     },
-    { img: park, name: t("parks"), specialization: "Парки" },
+    // { img: park, name: t("parks"), specialization: "Парки" },
   ];
 
   useEffect(() => {
@@ -65,10 +65,11 @@ export const SwiperCitytourComponent = () => {
       </div>
       <div className="Swiper-container">
         <Swiper
-          slidesPerView={5}
-          spaceBetween={30}
+          slidesPerView={3}
+          spaceBetween={10}
           pagination={{ clickable: true }}
           modules={[Pagination]}
+          loop={true}
           className="mySwiper"
         >
           {picture.map((element, index) => (

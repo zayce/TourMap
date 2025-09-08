@@ -22,7 +22,7 @@ export const Home = () => {
           <WhyUs />
           <TourComponent />
           <SwiperCitytourComponent />
-          <ServicesProvided />
+          {/* <ServicesProvided /> */}
           <HomeMap />
           {/* <CalendarPicker /> */}
         </div>

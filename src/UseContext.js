@@ -240,6 +240,47 @@ import DalgaBeachMain from "./assets/images/DalgaBeachMain.png";
 import DalgaBeachDesc from "./assets/images/DalgaBeachDesc.png";
 import BowlingMain from "./assets/images/BowlingMain.png";
 import BowlingDesc from "./assets/images/BowlingDesc.png";
+import ZooPark from "./assets/images/ZooParkBakumain.png";
+import ZooParkMain from "./assets/images/ZooParkBaku.png";
+import ZooParkDesc from "./assets/images/ZooParkBakuDesc.png";
+import TofigStadion from "./assets/images/TofigStadion.png";
+import TofigStadionMain from "./assets/images/TofigStadionMain.png";
+import TofigStadionDesc from "./assets/images/TofigStadionDesc.png";
+import OlympicStadion from "./assets/images/Olimpikstadion.png";
+import OlympicStadionMain from "./assets/images/OlimpikstadionMain.png";
+import OlympicStadionDesc from "./assets/images/OlimpikstadionDesc.png";
+import HeydarAliyevArenaStadion from "./assets/images/HeydarAliyevStadion.png";
+import HeydarAliyevArenaStadionMain from "./assets/images/HeydarAliyevCenterMain.png";
+import HeydarAliyevArenaStadionDesc from "./assets/images/HeydarAliyevStadionDesc.png";
+import BakuCrystalHall from "./assets/images/BakuCrystalHall.png";
+import BakuCrystalHallMain from "./assets/images/BakuCrystalHallMain.png";
+import BakuCrystalHallDesc from "./assets/images/BakuCrystalHallDsc.png";
+import BakuSportsHall from "./assets/images/BakuSportsHall.png";
+import BakuSportsHallMain from "./assets/images/BakuSportsHallMain.png";
+import BakuSportsHallDesc from "./assets/images/BakuSportsHallDesc.png";
+import QizQalasi from "./assets/images/QizQalasi.png";
+import QizQalasiMain from "./assets/images/QizQalasiMain.png";
+import QizQalasiDesc from "./assets/images/QizQalasiDesc.png";
+import BakuYachtClub from "./assets/images/ShipClubBaku.png";
+import BakuYachtClubMain from "./assets/images/ShipClubBakuMain.png";
+import BakuYachtClubDesc from "./assets/images/ShipClubBakuMainDesc.png";
+import PhilharmonicGarden from "./assets/images/FelormoniyaBaku.png";
+import PhilharmonicGardenMain from "./assets/images/FelormoniyaBakuMain.png";
+import PhilharmonicGardenDesc from "./assets/images/FelormoniyaBakuDesc.png";
+import FlameTowers from "./assets/images/FlameTower.png";
+import FlameTowersMain from "./assets/images/FlameTowerMain.png";
+import FlameTowersDesc from "./assets/images/FlameTowerDesc.png";
+import GulustanPalace from "./assets/images/GulustanPalaces.png";
+import GulustanPalaceMain from "./assets/images/GulustanPalacesMain.png";
+import GulustanPalaceDesc from "./assets/images/GulustanPalacesDesc.png";
+import LittleVenice from "./assets/images/LittleVenice.png";
+import LittleVeniceMain from "./assets/images/LittleVeniceMain.png";
+import LittleVeniceDesc from "./assets/images/LittleVeniceDesc.png";
+import WarTrophiesPark from "./assets/images/WarTrophiesPark.png";
+import WarTrophiesParkMain from "./assets/images/WarTrophiesParkMain.png";
+import WarTrophiesParkDesc from "./assets/images/WarTrophiesParkDesc.png";
+
+
 
 import GS from "./ServicesProvidedComponent/asestss/GabalaSeason.png";
 import NS from "./ServicesProvidedComponent/asestss/NabranSeason.png";
@@ -1753,7 +1794,7 @@ export const MyProvider = ({ children }) => {
       titleDescitemTopOpis: "yeddigozelTitleOpis",
       position: [40.9769265788676, 47.91395824901245],
     },
-    {           
+    {
       img: QizilBashNature,
       descImgMain: QizilbashMainNature,
       DescFirstHeydar: QizalbashDescNature,
@@ -1896,6 +1937,7 @@ export const MyProvider = ({ children }) => {
       minihistory2: "diriBabaMinihistory2",
       titleDescitemTop: "diriBabaTitleDescTop",
       titleDescitemTopOpis: "diriBabaTitleDescOpis",
+      position: [40.53268767733051, 48.942051083664715],
     },
     {
       img: QobustanQorgu,
@@ -1918,6 +1960,7 @@ export const MyProvider = ({ children }) => {
       minihistory2: "qobustanMinihistory2",
       titleDescitemTop: "qobustanTitleDescTop",
       titleDescitemTopOpis: "qobustanTitleDescOpis",
+      position: [40.111552740767294, 49.37840755481291],
     },
     {
       img: QobustanVolcano,
@@ -1940,6 +1983,7 @@ export const MyProvider = ({ children }) => {
       minihistory2: "QobustanVolcanoMiniHistory2",
       titleDescitemTop: "QobustanVolcanoTitle",
       titleDescitemTopOpis: "QobustanVolcanoOpis",
+      position: [40.237438793414135, 49.12652471337856],
     },
     {
       img: ShekiWall,
@@ -1962,6 +2006,7 @@ export const MyProvider = ({ children }) => {
       minihistory2: "ShekiFortressMiniHistory2",
       titleDescitemTop: "ShekiFortressTitleDesc",
       titleDescitemTopOpis: "ShekiFortressTitleDescOpis",
+      position: [41.20379452981041, 47.19687165488616],
     },
     {
       img: SekiAlbani,
@@ -1984,6 +2029,7 @@ export const MyProvider = ({ children }) => {
       minihistory2: "KishTempleMiniHistory2",
       titleDescitemTop: "KishTempleTitleDesc",
       titleDescitemTopOpis: "KishTempleTitleDescOpis",
+      position: [41.249136101495004, 47.193104937670235],
     },
     {
       img: SekiXanMosque,
@@ -2006,6 +2052,7 @@ export const MyProvider = ({ children }) => {
       minihistory2: "ShekiKhanMosqueMiniHistory2",
       titleDescitemTop: "ShekiKhanMosqueTitleDesc",
       titleDescitemTopOpis: "ShekiKhanMosqueTitleDescOpis",
+      position: [41.202899642892994, 47.19209264136206],
     },
     {
       img: ShekiMehemmed,
@@ -2028,6 +2075,7 @@ export const MyProvider = ({ children }) => {
       minihistory2: "SheikhMuhammadMosqueMiniHistory2",
       titleDescitemTop: "SheikhMuhammadMosqueTitleDesc",
       titleDescitemTopOpis: "SheikhMuhammadMosqueTitleDescOpis",
+      position: [40.75627878500051, 48.389916526003226],
     },
     {
       img: AsmaKorpusu,
@@ -2050,6 +2098,7 @@ export const MyProvider = ({ children }) => {
       minihistory2: "HangingBridgeMiniHistory2",
       titleDescitemTop: "HangingBridgeTitleDesc",
       titleDescitemTopOpis: "HangingBridgeTitleDescOpis",
+      position: [41.21512948963729, 47.36751847648517],
     },
     {
       img: LakeSide,
@@ -2072,6 +2121,7 @@ export const MyProvider = ({ children }) => {
       minihistory2: "LakesideGardenMiniHistory2",
       titleDescitemTop: "LakesideGardenTitleDesc",
       titleDescitemTopOpis: "LakesideGardenTitleDescOpis",
+      position: [40.74684561228057, 48.261775470179096],
     },
     {
       img: Xanqizi,
@@ -2094,6 +2144,7 @@ export const MyProvider = ({ children }) => {
       minihistory2: "KhanGiziSpringMiniHistory2",
       titleDescitemTop: "KhanGiziSpringTitleDesc",
       titleDescitemTopOpis: "KhanGiziSpringTitleDescOpis",
+      position: [39.764353924620025, 46.75102986829353],
     },
     {
       img: SushaQala,
@@ -2116,6 +2167,7 @@ export const MyProvider = ({ children }) => {
       minihistory2: "ShushaFortressMiniHistory2",
       titleDescitemTop: "ShushaFortressTitleDesc",
       titleDescitemTopOpis: "ShushaFortressTitleDescOpis",
+      position: [39.765883215474034, 46.750247710622865],
     },
     {
       img: AlmanCirch,
@@ -2138,6 +2190,7 @@ export const MyProvider = ({ children }) => {
       minihistory2: "ShamkirLutheranChurchMiniHistory2",
       titleDescitemTop: "ShamkirLutheranChurchTitleDesc",
       titleDescitemTopOpis: "ShamkirLutheranChurchTitleDescOpis",
+      position: [40.89686894766994, 46.045607822172705],
     },
     {
       img: YeddiQunbez,
@@ -2160,6 +2213,7 @@ export const MyProvider = ({ children }) => {
       minihistory2: "YeddiGunbezMiniHistory2",
       titleDescitemTop: "YeddiGunbezTitleDesc",
       titleDescitemTopOpis: "YeddiGunbezTitleDescOpis",
+      position: [40.620336574078415, 48.636215243192225],
     },
     {
       img: Pirqulu,
@@ -2182,6 +2236,7 @@ export const MyProvider = ({ children }) => {
       minihistory2: "PirquluQoruguMiniHistory2",
       titleDescitemTop: "PirquluQoruguTitleDesc",
       titleDescitemTopOpis: "PirquluQoruguTitleDescOpis",
+      position: [40.783643975301764, 48.51155255484585],
     },
     {
       img: ShamkirCastle,
@@ -2204,6 +2259,306 @@ export const MyProvider = ({ children }) => {
       minihistory2: "ShamkirCastleMiniHistory2",
       titleDescitemTop: "ShamkirCastleTitleDesc",
       titleDescitemTopOpis: "ShamkirCastleTitleDescOpis",
+      position: [40.83526406735779, 46.048628869228516],
+    },
+    {
+      img: ZooPark,
+      descImgMain: ZooParkMain,
+      DescFirstHeydar: ZooParkDesc,
+      id: 87,
+      special: "attractive",
+      specialization: "Attractive",
+      name: "BakuZooName",
+      openClose: "BakuZooOpenClose",
+      timeBuild: "BakuZooTimeBuild",
+      adres: "BakuZooAdres",
+      cost: "BakuZooCost",
+      rooms: "BakuZooRooms",
+      sayt: "BakuZooSayt",
+      category: "Bakı",
+      city: "baku",
+      specialTranslate: "Entertainment",
+      minihistory: "BakuZooMiniHistory1",
+      minihistory2: "BakuZooMiniHistory2",
+      titleDescitemTop: "BakuZooTitleDesc",
+      titleDescitemTopOpis: "BakuZooTitleDescOpis",
+      position: [40.392141055893696, 49.84909528365926],
+    },
+    {
+      img: TofigStadion,
+      descImgMain: TofigStadionMain,
+      DescFirstHeydar: TofigStadionDesc,
+      id: 88,
+      special: "attractive",
+      specialization: "Attractive",
+      name: "TofiqStadiumName",
+      openClose: "TofiqStadiumOpenClose",
+      timeBuild: "TofiqStadiumTimeBuild",
+      adres: "TofiqStadiumAdres",
+      cost: "TofiqStadiumCost",
+      rooms: "TofiqStadiumRooms",
+      sayt: "TofiqStadiumSayt",
+      category: "Bakı",
+      city: "baku",
+      specialTranslate: "Entertainment",
+      minihistory: "TofiqStadiumMiniHistory1",
+      minihistory2: "TofiqStadiumMiniHistory2",
+      titleDescitemTop: "TofiqStadiumTitleDesc",
+      titleDescitemTopOpis: "TofiqStadiumTitleDescOpis",
+      position: [40.39751319829478, 49.852371381812496],
+    },
+    {
+      img: OlympicStadion,
+      descImgMain: OlympicStadionMain,
+      DescFirstHeydar: OlympicStadionDesc,
+      id: 89,
+      special: "attractive",
+      specialization: "Attractive",
+      name: "BakuOlympicStadiumName",
+      openClose: "BakuOlympicStadiumOpenClose",
+      timeBuild: "BakuOlympicStadiumTimeBuild",
+      adres: "BakuOlympicStadiumAdres",
+      cost: "BakuOlympicStadiumCost",
+      rooms: "BakuOlympicStadiumRooms",
+      sayt: "BakuOlympicStadiumSayt",
+      category: "Bakı",
+      city: "baku",
+      specialTranslate: "Entertainment",
+      minihistory: "BakuOlympicStadiumMiniHistory1",
+      minihistory2: "BakuOlympicStadiumMiniHistory2",
+      titleDescitemTop: "BakuOlympicStadiumTitleDesc",
+      titleDescitemTopOpis: "BakuOlympicStadiumTitleDescOpis",
+      position: [40.430226436944736, 49.91937968623389],
+    },
+    {
+      img: HeydarAliyevArenaStadion,
+      descImgMain: HeydarAliyevArenaStadionMain,
+      DescFirstHeydar: HeydarAliyevArenaStadionDesc,
+      id: 90,
+      special: "attractive",
+      specialization: "Attractive",
+      name: "HeydarAliyevArenaName",
+      openClose: "HeydarAliyevArenaOpenClose",
+      timeBuild: "HeydarAliyevArenaTimeBuild",
+      adres: "HeydarAliyevArenaAdres",
+      cost: "HeydarAliyevArenaCost",
+      rooms: "HeydarAliyevArenaRooms",
+      sayt: "HeydarAliyevArenaSayt",
+      category: "Bakı",
+      city: "baku",
+      specialTranslate: "Entertainment",
+      minihistory: "HeydarAliyevArenaMiniHistory1",
+      minihistory2: "HeydarAliyevArenaMiniHistory2",
+      titleDescitemTop: "HeydarAliyevArenaTitleDesc",
+      titleDescitemTopOpis: "HeydarAliyevArenaTitleDescOpis",
+      position: [40.391964154202995, 49.825246345925784],
+    },
+    {
+      img: BakuCrystalHall,
+      descImgMain: BakuCrystalHallMain,
+      DescFirstHeydar: BakuCrystalHallDesc,
+      id: 91,
+      special: "attractive",
+      specialization: "Attractive",
+      name: "BakuCrystalHallName",
+      openClose: "BakuCrystalHallOpenClose",
+      timeBuild: "BakuCrystalHallTimeBuild",
+      adres: "BakuCrystalHallAdres",
+      cost: "BakuCrystalHallCost",
+      rooms: "BakuCrystalHallRooms",
+      sayt: "BakuCrystalHallSayt",
+      category: "Bakı",
+      city: "baku",
+      specialTranslate: "Entertainment",
+      minihistory: "BakuCrystalHallMiniHistory1",
+      minihistory2: "BakuCrystalHallMiniHistory2",
+      titleDescitemTop: "BakuCrystalHallTitleDesc",
+      titleDescitemTopOpis: "BakuCrystalHallTitleDescOpis",
+      position: [40.34431920634967, 49.85029422968052],
+    },
+    {
+      img: BakuSportsHall,
+      descImgMain: BakuSportsHallMain,
+      DescFirstHeydar: BakuSportsHallDesc,
+      id: 92,
+      special: "attractive",
+      specialization: "Attractive",
+      name: "BakuSportsHallName",
+      openClose: "BakuSportsHallOpenClose",
+      timeBuild: "BakuSportsHallTimeBuild",
+      adres: "BakuSportsHallAdres",
+      cost: "BakuSportsHallCost",
+      rooms: "BakuSportsHallRooms",
+      sayt: "BakuSportsHallSayt",
+      category: "Bakı",
+      city: "baku",
+      specialTranslate: "Entertainment",
+      minihistory: "BakuSportsHallMiniHistory1",
+      minihistory2: "BakuSportsHallMiniHistory2",
+      titleDescitemTop: "BakuSportsHallTitleDesc",
+      titleDescitemTopOpis: "BakuSportsHallTitleDescOpis",
+      position: [40.35886834853206, 49.83495281065738],
+    },
+    {
+      img: QizQalasi,
+      descImgMain: QizQalasiMain,
+      DescFirstHeydar: QizQalasiDesc,
+      id: 93,
+      special: "Palaces",
+      specialization: "Дворцы",
+      name: "QizQalasiName",
+      openClose: "QizQalasiOpenClose",
+      timeBuild: "QizQalasiTimeBuild",
+      adres: "QizQalasiAdres",
+      cost: "QizQalasiCost",
+      rooms: "QizQalasiRooms",
+      sayt: "-",
+      category: "Bakı",
+      city: "baku",
+      specialTranslate: "palaces",
+      minihistory: "QizQalasiMiniHistory1",
+      minihistory2: "QizQalasiMiniHistory2",
+      titleDescitemTop: "QizQalasiTitleDesc",
+      titleDescitemTopOpis: "QizQalasiTitleDescOpis",
+      position: [40.36628644015691, 49.83716026647034],
+    },
+    {
+      img: BakuYachtClub,
+      descImgMain: BakuYachtClubMain,
+      DescFirstHeydar: BakuYachtClubDesc,
+      id: 94,
+      special: "attractive",
+      specialization: "Attractive",
+      name: "BakuYachtClubName",
+      openClose: "BakuYachtClubOpenClose",
+      timeBuild: "BakuYachtClubTimeBuild",
+      adres: "BakuYachtClubAdres",
+      cost: "BakuYachtClubCost",
+      rooms: "BakuYachtClubRooms",
+      sayt: "BakuYachtClubSayt",
+      category: "Bakı",
+      city: "baku",
+      specialTranslate: "Entertainment",
+      minihistory: "BakuYachtClubMiniHistory1",
+      minihistory2: "BakuYachtClubMiniHistory2",
+      titleDescitemTop: "BakuYachtClubTitleDesc",
+      titleDescitemTopOpis: "BakuYachtClubTitleDescOpis",
+      position: [40.36212878491072, 49.840247496285144],
+    },
+    {
+      img: PhilharmonicGarden,
+      descImgMain: PhilharmonicGardenMain,
+      DescFirstHeydar: PhilharmonicGardenDesc,
+      id: 95,
+      special: "Palaces",
+      specialization: "Дворцы",
+      name: "PhilharmonicGardenName",
+      openClose: "PhilharmonicGardenOpenClose",
+      timeBuild: "PhilharmonicGardenTimeBuild",
+      adres: "PhilharmonicGardenAdres",
+      cost: "PhilharmonicGardenCost",
+      rooms: "PhilharmonicGardenRooms",
+      sayt: "-",
+      category: "Bakı",
+      city: "baku",
+      specialTranslate: "palaces",
+      minihistory: "PhilharmonicGardenMiniHistory1",
+      minihistory2: "PhilharmonicGardenMiniHistory2",
+      titleDescitemTop: "PhilharmonicGardenTitleDesc",
+      titleDescitemTopOpis: "PhilharmonicGardenTitleDescOpis",
+      position: [40.36342632925949, 49.83396557640743],
+    },
+    {
+      img: FlameTowers,
+      descImgMain: FlameTowersMain,
+      DescFirstHeydar: FlameTowersDesc,
+      id: 96,
+      special: "Palaces",
+      specialization: "Дворцы",
+      name: "FlameTowersName",
+      openClose: "FlameTowersOpenClose",
+      timeBuild: "FlameTowersTimeBuild",
+      adres: "FlameTowersAdres",
+      cost: "FlameTowersCost",
+      rooms: "FlameTowersRooms",
+      sayt: "-",
+      category: "Bakı",
+      city: "baku",
+      specialTranslate: "palaces",
+      minihistory: "FlameTowersMiniHistory1",
+      minihistory2: "FlameTowersMiniHistory2",
+      titleDescitemTop: "FlameTowersTitleDesc",
+      titleDescitemTopOpis: "FlameTowersTitleDescOpis",
+      position: [40.359669813739494, 49.826757566426984],
+    },
+    {
+      img: GulustanPalace,
+      descImgMain: GulustanPalaceMain,
+      DescFirstHeydar: GulustanPalaceDesc,
+      id: 97,
+      special: "Palaces",
+      specialization: "Дворцы",
+      name: "GulustanPalaceName",
+      openClose: "GulustanPalaceOpenClose",
+      timeBuild: "GulustanPalaceTimeBuild",
+      adres: "GulustanPalaceAdres",
+      cost: "GulustanPalaceCost",
+      rooms: "GulustanPalaceRooms",
+      sayt: "-",
+      category: "Bakı",
+      city: "baku",
+      specialTranslate: "palaces",
+      minihistory: "GulustanPalaceMiniHistory1",
+      minihistory2: "GulustanPalaceMiniHistory2",
+      titleDescitemTop: "GulustanPalaceTitleDesc",
+      titleDescitemTopOpis: "GulustanPalaceTitleDescOpis",
+      position: [40.35874173764141, 49.83163838166029],
+    },
+    {
+      img: LittleVenice,
+      descImgMain: LittleVeniceMain,
+      DescFirstHeydar: LittleVeniceDesc,
+      id: 98,
+      special: "attractive",
+      specialization: "Attractive",
+      name: "LittleVeniceName",
+      openClose: "LittleVeniceOpenClose",
+      timeBuild: "LittleVeniceTimeBuild",
+      adres: "LittleVeniceAdres",
+      cost: "LittleVeniceCost",
+      rooms: "LittleVeniceRooms",
+      sayt: "LittleVeniceSayt",
+      category: "Bakı",
+      city: "baku",
+      specialTranslate: "Entertainment",
+      minihistory: "LittleVeniceMiniHistory1",
+      minihistory2: "LittleVeniceMiniHistory2",
+      titleDescitemTop: "LittleVeniceTitleDesc",
+      titleDescitemTopOpis: "LittleVeniceTitleDescOpis",
+      position: [40.361216578915716, 49.83584255890647],
+    },
+    {
+      img: WarTrophiesPark,
+      descImgMain: WarTrophiesParkMain,
+      DescFirstHeydar: WarTrophiesParkDesc,
+      id: 99,
+      special: "museums",
+      name: "WarTrophiesParkName",
+      openClose: "WarTrophiesParkOpenClose",
+      timeBuild: "WarTrophiesParkTimeBuild",
+      adres: "WarTrophiesParkAdres",
+      cost: "WarTrophiesParkCost",
+      rooms: "WarTrophiesParkRooms",
+      sayt: "saytYarat",
+      category: "Bakı",
+      city: "baku",
+      specialTranslate: "museums",
+      specialization: "Музей",
+      minihistory: "WarTrophiesParkMiniHistory1",
+      minihistory2: "WarTrophiesParkMiniHistory2",
+      titleDescitemTop: "WarTrophiesParkTitleDesc",
+      titleDescitemTopOpis: "WarTrophiesParkTitleDescOpis",
+      position: [40.37645892318365, 49.874246141959915],
     },
   ];
 

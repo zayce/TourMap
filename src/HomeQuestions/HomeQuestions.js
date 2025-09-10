@@ -12,7 +12,7 @@ export const HomeQuestions = () => {
       <div className="Ques-wrapper">
         <div className="Ques-inner">
           <Questions />
-          <ReviewComponent />
+          {/* <ReviewComponent /> */}
         </div>
       </div>
     </>

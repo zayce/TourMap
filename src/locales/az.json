@@ -170,6 +170,7 @@
   "titleDescitemTopYarat": "Yaradıcılıq və müasir incəsənət məkanı",
   "titleDescitemTopOpisYarat": "YARAT yalnız müasir incəsənət qalereyası deyil, həm də rəssamların, yaradıcıların və tamaşaçıların birləşdiyi mədəni mərkəzdir. Burada incəsənət canlı dialoqa çevrilir, baxışları dəyişməyə və duyğuları oyatmaqa qadirdir. YARAT gənclərə sərgilər, ustad dərsləri və yaradıcılıq imkanları təqdim edir. Burada həmişə azadlıq və axtarış atmosferi hökm sürür.",
 
+  "costfireTempleAteshgah": "böyüklər 4 AZN, tələbələr 2 AZN, şagirdlər 0.60 AZN",
   "fireTempleAteshgah": "Atəşgah – Od məbədi",
   "openCloseFireTempleAteshgah": "Çər-Bz 11:00–21:00",
   "timeBuildFireTempleAteshgah": "XVII–XVIII əsrlər (müasir muzey 1975-ci ildə açılıb)",
@@ -1277,7 +1278,7 @@
   "LittleVeniceTitleDesc": "Bakının qəlbində romantik kanallar",
   "LittleVeniceTitleDescOpis": "«Kiçik Venesiya» Bakı Bulvarının unikal əyləncə kompleksidir. Qondola gəzintiləri, körpülər və kanalların kənarında restoranlar Xəzər sahilində Venesiya ab-havası yaradır. Kanalların sahillərində kiçik kafelər və parklar açılır, onlar boyunca kef gondolları gedir, axşamlar ərazi işıqlanırdı. Sovet dövründə o, zarafatla “Bakı Venesiya” adlanan uşaq əyləncə kanalları sistemi kimi də tanınırdı. Axşam saatlarına qədər kanalları boyunca motorlu qayıqların üzdüyü Bakı Venesiya bakılılar arasında çox məşhur idi. Onun gölməçə və kanallar sistemi bulvara çoxlu ziyarətçi cəlb edirdi.",
 
-    "WarTrophiesParkName": "Hərbi Qənimətlər Parkı",
+  "WarTrophiesParkName": "Hərbi Qənimətlər Parkı",
   "WarTrophiesParkOpenClose": "Çərşənbə axşamı–Bazar: 10:00–18:00, B.e.: bağlıdır",
   "WarTrophiesParkTimeBuild": "12 aprel 2021-ci ildə açılıb",
   "WarTrophiesParkAdres": "Xətai rayonu, Bakı, Azərbaycan",
@@ -1289,5 +1290,4 @@
   "WarTrophiesParkMiniHistory2": "Parkda tanklar, artilleriya, dəbilqələr, xəritələr və müxtəlif eksponatlar sərgilənir. O, həm muzey, həm də qələbənin simvolik abidəsi kimi fəaliyyət göstərir.",
   "WarTrophiesParkTitleDesc": "Açıq havada hərbi muzey",
   "WarTrophiesParkTitleDescOpis": "Hərbi Qənimətlər Parkında II Qarabağ müharibəsinə aid 300-dən çox eksponat — zirehli texnika, silahlar və hərbi artefaktlar nümayiş etdirilir. Bu məkan həm maarifləndirici, həm də Azərbaycanın yeni tarixini xatırladan simvolik bir yerdir. V parke predstavlenы maketы oboronitelnoy sistemi, və vstavleno bolee 300 eksponatov, 150-ə qədər tyajeloy texniki. Sredi eksponatov imeyutsya tanki, bayevыe maşını, artilleriyskie ustanovki, zenitno-raketnıe kompleksləri, strelkovoe orjie, transportnıe sredstva. В частности, в парке представлены tanki T-72, legkobronirovannıe tyagachi MT-LB, zenitnıe raketnıe kompleksləri «Osa» və «Kub». Также в парке выставлены обломки ракет оперативно-тактических ракетных комплексов (OTRK) «İskander», kotorыe posoobscheniyu agentstva Aerbaydjanskoy Republici for razminirovansiya (ANAMA), by the arritoria of Dağlıq Qarabağ. Pomimo etoho bu parke vossodana zagraditelnaya sistem Qarabahe, kotoraya sostoyit from 10 rubejey, vklyuchayuschix beton mühəndisləri soorujensiyası, protivotankovыe rvı və eji, torpaq armaturları, tuneli, okopы. В парке, помимо всего прочего, выставлены сотни шлемов армянских солдат, və üstəlik, voskovыe manekeny armyanskix voennıx. Насчёт касок было дано пояснение, что они брошены отступающими армянскими военными. Скамейки в парке сколочены из захваченных снарядных ящиков, элементы освещения отлиты из переплавленных снарядов, a urny — из гильз танковых снарядов."
-
 }

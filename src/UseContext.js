@@ -280,8 +280,6 @@ import WarTrophiesPark from "./assets/images/WarTrophiesPark.png";
 import WarTrophiesParkMain from "./assets/images/WarTrophiesParkMain.png";
 import WarTrophiesParkDesc from "./assets/images/WarTrophiesParkDesc.png";
 
-
-
 import GS from "./ServicesProvidedComponent/asestss/GabalaSeason.png";
 import NS from "./ServicesProvidedComponent/asestss/NabranSeason.png";
 import SHS from "./ServicesProvidedComponent/asestss/ShekiSeason.png";
@@ -429,8 +427,8 @@ export const MyProvider = ({ children }) => {
     {
       img: FireXram,
       descImgMain: AteshgaxMain,
-      DescFirstHeydar: AteshgaxDesc,
-      DescSecondImg: AteshgaxDesc2,
+      DescFirstHeydar: AteshgaxDesc2,
+      DescSecondImg: AteshgaxDesc,
       id: 6,
       name: "fireTempleAteshgah",
       openClose: "openCloseFireTempleAteshgah",
@@ -438,6 +436,7 @@ export const MyProvider = ({ children }) => {
       adres: "adresFireTempleAteshgah",
       rooms: "roomsFireTempleAteshgah",
       sayt: "saytFireTempleAteshgah",
+      cost: "costfireTempleAteshgah",
       category: "Bakı",
       city: "baku",
       specialTranslate: "museums",

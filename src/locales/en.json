@@ -1,4 +1,5 @@
 {
+  "Date": "Opening date",
   "aboutUs": "About Us",
   "guarantees": "Guarantees and Returns",
   "delivery": "Delivery",
@@ -168,9 +169,9 @@
   "minihistoryYarat1": "YARAT is the heart of contemporary art in Azerbaijan. A space where ideas, visual manifestos, and the culture of the future are born.",
   "minihistoryYarat2": "The project has become not just a gallery, but a magnet for creative people. It hosts exhibitions of local and international artists, film screenings, and meetings.",
   "titleDescitemTopYarat": "A Territory of Creativity and Contemporary Art",
- "titleDescitemTopOpisYarat": "YARAT is more than a contemporary art gallery — it is a cultural hub where artists, creators, and audiences meet. Here, art becomes a living dialogue that changes perspectives and stirs emotions. The space offers exhibitions, workshops, and lectures, giving youth a chance not only to observe but also to create. An atmosphere of freedom and exploration always prevails here.",
-  
- "costfireTempleAteshgah": "Adults: 4 AZN, students: 2 AZN, pupils: 0.60 AZN",
+  "titleDescitemTopOpisYarat": "YARAT is more than a contemporary art gallery — it is a cultural hub where artists, creators, and audiences meet. Here, art becomes a living dialogue that changes perspectives and stirs emotions. The space offers exhibitions, workshops, and lectures, giving youth a chance not only to observe but also to create. An atmosphere of freedom and exploration always prevails here.",
+
+  "costfireTempleAteshgah": "Adults: 4 AZN, students: 2 AZN, pupils: 0.60 AZN",
   "fireTempleAteshgah": "Ateshgah – Fire Temple",
   "openCloseFireTempleAteshgah": "Tue-Sun 11:00–21:00",
   "timeBuildFireTempleAteshgah": "17th–18th centuries (museum opened in 1975)",
@@ -1276,5 +1277,7 @@
   "WarTrophiesParkMiniHistory1": "The War Trophies Park in Baku opened in 2021 and showcases military equipment and items captured during the Second Karabakh War.",
   "WarTrophiesParkMiniHistory2": "The park includes tanks, artillery, helmets, maps, and a variety of exhibitions, serving both as a museum and as a memorial of the victory.",
   "WarTrophiesParkTitleDesc": "A military museum under the open sky",
-  "WarTrophiesParkTitleDescOpis": "The War Trophies Park presents more than 300 exhibits from the Second Karabakh War, including armored vehicles, weapons, and military artifacts. It is both an educational space and a symbolic reminder of Azerbaijan’s recent history.The park features models of the defense system and more than 300 exhibits, including up to 150 units of heavy equipment. The exhibits include tanks, combat vehicles, artillery mounts, anti-aircraft missile systems, small arms, and vehicles. In particular, the park features T-72 tanks, MT-LB light armored tractors, and Osa and Kub anti-aircraft missile systems. The park also features fragments of Iskander operational-tactical missile systems, which, according to the Azerbaijan Republic Agency for Mine Action (ANAMA), were discovered in the territory of Nagorno-Karabakh. In addition, the park recreates the enemy's barrier system in Karabakh, which consists of 10 lines, including concrete engineering structures, anti-tank ditches and hedgehogs, mined areas, tunnels, trenches, etc. In the park, among other things, hundreds of helmets of Armenian soldiers are on display, as well as wax dummies of Armenian soldiers. As for the helmets, an explanation was given that they were abandoned by retreating Armenian soldiers. The benches in the park are knocked together from captured shell boxes, lighting elements are cast from melted shells, and urns are made from tank shell casings."
+  "WarTrophiesParkTitleDescOpis": "The War Trophies Park presents more than 300 exhibits from the Second Karabakh War, including armored vehicles, weapons, and military artifacts. It is both an educational space and a symbolic reminder of Azerbaijan’s recent history.The park features models of the defense system and more than 300 exhibits, including up to 150 units of heavy equipment. The exhibits include tanks, combat vehicles, artillery mounts, anti-aircraft missile systems, small arms, and vehicles. In particular, the park features T-72 tanks, MT-LB light armored tractors, and Osa and Kub anti-aircraft missile systems. The park also features fragments of Iskander operational-tactical missile systems, which, according to the Azerbaijan Republic Agency for Mine Action (ANAMA), were discovered in the territory of Nagorno-Karabakh. In addition, the park recreates the enemy's barrier system in Karabakh, which consists of 10 lines, including concrete engineering structures, anti-tank ditches and hedgehogs, mined areas, tunnels, trenches, etc. In the park, among other things, hundreds of helmets of Armenian soldiers are on display, as well as wax dummies of Armenian soldiers. As for the helmets, an explanation was given that they were abandoned by retreating Armenian soldiers. The benches in the park are knocked together from captured shell boxes, lighting elements are cast from melted shells, and urns are made from tank shell casings.",
+
+  "aboutCenter": "About the center"
 }

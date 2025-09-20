@@ -35,29 +35,29 @@ export const SelectedObject = () => {
                     </li>
                     <li className="Selected-Object-Item">
                       <span className="Selected-Object-Word">
-                        Дата открытия:
+                         Açılış tarixi:
                       </span>
                       <span className="Selected-Object-time">
                         {t(e.timeBuild)}
                       </span>
                     </li>
                     <li className="Selected-Object-Item">
-                      <span className="Selected-Object-Word">Адрес:</span>
+                      <span className="Selected-Object-Word">Ünvan:</span>
                       <span className="Selected-Object-time">{t(e.adres)}</span>
                     </li>
                     <li className="Selected-Object-Item">
-                      <span className="Selected-Object-Word">Город:</span>
+                      <span className="Selected-Object-Word">Şəhər:</span>
                       <span className="Selected-Object-time">{t(e.city)}</span>
                     </li>
                     <li className="Selected-Object-Item">
-                      <span className="Selected-Object-Word">Тип:</span>
+                      <span className="Selected-Object-Word">Növ:</span>
                       <span className="Selected-Object-time">
                         {t(e.special)}
                       </span>
                     </li>
                   </ul>
                   <Link to={`/desc/${e.id}`}>
-                    <button className="AllPlaces-Button">Подробнее</button>
+                    <button className="AllPlaces-Button">Daha ətraflı oxuyun</button>
                   </Link>
                 </div>
               </div>

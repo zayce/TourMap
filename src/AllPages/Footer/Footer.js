@@ -5,70 +5,66 @@ import FB from "../Footer/Fc.png";
 import Visa from "../Footer/Visa.png";
 import Mc from "../Footer/MC.png";
 import Mir from "../Footer/ghj.png";
+import { useTranslation } from "react-i18next";
 
 import "../Footer/Footer.scss";
 import { Link } from "react-router-dom";
 
 export const Footer = () => {
+  const { t, i18n } = useTranslation();
   return (
-    <div className="Footer-wrapper">
+    <footer className="Footer-wrapper">
       <div className="Footer-inner">
-        <div className="Footersss">
-          <div className="Footer-Imgs-block">
-            <Link to={"/"}>
-              <div className="Footer-Logo">
-                <div className="Footer-logo-img">
-                  <img src={Logo} className="Logo" />
-                </div>
-                <div className="Footer-Name">TourMap</div>
-              </div>
-            </Link>
-            <div className="Footer-Social-text">Мы в социальных сетях</div>
+        {/* Левая часть */}
+        <div className="Footer-left">
+          <Link to={"/"} className="Footer-Logo">
+            <img src={Logo} className="Logo" alt="TourMap Logo" />
+            <span className="Footer-Name">TourMap</span>
+          </Link>
+
+          <div className="Footer-Social">
+            <span className="Footer-Social-text">Мы в соцсетях:</span>
             <div className="Footer-Social-Imgs">
-              <img src={Vk} alt="VK" />
-              <img src={Inst} alt="Instagram" />
-              <img src={FB} alt="Facebook" />
-            </div>
-            <div className="Footer-adds">Мы принимаем</div>
-            <div className="footer-Cards">
-              <img src={Visa} alt="Visa" />
-              <img src={Mc} alt="MasterCard" />
-              <img src={Mir} alt="Mir" />
+              <a href="https://vk.com" target="_blank" rel="noreferrer">
+                <img src={Vk} alt="VK" />
+              </a>
+              <a href="https://instagram.com" target="_blank" rel="noreferrer">
+                <img src={Inst} alt="Instagram" />
+              </a>
+              <a href="https://facebook.com" target="_blank" rel="noreferrer">
+                <img src={FB} alt="Facebook" />
+              </a>
             </div>
           </div>
-          <div className="Menus">
-            <ul className="Footer-Menu">
-              <li className="Menu-Footer-header-item">ПОКУПАТЕЛЮ</li>
-              <li className="Menu-Footer-items">
-                <Link to={"/Delivery"}>Доставка</Link>
-              </li>
-              <li className="Menu-Footer-items">
-                <Link to={"/Payment"}>Оплата</Link>
-              </li>
-              <li className="Menu-Footer-items">
-                <Link to={"/Garant"}>Гарантии и возврат</Link>
-              </li>
-              <li className="Menu-Footer-items">Производители</li>
-              <li className="Menu-Footer-items">Статьи</li>
-            </ul>
-            <ul className="Footer-Menu">
-              <li className="Menu-Footer-header-item">КОМПАНИЯ</li>
-              <li className="Menu-Footer-items">
-                <Link to={"/AboutUss"}>О нас</Link>
-              </li>
-              <li className="Menu-Footer-items">Контакты</li>
-              <li className="Menu-Footer-items">Пользовательское соглашение</li>
-              <li className="Menu-Footer-items">Политика конфиденциальности</li>
-              <li className="Menu-Footer-items">Обратная связь</li>
-            </ul>
-            <ul className="Footer-Menu">
-              <li className="Menu-Footer-header-item">КОНТАКТЫ</li>
-              <li className="Menu-Footer-items">(+994) 55 123 45 67</li>
-              <li className="Menu-Footer-items">zakaz@gidratop.ru</li>
-            </ul>
+        </div>
+
+        {/* Меню */}
+        <ul className="Footer-Menu">
+          <li className="Menu-Footer-header-item">КОМПАНИЯ</li>
+          <Link to={"/HomeQuestions"}>
+            <li className="menu-nav-item">{t("questionsAndComments")}</li>
+          </Link>
+          <Link to={"/AboutUs"}>
+            <li className="menu-nav-item">{t("aboutUs")}</li>
+          </Link>
+          <Link to={"/AllPlaces"}>
+            <li className="menu-nav-item">{t("allPlaces")}</li>
+          </Link>
+        </ul>
+
+        {/* Карты */}
+        <div className="Footer-payments">
+          <span>Мы принимаем:</span>
+          <div className="Footer-Cards">
+            <img src={Visa} alt="Visa" />
+            <img src={Mc} alt="MasterCard" />
+            <img src={Mir} alt="Mir" />
           </div>
         </div>
       </div>
-    </div>
+
+      {/* Нижняя линия */}
+      <div className="Footer-bottom">© 2025 TourMap. Все права защищены.</div>
+    </footer>
   );
 };

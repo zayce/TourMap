@@ -36,33 +36,33 @@ export const CityTourComponent = () => {
                     </li>
                     <li className="CityTourComponent-Item">
                       <span className="CityTourComponent-Word">
-                        Дата открытия:
+                       Açılış tarixi:
                       </span>
                       <span className="CityTourComponent-time">
                         {t(e.timeBuild)}
                       </span>
                     </li>
                     <li className="CityTourComponent-Item">
-                      <span className="CityTourComponent-Word">Адрес:</span>
+                      <span className="CityTourComponent-Word">Ünvan:</span>
                       <span className="CityTourComponent-time">
                         {t(e.adres)}
                       </span>
                     </li>
                     <li className="CityTourComponent-Item">
-                      <span className="CityTourComponent-Word">Город:</span>
+                      <span className="CityTourComponent-Word">Şəhər:</span>
                       <span className="CityTourComponent-time">
                         {t(e.city)}
                       </span>
                     </li>
                     <li className="CityTourComponent-Item">
-                      <span className="CityTourComponent-Word">Тип:</span>
+                      <span className="CityTourComponent-Word">Növ:</span>
                       <span className="CityTourComponent-time">
                         {t(e.specialTranslate)}
                       </span>
                     </li>
                   </ul>
                   <Link to={`/desc/${e.id}`}>
-                    <button className="AllPlaces-Button">Подробнее</button>
+                    <button className="AllPlaces-Button">Daha ətraflı oxuyun</button>
                   </Link>
                 </div>
               </Link>

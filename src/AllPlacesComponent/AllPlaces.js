@@ -4,6 +4,7 @@ import clock from "./clock.png";
 import { useParams } from "react-router-dom";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 export const AllPlaces = () => {
   const { traveled } = useMyContext();
@@ -61,23 +62,26 @@ export const AllPlaces = () => {
                       <span className="time">{t(e.openClose)}</span>
                     </li>
                     <li className="Allplaces-Item">
-                      <span className="Word">{t("city")}:</span>
+                      <span className="Word">{t("Şəhər")}:</span>
                       <span className="time">{t(e.city)}</span>
                     </li>
                     <li className="Allplaces-Item">
-                      <span className="Word">{t("category")}:</span>
+                      <span className="Word">{t("Növ")}:</span>
                       <span className="time">{t(e.special)}</span>
                     </li>
                     <li className="Allplaces-Item">
-                      <span className="Word">{t("category")}:</span>
+                      <span className="Word">{t("Açılış tarixi")}:</span>
                       <span className="time">{t(e.timeBuild)}</span>
                     </li>
                     <li className="Allplaces-Item">
-                      <span className="Word">{t("category")}:</span>
+                      <span className="Word">{t("Ünvan")}:</span>
                       <span className="time">{t(e.openClose)}</span>
                     </li>
                   </ul>
-                  <button className="AllPlaces-Button">Подробнее</button>
+                  <button className="AllPlaces-Button">Daha ətraflı oxuyun</button>{" "}
+                  <Link to={`/desc/${e.id}`}>
+                    <button className="AllPlaces-Button">Daha ətraflı oxuyun</button>
+                  </Link>{" "}
                 </div>
               </div>
             ))}

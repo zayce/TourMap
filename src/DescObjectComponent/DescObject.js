@@ -49,7 +49,7 @@ export const DescObject = () => {
 
             <div className="DescObject-Top-Block">
               <div className="DescObject-Left-Top-Block">
-                <div className="DescObject-Left-Top-Block-Title">О центре</div>
+                {/* <div className="DescObject-Left-Top-Block-Title">{t(selectedItem.aboutCenter)}</div> */}
                 <div className="DescObject-Left-Top-Block-Content">
                   <p>{t(selectedItem.minihistory)}</p>
                   <p>{t(selectedItem.minihistory2)}</p>
@@ -57,7 +57,7 @@ export const DescObject = () => {
               </div>
 
               <div className="DescObject-Right-Top-Block">
-                <div className="DescObject-Right-Top-Block-Title">Часы</div>
+                {/* <div className="DescObject-Right-Top-Block-Title">Часы</div> */}
                 <ul className="DescObject-Casi-List">
                   <li>
                     <FaClock className="casi-icon" />

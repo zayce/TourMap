@@ -29,54 +29,48 @@ export const TourComponent = () => {
       img: Baku,
       id: 1,
       state: "Popular",
-      person: one,
-      duo: two,
-      connect: "Baku",
+      connect: "Baku", //   person: one,
+      //   duo: two,
       city: t("baku"),
     },
     {
       category: t("Gəncə"),
       img: Gandja,
       id: 2,
-      state: "Popular",
-      person: one,
-      duo: two,
+      state: "Popular", //   person: one,
+      //   duo: two,
       city: t("Ganja"),
     },
     {
       category: t("Şəki"),
       img: Sheki,
       id: 3,
-      state: "Scenic",
-      person: one,
-      duo: two,
+      state: "Scenic", //   person: one,
+      //   duo: two,
       city: t("Sheki"),
     },
     {
       category: t("Lənkəran"),
       img: Lankoran,
       id: 4,
-      state: "Scenic",
-      person: one,
-      duo: two,
+      state: "Scenic", //   person: one,
+      //   duo: two,
       city: t("Lankaran"),
     },
     {
       category: t("Şamaxı"),
       img: Shamaha,
       id: 5,
-      state: "Scenic",
-      person: one,
-      duo: two,
+      state: "Scenic", //   person: one,
+      //   duo: two,
       city: t("Shamakhi"),
     },
     {
       category: t("Qarabağ"),
       img: Shusha,
       id: 6,
-      state: "Mountain",
-      person: one,
-      duo: two,
+      state: "Mountain", //   person: one,
+      //   duo: two,
       city: t("Karabakh"),
     },
     // {
@@ -91,18 +85,16 @@ export const TourComponent = () => {
       category: t("Qəbələ"),
       img: qabala,
       id: 8,
-      state: "Tourist",
-      person: one,
-      duo: two,
+      state: "Tourist", //   person: one,
+      //   duo: two,
       city: t("Gabala"),
     },
     {
       category: t("Xaçmaz"),
       img: Xacmaz,
       id: 9,
-      state: "Tourist",
-      person: one,
-      duo: two,
+      state: "Tourist", //   person: one,
+      //   duo: two,
       city: t("Khachmaz"),
     },
     // {
@@ -117,18 +109,16 @@ export const TourComponent = () => {
       category: t("Şəmkir"),
       img: Shemkir,
       id: 11,
-      state: "Tourist",
-      person: one,
-      duo: two,
+      state: "Tourist", //   person: one,
+      //   duo: two,
       city: t("Shamkir"),
     },
     {
       category: t("Ismayilli"),
       img: Ismailli,
       id: 12,
-      state: "Tourist",
-      person: one,
-      duo: two,
+      state: "Tourist", //   person: one,
+      //   duo: two,
       city: t("Ismailli"),
     },
     // {
@@ -144,17 +134,16 @@ export const TourComponent = () => {
       img: Qobustan,
       id: 14,
       state: "Tourist",
-      person: one,
-      duo: two,
+      //   person: one,
+      //   duo: two,
       city: t("Gobustan"),
     },
     {
       category: t("Qarışıq yerlər"),
       img: Obb,
       id: 15,
-      state: "Tourist",
-      person: one,
-      duo: two,
+      state: "Tourist", //   person: one,
+      //   duo: two,
       city: t("Mixed places"),
     },
   ];
@@ -173,7 +162,7 @@ export const TourComponent = () => {
                     className="img"
                     alt={attraction.name}
                   />
-                  <div className="overlay">
+                  {/* <div className="overlay">
                     <div className="overlay-text text">
                       <img
                         className="solo duo"
@@ -186,7 +175,7 @@ export const TourComponent = () => {
                       <img className="solo" src={attraction.duo} alt="duo" />
                       <div className="tur tur2">{t("tourForTwo")}</div>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
                 <div className="Beta-name">{attraction.city}</div>
               </div>

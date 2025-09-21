@@ -18,12 +18,14 @@ import { AboutUs } from "./AboutUsComponent/AboutUs";
 import { DescObject } from "./DescObjectComponent/DescObject";
 import { CityTourComponent } from "./CityTourComponent/CityTourComponent";
 
+
 const App = () => {
   return (
     <>
       <MyProvider>
         <BrowserRouter>
           <Header />
+         
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/CardPayment" element={<CardPayments />} />
@@ -38,7 +40,10 @@ const App = () => {
             <Route path="/HomeQuestions" element={<HomeQuestions />} />
             <Route path="/AboutUs" element={<AboutUs />} />
             <Route path="/desc/:id" element={<DescObject />} />
-            <Route path="/CityTourComponent/:category" element={<CityTourComponent />} />
+            <Route
+              path="/CityTourComponent/:category"
+              element={<CityTourComponent />}
+            />
           </Routes>
           <Footer />
         </BrowserRouter>

@@ -1,73 +1,166 @@
-.ChosenElement-wrapper {
-  font-family: Arial, sans-serif;
-  background-color: #f7f7f7;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.ChosenElement-inner {
+.Wrapper {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-}
-
-.ChosenElement-header {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
-}
-
-.ChosenElement-header h2 {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #333;
-}
-
-.ChosenElement-state {
-  font-size: 1.2rem;
-  color: #777;
-  font-weight: 600;
-}
-
-.ChosenElement-content {
-  display: flex;
-  gap: 30px;
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.ChosenElement-img {
-  flex: 1;
-}
-
-.chosen-img {
-  max-width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.ChosenElement-info {
-  flex: 2;
-  display: flex;
-  flex-direction: column;
   gap: 15px;
+  padding: 30px 20px;
+  background: #f8f3ed;
+  padding-top: 10px;
+  padding-bottom: 20px;
 }
 
-.ChosenElement-info p {
-  font-size: 1rem;
-  color: #555;
+.Inner {
+  width: 94%;
+  max-width: 1480px;
+  margin: 0 auto;
+
+  input {
+    width: 100%;
+    padding: 14px 18px;
+    border-radius: 14px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    outline: none;
+    background: #fff;
+    transition: all 0.3s ease;
+
+    &:focus {
+      border-color: #4a90e2;
+      box-shadow: 0 0 10px rgba(74, 144, 226, 0.4);
+      background: #fdfdfd;
+    }
+  }
+  .ResetButton {
+    margin-left: 10px;
+    padding: 8px 14px;
+    font-size: 14px;
+    border: none;
+    border-radius: 8px;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+
+    &:hover {
+      background: #1d1d1d;
+    }
+  }
 }
 
-.ChosenElement-info a {
-  color: #007bff;
-  text-decoration: none;
+/* Результаты (карточки) */
+.ResultCard {
+  max-width: 400px;
+  width: 100%;
+  background: #fff;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.3s ease;
+
+  h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+  }
+
+  p {
+    margin: 8px 0 0;
+    font-size: 14px;
+    color: #666;
+  }
 }
 
-.ChosenElement-info a:hover {
-  text-decoration: underline;
+/* Подсказки */
+.Suggestions {
+  width: 100%;
+  max-width: 600px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 14px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+  padding: 15px;
+  margin-top: 12px;
+  animation: fadeIn 0.25s ease;
+
+  .Suggestions-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 колонки */
+    gap: 10px 20px;
+  }
+}
+
+.SuggestionItem {
+  padding: 10px 12px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 10px;
+  transition: all 0.25s ease;
+  background: #fafafa;
+
+  &:hover {
+    background: #f0f6ff;
+    color: #333;
+    transform: translateX(4px);
+  }
+
+  .city {
+    color: #777;
+    font-size: 13px;
+    font-weight: 400;
+  }
+}
+
+/* пагинация */
+.Pagination {
+  margin-top: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+
+  button {
+    padding: 6px 12px;
+    font-size: 14px;
+    border: none;
+    border-radius: 8px;
+    background: #ccc;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+
+    &:hover:not(:disabled) {
+      background: #333;
+    }
+
+    &:disabled {
+      background: #ccc;
+      cursor: not-allowed;
+    }
+  }
+
+  span {
+    font-size: 18px;
+    color: #333;
+  }
+}
+
+/* "Ничего не найдено" */
+.NotFound {
+  margin-top: 12px;
+  font-size: 18px;
+  color: #333;
+  font-style: italic;
+  text-align: center;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

@@ -16,8 +16,9 @@ export const SelectedObject = () => {
     <>
       <div className="Selected-Object-wrapper">
         <div className="Selected-Object-inner">
-          <div className="Selected-Object-title">{specialization}</div>
-
+           
+          <div className="Selected-Object-title">{t(specialization)}</div>
+         
           <div className="Selected-Object">
             {filteredObjects.map((e) => (
               <div className="Selected-Object-card" key={e.id}>

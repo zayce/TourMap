@@ -25,10 +25,10 @@ export const Footer = () => {
           <div className="Footer-Social">
             <span className="Footer-Social-text">Мы в соцсетях:</span>
             <div className="Footer-Social-Imgs">
-              <a href="https://vk.com" target="_blank" rel="noreferrer">
+              {/* <a href="https://vk.com" target="_blank" rel="noreferrer">
                 <img src={Vk} alt="VK" />
-              </a>
-              <a href="https://instagram.com" target="_blank" rel="noreferrer">
+              </a> */}
+              <a href="https://www.instagram.com/tourmap2025/" target="_blank" rel="noreferrer">
                 <img src={Inst} alt="Instagram" />
               </a>
               <a href="https://facebook.com" target="_blank" rel="noreferrer">

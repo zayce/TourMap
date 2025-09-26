@@ -11,7 +11,8 @@ export const SelectedObject = () => {
   const filteredObjects = traveled.filter(
     (e) => e.specialization === specialization
   );
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+
   return (
     <>
       <div className="Selected-Object-wrapper">
@@ -58,7 +59,7 @@ export const SelectedObject = () => {
                     </li>
                   </ul>
                   <Link to={`/desc/${e.id}`}>
-                    <button className="AllPlaces-Button">Daha ətraflı oxuyun</button>
+                    <button className="AllPlaces-Button">{t("ReadMore")}</button>
                   </Link>
                 </div>
               </div>

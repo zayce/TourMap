@@ -24,7 +24,7 @@ export const Header = () => {
         <div className="Inner">
           <div className="Header-Top-Container">
             <div className="Header-left-container">
-              <div className="number-company">(+994) 55 123 45 67 </div>
+              <div className="number-company">tourmap25@gmail.com</div>
               <ul className="menu-social">
                 <li className="item-social">
                   <img src={Face} className="social" />

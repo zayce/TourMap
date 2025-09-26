@@ -23,7 +23,7 @@ export const Footer = () => {
           </Link>
 
           <div className="Footer-Social">
-            <span className="Footer-Social-text">Мы в соцсетях:</span>
+            <span className="Footer-Social-text">{t( "WeAreOnSocialNetworks")}</span>
             <div className="Footer-Social-Imgs">
               {/* <a href="https://vk.com" target="_blank" rel="noreferrer">
                 <img src={Vk} alt="VK" />
@@ -54,7 +54,7 @@ export const Footer = () => {
 
         {/* Карты */}
         <div className="Footer-payments">
-          <span>Мы принимаем:</span>
+          <span>{t("WeAccept")}</span>
           <div className="Footer-Cards">
             <img src={Visa} alt="Visa" />
             <img src={Mc} alt="MasterCard" />
